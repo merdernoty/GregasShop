@@ -1,36 +1,38 @@
-h1 { 
-    margin-bottom: 40px; 
-    line-height: 30px; 
-    font-weight: 300; 
-    font-size: 37px; 
-    color: #383838; 
-    margin: 40px 100px 45px; 
-    font-family: "Open Sans", Helvetica, Arial,; 
-  } 
-   
-  p { 
-    margin-bottom: 50px; 
-    font-size: 17.5px; 
-    line-height: 25px; 
-    font-weight: 350; 
-    margin: 30px 100px 20px; 
-    color: #333333; 
-    font-family: "Open Sans", Helvetica, Arial,; 
-  } 
-   
-  .mainpage_hr { 
-    background: linear-gradient(90deg, rgb(252, 4, 57)0%, rgb(156, 2, 46) 49%, rgb(0, 0, 0) 100%); 
-  } 
-   
-  hr { 
-    height: 1px; 
-    box-sizing: content-box; 
-    display: block; 
-    
-    margin-block-start: 0.5em; 
-    margin-block-end: 0.5em; 
-    margin-inline-start: auto; 
-    margin-inline-end: auto; 
-    overflow: hidden; 
-    margin: 20px 100px 10px; 
-  }  
+body {
+  display: flex;
+  justify-content: center; 
+  align-items: center;
+}
+
+.container5 {
+  display: flex;
+  text-align: center;
+  justify-content: center; 
+  flex-direction: column;
+  max-width: 77rem;
+  margin-left: 30px;
+  font: "Open Sans", Arial, sans-serif;
+}
+
+.title5 {
+  margin-bottom: 32px;
+  font-weight: bold;
+  font-size: 33px;
+  color: black;
+  font: 33px/28px "Open Sans", Arial, sans-serif;
+}
+
+.description {
+  font-size: 17px;
+  color: #1d1c1c;
+  overflow: auto;
+  text-align: justify;
+  display: block;
+  font: "Open Sans", Arial, sans-serif;
+}
+
+hr.grad {
+  border: none; 
+  background: linear-gradient(to right, rgb(208, 55, 228), rgb(224, 40, 40) 90%);
+  height: 1px;
+}
