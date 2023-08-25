@@ -9,7 +9,7 @@ import React from 'react';
 import Katalog from './Components/Katalog';
 import Locate from './Components/Locate';
 import BackToTopButton from './Components/BackToTopButton';
-// import Text from './Components/Text';
+import Text from './Components/Text';
 
 export default function App() {
   return (
@@ -19,14 +19,15 @@ export default function App() {
       <MainGui/>
       <Katalog/>
       <Search/>
-      <hr></hr>
+      <hr class="grad"></hr>
       <FotoButton/>
-      <hr></hr>
+      <hr class="grad"></hr>
       <New></New> 
-      <hr></hr>
+      <hr class="grad"></hr>
       <Hit></Hit>
-      {/* <Text></Text>  */}
-      <hr></hr>
+      <hr class="grad"></hr>
+      <Text></Text> 
+      <hr class="grad"></hr>
       <Footer></Footer>
   
     </div>
