@@ -10,6 +10,7 @@ import Katalog from './Components/Katalog';
 import Locate from './Components/Locate';
 import BackToTopButton from './Components/BackToTopButton';
 import Text from './Components/Text';
+import Slider from './Components/Slider/Slider';
 
 export default function App() {
   return (
@@ -18,7 +19,9 @@ export default function App() {
       <BackToTopButton/>
       <MainGui/>
       <Katalog/>
-      <Search/>
+      <Search/> 
+      <hr class="grad"></hr>
+      <Slider></Slider>
       <hr class="grad"></hr>
       <FotoButton/>
       <hr class="grad"></hr>
@@ -29,7 +32,7 @@ export default function App() {
       <Text></Text> 
       <hr class="grad"></hr>
       <Footer></Footer>
-  
+
     </div>
     );
   }
