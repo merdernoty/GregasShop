@@ -1,9 +1,12 @@
 {
   "name": "myapp",
   "version": "1.0.0",
+  "homepage": "https://startupupup.github.io/WebSiteAzamat",
   "description": "",
   "main": "index.js",
   "scripts": {
+    "predeplay": "npm run build",
+    "deploy": "gh-pages -d build",
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "react-scripts start",
     "build": "webpack --config webpack.config.js",
@@ -14,7 +17,8 @@
   "dependencies": {
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
-    "react-scripts": "^5.0.1"
+    "react-scripts": "^5.0.1",
+    "swiper": "^10.2.0"
   },
   "browserslist": {
     "production": [
@@ -29,6 +33,7 @@
     ]
   },
   "devDependencies": {
+    "gh-pages": "^6.0.0",
     "resolve-url-loader": "^5.0.0",
     "sass": "^1.66.1",
     "sass-loader": "^13.3.2"
