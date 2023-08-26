@@ -9,7 +9,6 @@ function Hit() {
   return (
     <div className="HitSlider"> <p className="HitSliderText"> Хиты </p>
       <div className="HitPhotos">
-        <div className="HitBobaTag"> Хит Продаж!</div>
         <div className="Container">
           <div className="image-container">
             <a href="/home">
@@ -33,7 +32,6 @@ function Hit() {
           </div>
         </div>
         
-        <div className="HitNoodleTag">Хит Продаж!</div>
         <div className="Container">
           <div className="image-container">
             <a href="/home">
@@ -55,7 +53,6 @@ function Hit() {
           </div>
         </div>
         
-        <div className="HitIceCreamTag">Хит Продаж!</div>
         <div className="Container">
           <div className="image-container">
             <a href="/home">
@@ -77,7 +74,6 @@ function Hit() {
           </div>
         </div>
         
-        <div className="HitSodaTag">Хит Продаж!</div>
         <div className="Container">
           <div className="image-container">
             <a href="/home">

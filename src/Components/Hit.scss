@@ -4,15 +4,18 @@ body {
     align-items: center; 
 }
 
+
 .HitSliderText {
     font-size: 20px;
     color:rgb(89, 88, 88);
-    font-weight: 2
+    font-weight: 2;
+    margin-left: 44px;
 }
 
 .HitPhotos {
     display:flex;
     margin-top: 20px;
+    justify-content: center;
 }
 
 .HitPhotos img {
@@ -89,7 +92,7 @@ body {
 }
 
 .BobaStock {
-    margin-top: 30px;
+    margin-top: 5px;
     margin-left: -5px;
     font-size: 11px;
     color:rgba(0, 0, 0, 0.623);
@@ -103,7 +106,7 @@ body {
 }
 
 .NoodleStock {
-    margin-top: 30px;
+    margin-top: 5px;
     margin-left: -5px;
     font-size: 11px;
     color:rgba(0, 0, 0, 0.623);
@@ -117,7 +120,7 @@ body {
 }
 
 .IceCreamStock {
-    margin-top: 30px;
+    margin-top: 5px;
     margin-left: -5px;
     font-size: 11px;
     color:rgba(0, 0, 0, 0.623);
@@ -131,7 +134,7 @@ body {
 }
 
 .SodaStock {
-    margin-top: 30px;
+    margin-top: 5px;
     margin-left: -5px;
     font-size: 11px;
     color:rgba(0, 0, 0, 0.623);
@@ -177,49 +180,6 @@ body {
     margin-left: 120px;
     font-size: 20px;
     color:black;
-}
-
-.HitBobaTag {
-    position: absolute;
-    margin-left: 23px;
-    background-color: rgb(41,146,217)   ;
-    color: white;
-    padding: 2px;
-    border-radius: 3px;
-    z-index: 1;
-}
-
-.HitNoodleTag {
-    justify-content: center;
-    position: absolute;
-    margin-left: 323px;
-    background-color: rgb(41,146,217);
-    color: white;
-    padding: 2px;
-    border-radius: 3px;
-    z-index: 1;
-}
-
-.HitIceCreamTag {
-    justify-content: center;
-    position: absolute;
-    margin-left: 623px;
-    background-color: rgb(41,146,217);
-    color: white;
-    padding: 2px;
-    border-radius: 3px;
-    z-index: 1;
-}
-
-.HitSodaTag {
-    justify-content: center;
-    position: absolute;
-    margin-left: 923px;
-    background-color: rgb(41,146,217);
-    color: white;
-    padding: 2px;
-    border-radius: 3px;
-    z-index: 1;
 }
 
 .image-container {

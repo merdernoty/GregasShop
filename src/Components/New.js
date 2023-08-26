@@ -12,8 +12,6 @@ function New() {
    <div className="NewSlider"> <p className="NewSliderText"> Новинки </p>
     <div className="NewPhotos">
 
-      
-      <div className="NewBobaTag">Новинки</div>
       <div className="Container">
         <div className="image-container">
         <a href="/home">
@@ -37,7 +35,6 @@ function New() {
     </div>
       </div>
       
-      <div className="NewNoodleTag">Новинки</div>
       <div className="Container">
       <div className="image-container">
         <a href="/home">
@@ -59,7 +56,6 @@ function New() {
     </div>
       </div>
       
-      <div className="NewIceCreamTag">Новинки</div>
       <div className="Container">
       <div className="image-container">
         <a href="/home">
@@ -81,7 +77,6 @@ function New() {
     </div>
       </div>
       
-      <div className="NewSodaTag">Новинки</div>
       <div className="Container">
       <div className="image-container">
         <a href="/home">
