@@ -18,8 +18,8 @@ export default function App() {
       <Locate/>
       <BackToTopButton/>
       <MainGui/>
-      <Katalog/>
-      <Search/> 
+    
+      <Search/> <Katalog/>
       <hr class="grad"></hr>
       <Slider></Slider>
       <hr class="grad"></hr>
