@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import Scrollbar from 'react-scrollbar';
 import './Katalog.scss';
 
 function Katalog() {
@@ -20,11 +21,14 @@ function Katalog() {
   return (
     <div className="katalog-container">
       <button className="katalog-button" onClick={toggleKatalog}>
-        Каталог
+      <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="20" height="20" viewBox="0 0 50 50">
+<path d="M 0 7.5 L 0 12.5 L 50 12.5 L 50 7.5 L 0 7.5 z M 0 22.5 L 0 27.5 L 50 27.5 L 50 22.5 L 0 22.5 z M 0 37.5 L 0 42.5 L 50 42.5 L 50 37.5 L 0 37.5 z"></path>
+</svg>
       </button>
       {isKatalogOpen && (
         <div className={`katalog-content ${isKatalogOpen ? 'open' : ''}`}>
-          <ul>
+          <Scrollbar style={{ height: '400px',scrollbarColor: 'red green'}}>
+            <ul>
             <li>
               <button className="submenu-button" onClick={() => toggleSubMenu('subMenu1')}>
                 Азиатская еда и напитки
@@ -112,7 +116,8 @@ function Katalog() {
                 </ul>
               )}
             </li>
-          </ul>
+            </ul>
+          </Scrollbar >
         </div>
       )}
     </div>
