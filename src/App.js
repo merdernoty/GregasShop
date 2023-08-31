@@ -1,23 +1,38 @@
 import './App.scss';
-import { Routes, Route, Link } from 'react-router-dom';
-import Home from "./Pages/Collection";
-import Collection from './Pages/Home';
-import Ours from "./Pages/Ours";
+import New from './Components/New';
+import Hit from './Components/Hit';
+import Footer from './Components/Footer';
+import MainGui  from './Components/MainGui';
+import FotoButton from './Components/FotoButton';
+import Search from './Components/Search';
+import React from 'react';
+import Katalog from './Components/Katalog';
+import Locate from './Components/Locate';
+import BackToTopButton from './Components/BackToTopButton';
+import Text from './Components/Text';
+import Slider from './Components/Slider/Slider';
 
-export default function App() {
-  return (
-    <div className="App">
-      <header>
-        <Link href="/">Home</Link>
-        <Link href="/Ours">Ours</Link>
-        <Link href="/Collection">Collection</Link>
-      </header>
-      <Routes>
-        <Route path="/" element={<Home />}/>
-        <Route path="/Ours" element={<Ours />}/>
-        <Route path="/Collection" element={<Collection/>}/>
-        <Route path="*" element={<Home />}/>
-      </Routes>
-    </div>
-    );
-  }
+
+export default function Collection() {
+    return (
+      <div className="App">
+        <Locate/>
+        <BackToTopButton/>
+        <MainGui/>
+        <Katalog/>
+        <Search/> 
+        <hr class="grad"></hr>
+        <Slider></Slider>
+        <hr class="grad"></hr>
+        <FotoButton/>
+        <hr class="grad"></hr>
+        <New></New> 
+        <hr class="grad"></hr>
+        <Hit></Hit>
+        <hr class="grad"></hr>
+        <Text></Text> 
+        <hr class="grad"></hr>
+        <Footer></Footer>
+      </div>
+      );
+    }
