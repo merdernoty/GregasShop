@@ -2,7 +2,7 @@ import './App.scss';
 import New from './Components/New';
 import Hit from './Components/Hit';
 import Footer from './Components/Footer';
-import {MainGui}  from './Components';
+import {MainGui}  from './Components/MainGui/MainGui';
 import FotoButton from './Components/FotoButton';
 import Search from './Components/Search';
 import React from 'react';

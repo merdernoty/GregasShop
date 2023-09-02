@@ -35,7 +35,7 @@ export const MainGui = () => {
         <li>Sale</li>
         <li>Новые поступления</li>
       </ul>
-      {isSticky && <Katalog className={styles.Job + ' ' + styles.stickyKatalog} />}  //Стили для Меню
+      {isSticky && <Katalog className={styles.Job + ' ' + styles.stickyKatalog} />}
     </header>
   );
 };
