@@ -11,6 +11,9 @@ import Locate from './Components/Locate';
 import BackToTopButton from './Components/BackToTopButton';
 import Text from './Components/Text';
 import Slider from './Components/Slider/Slider';
+import Cart from './Components/Menuright/Cart';
+import Favorite from './Components/Menuright/Favorite';
+import UserProfile from './Components/Menuright/UserProfile';
 
 export default function App() {
   return (
@@ -32,6 +35,9 @@ export default function App() {
       <Text></Text> 
       <hr class="grad"></hr>
       <Footer></Footer>
+      <Cart></Cart>
+      <Favorite></Favorite>
+      <UserProfile></UserProfile>
 
     </div>
     );
