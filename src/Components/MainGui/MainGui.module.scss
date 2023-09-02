@@ -1,0 +1,18 @@
+.MainWrapper { 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  position: relative;
+}
+
+.MainLogo {
+  position: absolute;
+  left: 30px;
+}
+
+.MenuWrapper{
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+}
