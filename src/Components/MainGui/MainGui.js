@@ -26,7 +26,7 @@ export const MainGui = () => {
     [styles.sticky]: isSticky,
   });
 
-  return (
+   return (
     <header className={headerClasses}>
       <div className={styles.MainLogo}><img src={LogoImage}></img></div>
       <ul className={styles.MenuWrapper}>
@@ -35,7 +35,7 @@ export const MainGui = () => {
         <li>Sale</li>
         <li>Новые поступления</li>
       </ul>
-      {isSticky && <Katalog className={styles.Job + ' ' + styles.stickyKatalog} />}
+      {isSticky && <Katalog className={styles.Job + ' ' + styles.stickyKatalog} />}  //Стили для Меню
     </header>
   );
 };
