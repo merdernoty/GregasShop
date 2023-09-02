@@ -1,11 +1,11 @@
 import React, { useState, useEffect } from 'react';
 import styles from './MainGui.module.scss';
-import logoImage from '../../img/LogoMain.png';
+import LogoImage from '../../img/LogoMain.png';
 import classNames from 'classnames';
-
+import Katalog from '../Katalog';
 export const MainGui = () => {
   const [isSticky, setIsSticky] = useState(false);
-
+  
   useEffect(() => {
     const handleScroll = () => {
       if (window.scrollY > 0) {
@@ -26,15 +26,16 @@ export const MainGui = () => {
     [styles.sticky]: isSticky,
   });
 
-  return (
+   return (
     <header className={headerClasses}>
-      <div className={styles.MainLogo}>GregasShop</div>
+      <div className={styles.MainLogo}><img src={LogoImage}></img></div>
       <ul className={styles.MenuWrapper}>
         <li>Коллекции</li>
         <li>Хиты</li>
         <li>Sale</li>
         <li>Новые поступления</li>
       </ul>
+      {isSticky && <Katalog className={styles.Job + ' ' + styles.stickyKatalog} />}  //Стили для Меню
     </header>
   );
 };
