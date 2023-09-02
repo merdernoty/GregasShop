@@ -15,10 +15,13 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "classnames": "^2.3.2",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-icons": "^4.10.1",
     "react-scripts": "^5.0.1",
+    "react-scrollbar": "^0.5.6",
+    "react-svg": "^16.1.22",
     "swiper": "^10.2.0"
   },
   "browserslist": {
@@ -35,8 +38,11 @@
   },
   "devDependencies": {
     "gh-pages": "^6.0.0",
+    "react-router-dom": "^6.15.0",
     "resolve-url-loader": "^5.0.0",
     "sass": "^1.66.1",
-    "sass-loader": "^13.3.2"
+    "sass-loader": "^13.3.2",
+    "webpack": "^5.88.2",
+    "webpack-cli": "^5.1.4"
   }
 }

@@ -2,7 +2,7 @@ import './App.scss';
 import New from './Components/New';
 import Hit from './Components/Hit';
 import Footer from './Components/Footer';
-import MainGui  from './Components/MainGui';
+import {MainGui}  from './Components';
 import FotoButton from './Components/FotoButton';
 import Search from './Components/Search';
 import React from 'react';
@@ -21,8 +21,8 @@ export default function App() {
       <Locate/>
       <BackToTopButton/>
       <MainGui/>
-      <Katalog/>
-      <Search/> 
+    
+      <Search/> <Katalog/>
       <hr class="grad"></hr>
       <Slider></Slider>
       <hr class="grad"></hr>
