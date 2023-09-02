@@ -3,6 +3,7 @@
     padding: 0;
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
+    
 }
 
 nav-container {
@@ -13,7 +14,8 @@ nav-container {
     padding: 20px;
     z-index:999;
     margin-left: 2rem;
-    
+    position: relative;  //kurwabober
+    right: 200px;
 }
 
 input{
@@ -28,9 +30,10 @@ input{
     width: 70%;
     justify-content: center;
     align-items: center;
-
+    left: 47px;
 }
 .Search-submit {
+    position: relative;
     padding: 12px 20px;
     background: #EA88AD;
     font-size: 13px;
@@ -39,5 +42,7 @@ input{
     border-radius: 5px;
     border-color: #EA88AD;
     cursor: pointer;
+    left: 50px;
+    
 }
 
