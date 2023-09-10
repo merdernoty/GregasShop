@@ -35,8 +35,4 @@ export const routes = [
       },
     ],
   },
-  {
-    path: '/abc',
-    element: <div>abc</div>,
-  },
 ];

@@ -4,6 +4,7 @@ import photo1 from '../../../../assets/images/photo1.jpg';
 import photo2 from '../../../../assets/images/photo2.jpg';
 import photo3 from '../../../../assets/images/photo3.jpg';
 import photo4 from '../../../../assets/images/photo4.jpg';
+import { Link } from 'react-router-dom';
 
 export const New = () => {
   return (
@@ -13,10 +14,10 @@ export const New = () => {
       <div className="NewPhotos">
         <div className="Container">
           <div className="image-container">
-            <a href="/product/1">
+            <Link to="/product/1">
               <img src={photo1} />
-              <div class="shine-effect"></div>
-            </a>
+              <div className="shine-effect"></div>
+            </Link>
           </div>
           <p className="Boba">
             <a href="/home/" className="link">
