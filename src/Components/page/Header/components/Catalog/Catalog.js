@@ -183,7 +183,6 @@ export const Catalog = () => {
           </Scrollbar>
         </div>
       )}
-      <hr className="grad" />
     </div>
   );
 };

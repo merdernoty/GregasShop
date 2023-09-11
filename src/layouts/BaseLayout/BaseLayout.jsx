@@ -1,8 +1,8 @@
-import { Footer } from '../../components';
+import { Footer } from '../../Components';
 import { Outlet } from 'react-router-dom';
 import React from 'react';
 import './BaseLayout.scss';
-import { Header } from '../../components';
+import { Header } from '../../Components';
 
 export const BaseLayout = () => {
   return (
