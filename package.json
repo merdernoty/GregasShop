@@ -1,7 +1,6 @@
 {
   "name": "myapp",
   "version": "1.0.0",
-  "homepage": "https://startupupup.github.io/WebSiteAzamat",
   "description": "",
   "main": "index.js",
   "scripts": {
@@ -9,7 +8,7 @@
     "deploy": "gh-pages -d build",
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "react-scripts start",
-    "build": "webpack --config webpack.config.js",
+    "build": "react-scripts build",
     "lint": "eslint src"
   },
   "author": "",
@@ -18,7 +17,6 @@
     "classnames": "^2.3.2",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
-    "react-icons": "^4.10.1",
     "react-scripts": "^5.0.1",
     "react-scrollbar": "^0.5.6",
     "react-svg": "^16.1.22",

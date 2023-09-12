@@ -1,0 +1,83 @@
+/* MainGui.module.scss */
+
+.MainWrapper {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  background-color: #ffffff;
+  color: black;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  height: 80px;
+  z-index: 100; /* Установите значение z-index, чтобы меню было поверх остального контента */
+}
+
+.MainLogo img {
+  position: absolute;
+  left: 110px;
+  top: -5px;
+  height: 70px;
+  width: 90px;
+}
+
+.MenuWrapper {
+  position: absolute;
+  right: 97px;
+  list-style: none;
+  display: flex;
+  margin: 0;
+  padding: 0;
+  margin: 30px 0 30px 0;
+}
+
+.MenuWrapper li {
+  margin-right: 20px;
+  color: hotpink;
+}
+.MenuWrapper li:hover {
+  color: rgb(248, 144, 196);
+}
+.MainWrapper {
+  position: relative; /* Исходное значение */
+  /* ... остальные начальные стили ... */
+}
+
+/* Стили для меню, когда оно липкое */
+.sticky {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  background-color: white;
+  color: black;
+  display: flex;
+  height: 70px;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  z-index: 100;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Тень */
+}
+.sticky img {
+  position: absolute;
+  left: 235px;
+}
+.stickyKatalog {
+  position: fixed;
+  top: 0;       /* Установите значение top в 0, чтобы компонент был приклеен к верху экрана */
+  left: 0;
+  width: 100%;
+  background-color: white;
+  z-index: 100;
+}
+a:-webkit-any-link {  /*Стили для кнопок Колекции Хиты Sale Новые Поступления*/
+  color: black;
+  cursor: pointer;
+  text-decoration: none;
+}
+a:-webkit-any-link:hover {
+  color: hotpink;
+}
