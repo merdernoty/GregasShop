@@ -1,5 +1,6 @@
-import './About.scss';
 
+import './About.scss';
+=======
 export const About = () => {
   return (
     <div className='box'>

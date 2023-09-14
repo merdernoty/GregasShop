@@ -56,7 +56,6 @@ export const MainGui = () => {
           </Link>
         </li>
       </ul>
-      {isSticky && <Catalog className={styles.Job + ' ' + styles.stickyKatalog} />}
     </header>
   );
 };
