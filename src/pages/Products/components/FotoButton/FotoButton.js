@@ -1,12 +1,12 @@
 import React from 'react';
 import './FotoButton.scss';
-import foto1 from '../../../../assets/images/foto1.jpg';
-import foto2 from '../../../../assets/images/foto2.jpg';
-import foto3 from '../../../../assets/images/foto3.jpg';
-import foto4 from '../../../../assets/images/foto4.jpg';
-import foto5 from '../../../../assets/images/foto5.jpg';
-import foto6 from '../../../../assets/images/foto6.jpg';
-import foto7 from '../../../../assets/images/foto7.jpg';
+import foto1 from '../../../../assets/images/Fotobutton1.png';
+import foto2 from '../../../../assets/images/Fotobutton2.png';
+import foto3 from '../../../../assets/images/Fotobutton3.png';
+import foto4 from '../../../../assets/images/Fotobutton4.png';
+import foto5 from '../../../../assets/images/Fotobutton5.png';
+import foto6 from '../../../../assets/images/Fotobutton6.png';
+
 
 export const FotoButton = () => {
   return (
@@ -15,43 +15,37 @@ export const FotoButton = () => {
         <a href="/home">
           <img src={foto1} alt="Foto 1" />
         </a>
-        <p>РЮКЗАКИ</p>
+        <p>КОСМЕТИКА</p>
       </div>
       <div className="fotoItem">
         <a href="/home">
           <img src={foto2} alt="Foto 2" />
         </a>
-        <p>АКСЕССУАРЫ</p>
+        <p>ПРИКОЛЫ</p>
       </div>
       <div className="fotoItem">
         <a href="/home">
           <img src={foto3} alt="Foto 3" />
         </a>
-        <p>ГАДЖЕТЫ</p>
+        <p>КАНЦЕЛЯРИЯ</p>
       </div>
       <div className="fotoItem">
         <a href="/home">
           <img src={foto4} alt="Foto 4" />
         </a>
-        <p>ДЛЯ ДОМА</p>
+        <p>АКСЕССУАРЫ</p>
       </div>
       <div className="fotoItem">
         <a href="/home">
           <img src={foto5} alt="Foto 5" />
         </a>
-        <p>ИГРУШКИ</p>
+        <p>ИГРЫ,ФИЛЬМЫ,АНИМЕ</p>
       </div>
       <div className="fotoItem">
         <a href="/home">
           <img src={foto6} alt="Foto 6" />
         </a>
-        <p>КАНЦЕЛЯРИЯ</p>
-      </div>
-      <div className="fotoItem">
-        <a href="/home">
-          <img src={foto7} alt="Foto 7" />
-        </a>
-        <p>ОДЕЖДА</p>
+        <p>ЕДА И НАПИТКИ</p>
       </div>
     </div>
   );

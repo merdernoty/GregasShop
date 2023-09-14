@@ -1,4 +1,4 @@
-
+import styles from "./About.scss";
 
 export const About = () => {
   return (
