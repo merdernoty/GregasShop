@@ -58,7 +58,6 @@ export const Footer = () => {
                       <div className="item">
                         <div className="title">
                           <a href="src/components/index">Условия доставки</a>
-                        </div> 
                         </div>
                       </div>
                     </div>
