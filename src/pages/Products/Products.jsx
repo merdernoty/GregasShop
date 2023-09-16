@@ -1,6 +1,6 @@
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
-import { FotoButton, New, Slider, Text, Hit } from './components';
+import { FotoButton, New, Slider, NewsWall, Text, Hit } from './components';
 
 export const Products = () => {
   const navigate = useNavigate();
@@ -18,6 +18,8 @@ export const Products = () => {
       <New />
       <hr className="grad" />
       <Hit />
+      <hr className="grad" />
+      <NewsWall />
       <hr className="grad" />
       <Text />
     </>
