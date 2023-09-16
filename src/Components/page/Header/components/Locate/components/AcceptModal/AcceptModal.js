@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
-import './AcceptModal.scss';
+import styles from'./AcceptModal.scss';
 import { Modal } from './components';
+import classNames from 'classnames';
 
 export const AcceptModal = ({ acceptActive, setAcceptActive }) => {
   const [modalActive, setModalActive] = useState(false);
@@ -16,13 +17,15 @@ export const AcceptModal = ({ acceptActive, setAcceptActive }) => {
         className={acceptActive ? 'acceptModal__content acceptActive' : 'acceptModal__content'}
         onClick={(e) => e.stopPropagation()}
       >
-        <h1>Ваш Город Махачкала?</h1>
+        <div className='Local-Wrapper'>
+        <h1 className='textLoc'>Ваш Город Махачкала?</h1>
         <button className="btn1" onClick={() => setAcceptActive(false)}>
           Все Верно
         </button>
         <button className="btn2" onClick={() => setModalActive(true)}>
           Сменить Город
         </button>
+        </div>
       </div>
       <Modal active={modalActive} setActive={closeModal}></Modal>
     </div>

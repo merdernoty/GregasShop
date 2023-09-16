@@ -2,49 +2,49 @@
     {
       "id": 0,
       "title": "Boba",
-      "img":"",
+      "imageURL":"/assets/img/boba.jpg",
       "category": 1,
       "price": 25.99
     },
     {
       "id": 1,
       "title": "Soda",
-      "img":"",
+      "imageURL":"../images/foto1.jpg",
       "category": 2,
       "price": 19.95
     },
     {
       "id": 2,
       "title": "Nodle",
-      "img":"",
+      "imageURL":"../images/foto2.jpg",
       "category": 1,
       "price": 32.50
     },
     {
       "id": 3,
       "title": "Pen",
-      "img":"",
+      "imageURL":"../images/foto3.jpg",
       "category": 1,
       "price": 32.50
     },
     {
       "id": 4,
       "title": "Pencil",
-      "img":"",
+      "imageURL":"../images/foto4.jpg",
       "category": 1,
       "price": 32.50
     },
     {
       "id": 5,
       "title": "Book",
-      "img":"",
+      "imageURL":"../images/foto5.jpg",
       "category": 1,
       "price": 32.50
     },
     {
       "id": 6,
       "title": "Ramen",
-      "img":"",
+      "imageURL":"../images/foto7.jpg",
       "category": 1,
       "price": 32.50
     }
