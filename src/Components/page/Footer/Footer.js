@@ -1,5 +1,6 @@
 import React from 'react';
 import './Footer.scss';
+import { Link } from 'react-router-dom';
 
 export const Footer = () => {
   return (
@@ -20,22 +21,14 @@ export const Footer = () => {
                       </div>
                       <div className="item">
                         <div className="title">
+                        <Link to="about">
                           <a href="src/components/index">О компании</a>
+                          </Link>
                         </div>
                       </div>
                       <div className="item">
                         <div className="title">
                           <a href="src/components/index">Акции</a>
-                        </div>
-                      </div>
-                      <div className="item">
-                        <div className="title">
-                          <a href="src/components/index">Обзоры</a>
-                        </div>
-                      </div>
-                      <div className="item">
-                        <div className="title">
-                          <a href="src/components/index">Политика</a>
                         </div>
                       </div>
                     </div>
@@ -67,34 +60,12 @@ export const Footer = () => {
                           <a href="src/components/index">Условия доставки</a>
                         </div>
                       </div>
-                      <div className="item">
-                        <div className="title">
-                          <a href="src/components/index">Возврат денежных средств</a>
-                        </div>
-                      </div>
                     </div>
                   </div>
                 </div>
               </div>
 
-              <div className="col-md-4 col-sm-4">
-                <div className="bottom-menu">
-                  <div className="items">
-                    <div className="items-link">
-                      <div className="item">
-                        <div className="title1">
-                          <a href="src/components/index">Помощь</a>
-                        </div>
-                      </div>
-                      <div className="item">
-                        <div className="title">
-                          <a href="src/components/index">Вопрос-ответ</a>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
+             
 
               <div className="col-md-4 col-sm-4">
                 <div className="bottom-menu">
@@ -155,7 +126,7 @@ export const Footer = () => {
           </div>
         </div>
 
-        <div className="col-lg-6 col-md-12 col-sm-4 col-sm-offset-2">
+        <div className="title2">
           <div className="info contacts_block_footer">
             <span className="white_middle_text">Наши контакты</span>
             <div className="phone block">

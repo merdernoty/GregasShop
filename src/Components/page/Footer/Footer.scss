@@ -77,12 +77,16 @@
   .title1 {
     margin-top: 5px;
     font-weight: bold;
+    margin: 0 45px 0 45px;
   }
 
   .title1 {
     margin-bottom: 15px; 
   }
 
+.title { 
+  margin-left: 45px;
+}
   .work-time {
     display: flex;
     align-items: flex-start;
@@ -127,6 +131,10 @@
   margin-bottom: 15px;
 }
 
+.title2{
+  margin-top: 26px;
+  font-size: 20px;
+}
 .item {
   a {
     svg {
