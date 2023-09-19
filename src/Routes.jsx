@@ -4,6 +4,8 @@ import { Products } from './pages/Products/Products';
 import { About } from './pages/About/About';
 import { Product } from './pages/Product/Product';
 import { Collection } from './pages/Collection/Collection';
+import { Information } from './pages/Information/Information';
+import { Deals } from './pages/Deals/Deals';
 
 export const routes = [
   {
@@ -23,6 +25,10 @@ export const routes = [
         element: <About />,
       },
       {
+        path: 'deals',
+        element: <Deals />,
+      },
+      {
         path: 'collection',
         element: <Collection />,
       },
@@ -38,6 +44,10 @@ export const routes = [
         path: 'product/:productId',
         element: <Product />,
       },
+      {
+        path: 'information',
+        element: <Information />,
+      }
     ],
   },
 ];
