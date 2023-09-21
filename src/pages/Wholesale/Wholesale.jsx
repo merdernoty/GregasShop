@@ -1,16 +1,16 @@
 
-import './Deals.scss';
+import './Wholesale.scss';
 
 
-export const Deals = () => {
+export const Wholesale = () => {
   return (
     <div className='box'>
       <section>
     
-        <h1>Lorem bobr</h1>
+        <h1>Lorem Ipsum</h1>
         
         <p>
-        Lorem ipsum
+        Lorem Ipsum
         </p>
         <br></br>
       </section>
@@ -18,9 +18,9 @@ export const Deals = () => {
       <section>
         <ul>
           
-          <li>Lorem ipsum</li>
-          <li>Lorem ipsum</li>
-          <li>Lorem ipsum</li>
+          <li> НУЖНА АНКЕТА </li>
+          <li>Lorem Ipsum</li>
+          <li>Lorem Ipsum</li>
         </ul>
       </section>
     </div>
