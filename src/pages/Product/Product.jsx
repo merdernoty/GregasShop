@@ -29,7 +29,7 @@ export const Product = () => {
 
       <section>
         <h2>Изображения продукта</h2>
-        <img src="путь_к_изображению_1.jpg" alt="Изображение продукта 1" />
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSADSOJuy_z4RX8FtoXdEhRQ-QScg5YG-3Mtw&usqp=CAU" alt="Изображение продукта 1" />
         <img src="путь_к_изображению_2.jpg" alt="Изображение продукта 2" />
       </section>
 
