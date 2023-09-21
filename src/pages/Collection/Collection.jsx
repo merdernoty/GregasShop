@@ -5,14 +5,15 @@ import './Collection.scss'; // Импортируйте файл стилей д
 import Sort from './Sort/Sort';
 
 export const Collection = () => {
-  const [Items, setItems] = React.useState([])
-  fetch('https://650c60bf47af3fd22f678d4b.mockapi.io/items')
-    .then((response) => {
-      return response.json();
-    })
-    .then((json) => {
-      setItems(json)
-    });
+  const [Items, setItems] = React.useState([]);
+
+  React.useEffect(() => {
+    fetch('https://650c60bf47af3fd22f678d4b.mockapi.io/items')
+      .then((response) => response.json())
+      .then((json) => {
+        setItems(json);
+      });
+  }, []);
 
   return (
     <div className="collection-container">
