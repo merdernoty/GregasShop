@@ -49,16 +49,21 @@ export const Footer = () => {
                       </div>
                       <div className="item">
                         <div className="title">
+                          <Link to="wholesale">
                           <a href="src/components/index">Оптовые продажи</a>
+                          </Link>
                         </div>
                       </div>
                       <div className="item">
                         <div className="title">
+                          <Link to='payment'>
                           <a href="src/components/index">Способы оплаты</a>
+                          </Link>
                         </div>
                       </div>
                       <div className="item">
                         <div className="title">
+                          <Link to='cargo'>
                           <Link to="Information">
                           <a href="src/components/index">Условия доставки</a>
                           </Link>
