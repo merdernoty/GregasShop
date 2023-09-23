@@ -44,7 +44,9 @@ export const Footer = () => {
                     <div className="items-link">
                       <div className="item">
                         <div className="title1">
+                        <Link to="Information">
                           <a href="src/components/index">Информация</a>
+                          </Link>
                         </div>
                       </div>
                       <div className="item">
@@ -64,7 +66,6 @@ export const Footer = () => {
                       <div className="item">
                         <div className="title">
                           <Link to='cargo'>
-                          <Link to="Information">
                           <a href="src/components/index">Условия доставки</a>
                           </Link>
                         </div>

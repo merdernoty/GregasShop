@@ -9,7 +9,6 @@ import { Cargo } from './pages/Cargo/Cargo';
 import { Product } from './pages/Product/Product';
 import { Collection } from './pages/Collection/Collection';
 import { Information } from './pages/Information/Information';
-import { Deals } from './pages/Deals/Deals';
 
 export const routes = [
   {
