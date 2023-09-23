@@ -1,109 +1,118 @@
-.katalog-container {
+.Wrapper-Catalog {
   position: relative;
-  width: 100%;
-  display: inline-block;
-  vertical-align: top;
-  color: white;
-  list-style-type: none;
+  margin-bottom: 30px;
 }
 
-.katalog-button {
-  position: relative;
-  left: 118px;
-  top:-37px;
-  padding: 5px 10px 5px 10px ;
-  background-color:hotpink;
-  
-  border: none;
-  cursor: pointer;
-  color: white;
-  font-size: 16px;
-  border-radius: 5px;
-  vertical-align: middle;
-
-}
-.katalog-button:hover{
-  background-color: #EA88AD;
-}
-
-
-.katalog-content {
+.navbar {
   position: absolute;
-  width: 100%;
-  top: 100%;
-  left: 0;
-  justify-content: space-between;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
-  padding: 10px;
+  background-color: white;
+  height: 20px;
+  width: 20px;
+  top: -30px;
+  left: 90px;
   display: flex;
-  flex-direction: column;
-  z-index: 2;
-  max-height: 0;
-  overflow: hidden;
-  transition: max-height 0.3s ease-in-out;
-  height: 75vh;
-  border-radius: 4px;
-  margin-top: 10px;
-  background-color: white;
-  border: 2px solid rgb(230, 57, 164);
+  justify-content: start;
+  align-items: center;
 }
 
-.katalog-content.open {
-  max-height: 400px; /* Подставьте нужную высоту */
-  background-color: white;
-  width: 1000px;
-  font-size: large;
-  margin-top: -20px;
-}
-
-.katalog-content p {
-  margin: 0;
-  padding: 5px;
-  cursor: pointer;
-  color: white;
-}
-
-.sub-menu {
-  padding-left: 10px;
-  list-style: none;
-  width: 100%;
-  color: white;
-  font-size: large;
-}
-
-.sub-menu li {
-  font-size: large;
-  margin-bottom: 5px;
-}
-
-.sub-menu a {
-  text-decoration: none;
-  color: #843B62;
-  display: block;
-  margin-left: 20px;
-  list-style-type: square ;
-  
-}
-
-.submenu-button {
-  height: 10px;
+.menu-bars {
+  margin-left: 2rem;
+  font-size: 2rem;
   background: none;
-  border: none;
-  cursor: pointer;
-  padding: 5px;
+}
+
+.nav-menu {
+  background-color: white;
+  border: 2px solid hotpink;
+  border-radius: 12px;
+  box-shadow: 1px 1px 1px 1px rgba(245, 40, 145, 0.2);
+  width: 350px;
+  height: 0; /* Изменено на 0, чтобы начать с нулевой высоты */
+  display: flex;
+  justify-content: center;
+  position: absolute;
+  top: 20px;
+  left: 0; /* Изменено на 0 */
+  z-index: 3;
+  opacity: 0; /* Изменено на 0 */
+  transition: opacity 0.3s ease-in-out; /* Добавлена анимация для opacity */
+}
+
+.nav-menu.active {
+  height: 68vh; /* Изменено высота для активного состояния */
+  opacity: 1; /* Изменено на 1 */
+}
+
+.nav-text {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  list-style: none;
+  height: 60px;
   font-size: 20px;
-  text-align: left;
-  color: #333;
+}
+
+.nav-text a {
+  text-decoration: none;
+  color: #f5f5f5;
+  font-size: 18px;
   width: 100%;
-  font: "Open Sans", Arial, sans-serif;
-  
-}
-.submenu-button:hover{
-  color: #5c5959;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  border-radius: 4px;
+  cursor: pointer;
 }
 
+.nav-text a:hover {
+  background-color: #e7e7e7;
+  border-radius: 12px;
+}
 
-.a {
+.nav-menu-items {
+  width: 100%;
+}
+
+span {
+  margin-left: 16px;
+}
+
+span:hover {
+  cursor: pointer;
+  color: hotpink;
+}
+
+.title-Category {
+  position: absolute;
+  left: 130px;
+  width: 1260px;
+  height: 68vh;
+  background-color: rgb(252, 252, 252);
+  color: black;
+  z-index: 2;
+  border-radius: 12px;
+  border: 2px solid hotpink;
+  left: 0; /* Изменено на 0 */
+  top: 20px;
+  padding-left: 430px;
+  padding-top: 30px;
+  font-size: 17px;
+  line-height: 2px;
+  opacity: 0; /* Изменено на 0 */
+  transition: opacity 0.3s ease-in-out; /* Добавлена анимация для opacity */
+}
+
+.title-Category.active {
+  opacity: 1; /* Изменено на 1 */
+}
+
+.subcategories {
+  list-style: none;
   font-size: 20px;
+  line-height: 40px;
 }
 
+.subcategories:hover {
+  cursor: pointer;
+  color: hotpink;
+}
