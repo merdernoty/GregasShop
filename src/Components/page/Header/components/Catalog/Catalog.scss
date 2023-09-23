@@ -28,19 +28,18 @@
   box-shadow: 1px 1px 1px 1px rgba(245, 40, 145, 0.2);
   width: 350px;
   height: 0; /* Изменено на 0, чтобы начать с нулевой высоты */
-  display: flex;
+  display: none; /* Изменено на display: none; */
   justify-content: center;
   position: absolute;
   top: 20px;
   left: 0; /* Изменено на 0 */
   z-index: 3;
-  opacity: 0; /* Изменено на 0 */
-  transition: opacity 0.3s ease-in-out; /* Добавлена анимация для opacity */
+  transition: height 0.3s ease-in-out; /* Добавлена анимация для height */
 }
 
 .nav-menu.active {
   height: 68vh; /* Изменено высота для активного состояния */
-  opacity: 1; /* Изменено на 1 */
+  display: block; /* Изменено на display: block; */
 }
 
 .nav-text {
@@ -86,7 +85,7 @@ span:hover {
   position: absolute;
   left: 130px;
   width: 1260px;
-  height: 68vh;
+  height: 0; /* Изменено на 0, чтобы начать с нулевой высоты */
   background-color: rgb(252, 252, 252);
   color: black;
   z-index: 2;
@@ -94,16 +93,17 @@ span:hover {
   border: 2px solid hotpink;
   left: 0; /* Изменено на 0 */
   top: 20px;
-  padding-left: 430px;
+  padding-left: 400px;
   padding-top: 30px;
   font-size: 17px;
   line-height: 2px;
-  opacity: 0; /* Изменено на 0 */
-  transition: opacity 0.3s ease-in-out; /* Добавлена анимация для opacity */
+  display: none; /* Изменено на display: none; */
+  transition: height 0.3s ease-in-out; /* Добавлена анимация для height */
 }
 
 .title-Category.active {
-  opacity: 1; /* Изменено на 1 */
+  height: 68vh; /* Изменено высота для активного состояния */
+  display: block; /* Изменено на display: block; */
 }
 
 .subcategories {
