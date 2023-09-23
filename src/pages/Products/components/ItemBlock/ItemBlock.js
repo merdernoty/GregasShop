@@ -2,6 +2,7 @@ import React from 'react';
 import './ItemBlock.scss';
 import { Link } from 'react-router-dom'; // Добавлен импорт Link
 
+
 export const ItemBlock = ({ title, price, image }) => {
   return (
     <div className="ItemBlock">

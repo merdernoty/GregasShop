@@ -1,9 +1,11 @@
 import React from 'react';
 import './Sort.scss';
 export default function Sort() {
-  const [isVisible, setIsVisible] = React.useState(false);
+  const [isVisible, setIsVisible] = React.useState(true);
   const [selected, setSelected] = React.useState(false);
   const list = ['популярности', 'цене', 'алфавиту'];
+  const SortName = list[selected]
+
 
   const onClickListItem = (i) => {
     setSelected(i);
@@ -19,7 +21,7 @@ export default function Sort() {
           />
         </svg>
         <b>Сортировка по:</b>
-        <span onClick={() => setIsVisible(!isVisible)}>{list[selected]}</span>
+        <span onClick={() => setIsVisible(!isVisible)}>{SortName}</span>
       </div>
       {isVisible && (
         <div className="sort__popup">
