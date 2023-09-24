@@ -1,8 +1,8 @@
 import React from 'react';
 import './Sort.scss';
 export default function Sort() {
-  const [isVisible, setIsVisible] = React.useState(true);
-  const [selected, setSelected] = React.useState(false);
+  const [isVisible, setIsVisible] = React.useState(false);
+  const [selected, setSelected] = React.useState(0);
   const list = ['популярности', 'цене', 'алфавиту'];
   const SortName = list[selected]
 
