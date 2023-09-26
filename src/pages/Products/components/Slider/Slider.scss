@@ -15,6 +15,16 @@
   align-items: center;
 }
 
+.swiper-button-next{
+  color: hotpink;
+}
+.swiper-button-prev{
+  color: hotpink;
+}
+.swiper-pagination-bullet-active{
+  background-color: hotpink;
+}
+
 .swiper-slide img {
   background-color: rgb(255, 255, 255);
   display: block;
