@@ -1,51 +1,47 @@
 /* ItemBlock.scss */
 
 .ItemBlock {
-  border: 2px solid #c0c0c05f;
-  width: calc(100% - 300px);
-  flex-basis: calc(25% - 25px);
-  max-width: 300px;
-  box-sizing: border-box;
-  margin: 25px;
-  position: relative;
+  display: grid;
+  grid-template-columns: repeat(
+    minmax(250px, 3fr)
+  ); /* Автоматическое распределение карточек по горизонтали */
+  gap: 20px; /* Расстояние между карточками */
+  border-radius: 12px;
+  border: 1px solid #e0e0e0;
+  box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
   background: #fff;
-  transition: transform 0.2s;
-  color: black; /* Цвет текста */
+  transition: transform 0.2s, box-shadow 0.2s;
+  overflow: hidden;
+  margin: 20px;
 }
 
 .ItemBlock:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transform: translateY(-8px); /* Увеличиваем смещение при наведении */
+  box-shadow: 0 12px 16px rgba(0, 0, 0, 0.3); /* Увеличиваем тень при наведении */
 }
-
 .NewPhotos {
   display: flex;
+  margin: 0;
   justify-content: center;
 }
 
 .Item-container {
-  position: relative;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding: 2px;
+  padding: 14px;
+  border-radius: 30px;
 }
 
 .image-container {
-  position: relative;
   overflow: hidden;
-  display: inline-block;
-  border-radius: 10px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  border-radius: 30px;
+  position: relative;
 }
 
-.image-container::before,
-.shine-effect {
+.image-container::before {
   content: '';
   position: absolute;
   top: 0;
-  left: -100%;
-  width: 200%;
+  left: 0;
+  width: 100%;
   height: 100%;
   background: linear-gradient(
     to right,
@@ -54,12 +50,11 @@
     rgba(255, 255, 255, 0) 100%
   );
   transform: skewX(-25deg);
-  transition: left 0.5s, opacity 0.5s;
+  transition: opacity 0.3s;
+  opacity: 0;
 }
 
-.image-container:hover::before,
-.image-container:hover .shine-effect {
-  left: 100%;
+.image-container:hover::before {
   opacity: 1;
 }
 
@@ -76,21 +71,17 @@
   z-index: 1;
 }
 
-.Stock {
-  margin-top: 10px;
-  font-size: 11px;
-  color: rgba(0, 0, 0, 0.623);
-}
-
+.Stock,
 .Sold {
-  margin-top: 5px;
-  font-size: 11px;
-  color: rgba(0, 0, 0, 0.623);
+  margin-top: 8px;
+  font-size: 12px;
+  color: rgba(0, 0, 0, 0.6);
 }
 
 .Price {
   margin-top: 10px;
-  font-size: 20px;
+  font-size: 18px;
+  font-weight: bold;
   color: black;
 }
 
@@ -103,21 +94,25 @@
   background-color: red;
   text-align: center;
   opacity: 0;
-  transition: height 0.5s, opacity 0.4s;
+  transition: height 0.3s, opacity 0.3s;
   z-index: 2;
+  overflow: hidden;
 }
 
 .Item-container:hover .expand-details {
-  height: 23px;
+  height: 30px;
   opacity: 1;
 }
 
 .details-button {
-  margin-top: 0px;
-  padding: 0px 123.8px;
+  padding: 8px 0;
   color: white;
   cursor: pointer;
   background-color: red;
   z-index: 3;
   text-decoration: none;
+}
+
+.Rating{
+  color: rgb(31, 214, 31);
 }

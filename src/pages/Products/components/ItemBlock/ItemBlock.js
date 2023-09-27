@@ -3,7 +3,7 @@ import './ItemBlock.scss';
 import { Link } from 'react-router-dom'; // Добавлен импорт Link
 
 
-export const ItemBlock = ({ title, price, image }) => {
+export const ItemBlock = ({ title, price, image, rating }) => {
   return (
     <div className="ItemBlock">
       <Link to="/product/1">
@@ -18,8 +18,8 @@ export const ItemBlock = ({ title, price, image }) => {
               </a>
               <a href="/home/"></a>
               <p className="Stock">
-                В Наличии &#10004; 1<p className="Sold"> Продано За Месяц &#10004; 1</p>
-                <p key={price}className="Price">{price}</p>
+                В Наличии &#10004; 1<p className="Sold"> Продано За Месяц &#10004; <b className='Rating'>{rating}</b></p>
+                <p key={price}className="Price">Цена: {price}</p>
               </p>
             </p>
           </div>
