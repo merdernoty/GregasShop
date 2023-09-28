@@ -56,13 +56,13 @@ export const routes = [
         element: <Products />,
       },
       {
-        path: 'product/:productId',
+        path: 'product/:productId/:title/:price/:image/:id',
         element: <Product />,
       },
       {
         path: 'information',
         element: <Information />,
-      }
+      },
     ],
   },
 ];

@@ -1,14 +1,15 @@
+import React from 'react';
 import { useParams } from 'react-router-dom';
 
 export const Product = () => {
-  const { productId } = useParams();
+  const { productId, title, price, image,} = useParams();
 
   return (
     <div>
       <section>
-        <h2>Описание продукта {productId}</h2>
+        <h2>Описание продукта</h2>
         <p>
-          Продукт [название продукта] является [краткое описание продукта]. Он предназначен для [цель или назначение
+          Продукт {title} является [краткое описание продукта]. Он предназначен для [цель или назначение
           продукта].
         </p>
       </section>
@@ -24,13 +25,13 @@ export const Product = () => {
 
       <section>
         <h2>Цена</h2>
-        <p>Цена продукта: [цена] рублей</p>
+        <p>Цена продукта: {price} рублей</p>
       </section>
 
       <section>
         <h2>Изображения продукта</h2>
-        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSADSOJuy_z4RX8FtoXdEhRQ-QScg5YG-3Mtw&usqp=CAU" alt="Изображение продукта 1" />
-        <img src="путь_к_изображению_2.jpg" alt="Изображение продукта 2" />
+        <img src={image} alt={`Изображение ${title}`} />
+        {/* Add more images as needed */}
       </section>
 
       <section>
@@ -39,3 +40,4 @@ export const Product = () => {
     </div>
   );
 };
+
