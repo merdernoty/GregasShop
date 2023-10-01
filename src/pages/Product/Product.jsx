@@ -1,43 +1,61 @@
 import React from 'react';
 import { useParams } from 'react-router-dom';
+import './Product.scss';
+import './Product1.js';
 
 export const Product = () => {
-  const { productId, title, price, image,} = useParams();
+  const { productId, title, price, image, id } = useParams();
 
   return (
     <div>
-      <section>
-        <h2>Описание продукта</h2>
-        <p>
-          Продукт {title} является [краткое описание продукта]. Он предназначен для [цель или назначение
-          продукта].
-        </p>
-      </section>
+      <h3 className="TitleBox"> {title} </h3>
+      <div className="ProductBox">
+        <br></br>
+        <section>
+          <img className="ProductImage" src={image} alt={`Изображение ${title}`} />
+          {/* Add more images as needed */}
+        </section>
+        <section>
+          <p className="PriceTag1"> цена {price} </p>
+          <p className="PriceTag2"> РРЦ XX </p>
+        </section>
+        <br></br>
+        <section>
+          <div className="ProductDetails">
+            <p>В наличии 368 </p>
+            <p>Продано за месяц 398 </p>
+            <p>Минимальная сумма заказа 9 999</p>
+          </div>
+        </section>
+        <div className="Sales">
+          <section>
+            <p> Скидка от 50 000 - 3% </p>
+            <p> Скидка от 100 000 - 5% </p>
+            <p> Скидка от 200 000 - 10% </p>
+          </section>
+          <br></br>
+          <section>
+            <p> Доставка в город Махачкала от Х дней</p>
+          </section>
+          <br></br>
+          <br></br>
+          {/* ...... */}
+          <div>
+            <button class="addtocart">
+              <div class="pretext">
+                <i class="fas fa-cart-plus"></i> ADD TO CART
+              </div>
 
-      <section>
-        <h2>Характеристики продукта</h2>
-        <ul>
-          <li>Характеристика 1: [описание]</li>
-          <li>Характеристика 2: [описание]</li>
-          <li>Характеристика 3: [описание]</li>
-        </ul>
-      </section>
-
-      <section>
-        <h2>Цена</h2>
-        <p>Цена продукта: {price} рублей</p>
-      </section>
-
-      <section>
-        <h2>Изображения продукта</h2>
-        <img src={image} alt={`Изображение ${title}`} />
-        {/* Add more images as needed */}
-      </section>
-
-      <section>
-        <h2>Отзывы клиентов</h2>
-      </section>
+              <div class="pretext done">
+                <div class="posttext">
+                  <i class="fas fa-check"></i> ADDED
+                </div>
+              </div>
+            </button>
+          </div>
+          {/* ...... */}
+        </div>
+      </div>
     </div>
   );
 };
-

@@ -3,7 +3,7 @@ import './ItemBlock.scss';
 import { Link } from 'react-router-dom'; // Добавлен импорт Link
 
 
-export const ItemBlock = ({ title, price, image, rating }) => {
+export const ItemBlock = ({ title, price, image, rating, id }) => {
   return (
     <div className="ItemBlock">
       <Link to={`/product/${id}/${encodeURIComponent(title)}/${price}/${encodeURIComponent(image)}/${id}`}>
