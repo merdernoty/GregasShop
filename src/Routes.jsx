@@ -2,8 +2,13 @@ import { BaseLayout } from './layouts/BaseLayout/BaseLayout';
 import { Contacts } from './pages/Contacts/Contacts';
 import { Products } from './pages/Products/Products';
 import { About } from './pages/About/About';
+import { Deals } from './pages/Deals/Deals';
+import { Wholesale } from './pages/Wholesale/Wholesale';
+import { Payment } from './pages/Payment/Payment';
+import { Cargo } from './pages/Cargo/Cargo';
 import { Product } from './pages/Product/Product';
 import { Collection } from './pages/Collection/Collection';
+import { Information } from './pages/Information/Information';
 
 export const routes = [
   {
@@ -23,6 +28,22 @@ export const routes = [
         element: <About />,
       },
       {
+        path: 'deals',
+        element: < Deals />,
+      },
+      {
+        path: 'wholesale',
+        element: <Wholesale />,
+      },
+      {
+        path: 'payment',
+        element: <Payment />,
+      },
+      {
+        path:'cargo',
+        element: <Cargo />
+      },
+      {
         path: 'collection',
         element: <Collection />,
       },
@@ -38,6 +59,10 @@ export const routes = [
         path: 'product/:productId',
         element: <Product />,
       },
+      {
+        path: 'information',
+        element: <Information />,
+      }
     ],
   },
 ];
