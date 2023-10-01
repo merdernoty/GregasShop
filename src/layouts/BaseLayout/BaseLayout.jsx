@@ -3,13 +3,16 @@ import { Outlet } from 'react-router-dom';
 import React from 'react';
 import './BaseLayout.scss';
 import { Header } from '../../Components';
+import { SearchProvider } from '../../hooks/context/SearchContext';
 
 export const BaseLayout = () => {
   return (
     <div className="App">
-      <Header />
-      <Outlet />
-      <Footer />
+      <SearchProvider>
+        <Header />
+        <Outlet />
+        <Footer />
+      </SearchProvider>
     </div>
   );
 };

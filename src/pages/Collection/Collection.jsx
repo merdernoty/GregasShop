@@ -4,11 +4,12 @@ import { ItemBlock } from '../Products/components/ItemBlock/ItemBlock';
 import './Collection.scss'; // Импортируйте файл стилей для коллекции
 import Sort from './Sort/Sort';
 import Skeleton from './Skeleton/Skeleton';
+import { useSearch } from '../../hooks/context/SearchContext';
 
 export const Collection = () => {
   const [Items, setItems] = React.useState([]);
   const [isLoading, setIsLoading] = React.useState(true);
-
+  const { searchValue } = useSearch();
   const [categoryId, setCategoryId] = React.useState(0);
   const [sort, setSortsort] = React.useState({
     name: 'популярности',
@@ -30,23 +31,19 @@ export const Collection = () => {
       });
   }, [categoryId, sort]);
 
+  const Skeletons = [...new Array(6)].map((_, index) => <Skeleton key={index}></Skeleton>);
+  const products = Items.filter((obj) => {
+     if (obj.title.includes(searchValue)) {
+      return true;
+    }
+    return false;
+  }).map((obj) => <ItemBlock key={obj.id} {...obj}></ItemBlock>);
+
   return (
     <div className="collection-container">
       <Categories value={categoryId} onClickCategories={(index) => setCategoryId(index)} />
       <Sort value={sort} onChangeSort={(index) => setSortsort(index)}></Sort>
-      <div className="product-list">
-        {isLoading
-          ? [...new Array(6)].map((_, index) => <Skeleton key={index}></Skeleton>)
-          : Items.map((obj) => (
-              <ItemBlock
-                key={obj.id}
-                title={obj.title}
-                price={obj.price}
-                rating={obj.rating}
-                image={obj.image}
-              ></ItemBlock>
-            ))}
-      </div>
+      <div className="product-list">{isLoading ? Skeletons : products}</div>
     </div>
   );
 };
