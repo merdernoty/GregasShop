@@ -1,7 +1,7 @@
 import React from 'react';
 import { Cart, Favorite, UserProfile,Locate, BackToTopButton, MainGui, Search, Catalog } from './components';
 
-export const Header = () => {
+export const Header = ({searchValue, setSearchValue}) => {
   return (
     <>
       <Locate />
@@ -10,7 +10,7 @@ export const Header = () => {
       <Favorite/>
       <UserProfile/>
       <MainGui />
-      <Search />
+      <Search  searchValue={searchValue} setSearchValue={setSearchValue}/>
       <Catalog />
     </>
   );
