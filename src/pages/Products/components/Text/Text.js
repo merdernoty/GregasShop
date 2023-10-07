@@ -5,7 +5,7 @@ export const Text = () => {
   return (
     <div className="container5">
       <h3 className="title5">
-        Оптовый интернет-магазин подарков Grega's Shop
+        Оптовый интернет-магазин подарков Grega's Shop :
         <br />
       </h3>
       <p className="description">
