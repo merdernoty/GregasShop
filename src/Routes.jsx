@@ -9,6 +9,9 @@ import { Cargo } from './pages/Cargo/Cargo';
 import { Product } from './pages/Product/Product';
 import { Collection } from './pages/Collection/Collection';
 import { Information } from './pages/Information/Information';
+import { Cart } from './pages/Cartpage/Cart';
+import { Personalacc } from './pages/Personalacc/Personalacc';
+
 export const routes = [
   {
     path: '',
@@ -61,6 +64,14 @@ export const routes = [
       {
         path: 'information',
         element: <Information />,
+      },
+      {
+        path:'cart',
+        element: <Cart />
+      },
+      {
+        path:'personalacc',
+        element: <Personalacc />
       },
     ],
   },
