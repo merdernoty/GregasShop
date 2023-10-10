@@ -248,3 +248,55 @@ body {
     z-index: 3;
     text-decoration: none;
 }
+@media (max-width: 1024px) {
+    .HitPhotos,.HitSlider, .body{
+        flex-wrap: wrap; /* Разрешаем перенос элементов на новую строку */
+        margin-left: auto; /* Центрируем блоки по горизонтали */
+        margin-right: auto;
+        width: 85%; /* Занимают 50% ширины родительского контейнера */
+        font-size: 16px;
+    }
+   
+    
+  }
+@media (max-width: 768px) {
+        .HitSlider, .body{
+      flex-wrap: wrap; /* Разрешаем перенос элементов на новую строку */
+      margin-left: 32.7%; /* Центрируем блоки по горизонтали */
+      width: 50%; /* Занимают 50% ширины родительского контейнера */
+    }
+    .HitSliderText{
+        margin-left: 268px;
+    }
+  }
+@media (max-width: 425px) {
+    .HitPhotos,.HitSlider, .body {
+      flex-wrap: wrap; /* Разрешаем перенос элементов на новую строку */
+      margin-left: 35.5%; /* Центрируем блоки по горизонтали */
+      width: 50%; /* Занимают 50% ширины родительского контейнера */
+    }
+    .HitSliderText{
+        margin-left: 330px;
+  }
+}
+@media (max-width: 375px) {
+    .HitPhotos,.HitSlider, .body{
+      flex-wrap: wrap; /* Разрешаем перенос элементов на новую строку */
+      margin-left: 35.5%; /* Центрируем блоки по горизонтали */
+      width: 50%; /* Занимают 50% ширины родительского контейнера */
+    }
+    .HitSliderText{
+        margin-left: 330px;
+    }
+  }
+
+@media (max-width: 320px) {
+    .HitPhotos,.HitSliderText,.HitSlider, .body{
+      flex-wrap: wrap; /* Разрешаем перенос элементов на новую строку */
+      margin-left: 36.5%; /* Центрируем блоки по горизонтали */
+      width: 50%; /* Занимают 50% ширины родительского контейнера */
+    }
+    .HitSliderText{
+        margin-left: 335px;
+    }
+  }

@@ -5,7 +5,7 @@ import News from '../../../../assets/images/NewsWall.jpg';
 export const NewsWall = () => {
   return (
     <div className="HitNewsWall">
-      <div className="NewsWallText">Новости</div>
+      <div className="NewsWallText">News:</div>
       <div className="NewsWallPhotos">
         <div className="data-container">
           <a href="/home">

@@ -81,6 +81,7 @@ export const Catalog = () => {
             ))}
         </ul>
       </nav>
+      <div className='Countline'></div>
     </div>
   );
 };

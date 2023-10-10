@@ -1,10 +1,10 @@
 import React, { useState } from 'react';
-import './Cart.scss'; 
-import { FaShoppingCart } from 'react-icons/fa'; 
+import './Cart.scss';
+import { FaShoppingCart } from 'react-icons/fa';
 
 const Cart = () => {
-  const [items, setItems] = useState([]); 
-  
+  const [items, setItems] = useState([]);
+
   const addToCart = (product) => {
     setItems([...items, product]);
   };
@@ -21,17 +21,20 @@ const Cart = () => {
   };
 
   return (
-    <div className="cart" onClick={handleCartClick}>
-      <FaShoppingCart className="cart-icon" />
-      <ul>
-        {items.map((item, index) => (
-          <li key={index}>{item.name} - {item.price} руб.</li>
-        ))}
-      </ul>
-      <p> {calculateTotal()} руб.</p>
+    <div className='WrapperCart'>
+      <div className="cart" onClick={handleCartClick}>
+        <FaShoppingCart className="cart-icon" />
+        <ul>
+          {items.map((item, index) => (
+            <li key={index}>
+              {item.name} - {item.price} руб.
+            </li>
+          ))}
+        </ul>
+        <p> {calculateTotal()} руб.</p>
+      </div>
     </div>
   );
 };
 
 export default Cart;
-
