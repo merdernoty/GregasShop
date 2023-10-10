@@ -49,6 +49,8 @@ export const Catalog = () => {
   return (
     <div ref={menuRef} className="Wrapper-Catalog" onMouseEnter={() => handleCatalogHover(true)} onMouseLeave={() => handleCatalogHover(false)}>
       <IconContext.Provider value={{ color: 'hotpink' }}>
+
+   develop-branch
         <div className="navbar">
         <Link
   to="catalogpage">
@@ -81,6 +83,7 @@ export const Catalog = () => {
             ))}
         </ul>
       </nav>
+      <div className='Countline'></div>
     </div>
   );
 };
