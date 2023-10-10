@@ -1,3 +1,4 @@
+
 .MainWrapper {
   justify-content: center;
   width: 1240px;
@@ -7,8 +8,6 @@
   background: #a4161a;
   position: relative;
   align-items: center;
-  margin-left: 5px;
-}
 
 .MainLogo {
   position: absolute;
@@ -49,10 +48,17 @@
     color: #fff;
     font-size: 16px;
     a {
+      position: absolute;
       width: 126.186px;
       height: 42px;
       color: #ffffff;
-      padding-top: 30px;
+      z-index: 100;
+      margin-left: -65px;
+      span{
+        margin-top: 10px;
+        width: 126.186px;
+        height: 42px;
+      }
     }
   }
   li:hover {
@@ -60,6 +66,6 @@
   }
   li a:hover {
     color: #161a1d;
-    padding-top: 30px;
   }
+}
 }

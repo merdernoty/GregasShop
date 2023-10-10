@@ -3,7 +3,7 @@
 .ItemBlock {
   display: grid;
   grid-template-columns: repeat(
-    minmax(250px, 3fr)
+    minmax(300px, 4fr)
   ); /* Автоматическое распределение карточек по горизонтали */
   gap: 20px; /* Расстояние между карточками */
   border-radius: 12px;
