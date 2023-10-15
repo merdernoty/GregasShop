@@ -48,11 +48,11 @@ export const Catalog = () => {
 
   return (
     <div ref={menuRef} className="Wrapper-Catalog" onMouseEnter={() => handleCatalogHover(true)} onMouseLeave={() => handleCatalogHover(false)}>
-      <IconContext.Provider value={{ color: 'hotpink' }}>
+      <IconContext.Provider value={{ color: 'black' }}>
         <div className="navbar">
         <Link
   to="catalogpage">
-  <FaIcons.FaBars />
+  <FaIcons.FaBars className='BarsIcon' />
 </Link>
 
 
