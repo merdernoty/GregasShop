@@ -9,6 +9,7 @@ import { Cargo } from './pages/Cargo/Cargo';
 import { Product } from './pages/Product/Product';
 import { Collection } from './pages/Collection/Collection';
 import { Information } from './pages/Information/Information';
+import { CatalogPage } from './pages/CatalogPage/CatalogPage';
 export const routes = [
   {
     path: '',
@@ -53,6 +54,10 @@ export const routes = [
       {
         path: 'catalog',
         element: <Products />,
+      },
+      {
+        path: 'catalogpage',
+        element: <CatalogPage />,
       },
       {
         path: 'product/:productId/:title/:price/:image/:id',
