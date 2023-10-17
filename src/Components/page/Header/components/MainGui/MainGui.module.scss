@@ -12,7 +12,7 @@
 
 
 .MainLogo {
-  position: absolute;
+  position: relative;
 
   img {
     width: 94px;
@@ -70,3 +70,80 @@
     color: #161a1d;
   }
 }
+
+@media screen and (max-width: 1000px) {
+  .MainWrapper {
+   width: 900px;
+   margin-left: 150px; 
+   
+  }
+  .MainLogo{
+    img {
+      width: 70px;
+      height: 60px;
+      flex-shrink: 0;
+      position: absolute;
+      left: 20px;
+      top: 21px;
+    }
+    svg {
+      width: 70px;
+      height: 90px;
+      position: absolute;
+      left: 20px;
+      top: 9.5px;
+      
+    }
+  }
+  .MenuWrapper{
+   margin-right: 190px;
+   margin-left: 510px;
+   
+   li{
+    width: 99px;
+    height: 38px;
+    font-size: 14px;
+   }
+   a{
+    position: absolute;
+    
+      height: 22px;
+      margin-left: -65px;
+      margin-top: -4px;
+   }
+   span{
+    margin-top: 3px;
+    height: 21px;
+   }
+  }
+}
+@media screen and (max-width: px) {
+  .MainWrapper {
+  
+   width: 600px; 
+   margin-left: 12%; /* Центрируем блоки по горизонтали */
+    margin-right: 50%
+   
+  }
+  .MainLogo{
+    img {
+      width: 60px;
+      height: 20px;
+      flex-shrink: 0;
+      position: absolute;
+      left: 50px;
+      top: 21px;
+    }
+    svg {
+      position: absolute;
+      left: 50px;
+      top: 9.5px;
+    }
+    
+  }
+  .MenuWrapper{
+    width: 5px;
+    height: 5px;
+  }
+}
+
