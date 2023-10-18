@@ -41,3 +41,31 @@
 
   }
 }
+@media screen and (max-width: 768px){
+  .nav-container{
+    .search-input{
+      width: 90px;
+      left: 340px;
+      height: 40px;
+      top: 5px;
+    }
+  }
+  .clearIcon{
+
+  }
+}
+
+@media screen and (max-width: 488px){
+  .nav-container{
+    .search-input{
+      width: 70px;
+      left: 500px;
+      height: 30px;
+      top: 10px;
+      
+    }
+  }
+  .clearIcon{
+
+  }
+}

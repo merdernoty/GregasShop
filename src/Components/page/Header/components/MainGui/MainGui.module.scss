@@ -71,11 +71,11 @@
   }
 }
 
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 1024px) {
   .MainWrapper {
    width: 900px;
    margin-left: 150px; 
-   
+   display: flexbox;
   }
   .MainLogo{
     img {
@@ -96,17 +96,16 @@
     }
   }
   .MenuWrapper{
-   margin-right: 190px;
+   margin-right: 260px;
    margin-left: 510px;
    
    li{
-    width: 99px;
+    width: 80px;
     height: 38px;
     font-size: 14px;
    }
    a{
     position: absolute;
-    
       height: 22px;
       margin-left: -65px;
       margin-top: -4px;
@@ -117,33 +116,94 @@
    }
   }
 }
-@media screen and (max-width: px) {
+@media screen and (max-width: 768px) {
   .MainWrapper {
-  
-   width: 600px; 
-   margin-left: 12%; /* Центрируем блоки по горизонтали */
-    margin-right: 50%
+   width: 660px;
+   margin-left: 250px; 
    
   }
   .MainLogo{
     img {
-      width: 60px;
-      height: 20px;
+      width: 50px;
+      height: 60px;
       flex-shrink: 0;
       position: absolute;
-      left: 50px;
-      top: 21px;
+      left: 27px;
+      top: 16px;
     }
     svg {
+      width: 65px;
+      height: 70px;
       position: absolute;
-      left: 50px;
-      top: 9.5px;
+      left: 20px;
+      top: 15px;
+      
     }
-    
   }
   .MenuWrapper{
-    width: 5px;
-    height: 5px;
+   margin-right: 190px;
+   margin-left: 410px;
+   
+   li{
+    width: 80px;
+    height: 45px;
+    font-size: 12px;
+   }
+   a{
+    position: absolute;
+      height: 5px;
+      margin-left: -5px;
+      margin-top: -1px;
+   }
+   span{
+    margin-top: 3px;
+    height: 21px;
+   }
+  }
+}
+@media screen and (max-width: 488px) {
+  .MainWrapper {
+   width: 420px;
+   margin-left: 380px; 
+   
+  }
+  .MainLogo{
+    img {
+      width: 30px;
+      height: 40px;
+      flex-shrink: 0;
+      position: absolute;
+      left: 27px;
+      top: 16px;
+    }
+    svg {
+      width: 50px;
+      height: 70px;
+      position: absolute;
+      left: 20px;
+      top: 15px;
+      
+    }
+  }
+  .MenuWrapper{
+   margin-right: 190px;
+   margin-left: 410px;
+   
+   li{
+    width: 80px;
+    height: 45px;
+    font-size: 12px;
+   }
+   a{
+    position: absolute;
+      height: 5px;
+      margin-left: -5px;
+      margin-top: -1px;
+   }
+   span{
+    margin-top: 3px;
+    height: 21px;
+   }
   }
 }
 
