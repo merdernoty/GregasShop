@@ -1,23 +1,23 @@
+// *{outline: 1px solid black;}
+
 .h1{
-    width: 40px;
-    
+    width: 40px; 
 }
-.box{
+
+.basketbox{
     margin-left: 110px;
     // display: flex;
     justify-content: left;
     width: 900px;
     font-family: "poppins-regular", sans-serif;
-    
     margin-top: 20px;
+    font-weight: bold;
+    font-size: 22px;
 }
 
 .ul { 
     margin-left: 35px;
 }
-li::marker {
-    color: hotpink;
-    }
 
 .p{
     margin-left: 90px;

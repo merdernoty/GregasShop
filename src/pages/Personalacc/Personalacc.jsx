@@ -16,7 +16,6 @@ export const Personalacc = () => {
           <div className='box-quantity'></div>
           <div className='box-totalPrice'></div>
         </div>
-        
       </div>
     </div>
   );
