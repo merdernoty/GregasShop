@@ -47,16 +47,28 @@ position: relative;
       }
     }
       ul {
-      
         top: 30px;
-        
-        li {
-          
-
-        }
-        
       }
     }
     
   }
 
+  @media screen and (max-width: 389px) {
+    .WrapperCart{
+     
+      
+      .cart {
+     right: 489px;
+     top: 14px;
+     font-size: 12px;
+        .cart-icon {
+          
+          &:hover {
+           
+          }
+        }
+      }
+     
+        
+      }
+  }

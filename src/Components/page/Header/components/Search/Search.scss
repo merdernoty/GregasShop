@@ -30,38 +30,32 @@
     }
   
 }
-@media screen and (max-width: 1000px){
+@media screen and (max-width: 1024px){
   .nav-container{
     .search-input{
-      width: 130px;
-      left: 290px;
+      width: 190px;
+      left: 210px;
     }
   }
   .clearIcon{
-
+    
   }
 }
 @media screen and (max-width: 768px){
   .nav-container{
     .search-input{
-      width: 90px;
-      left: 340px;
+      width: 140px;
+      left: 290px;
       height: 40px;
       top: 5px;
     }
   }
-  .clearIcon{
-
-  }
 }
 
-@media screen and (max-width: 488px){
+@media screen and (max-width: 389px){
   .nav-container{
     .search-input{
-      width: 70px;
-      left: 500px;
-      height: 30px;
-      top: 10px;
+      display: none;
       
     }
   }

@@ -73,41 +73,40 @@
 
 @media screen and (max-width: 1024px) {
   .MainWrapper {
-   width: 900px;
-   margin-left: 150px; 
-   display: flexbox;
+   width: 1021px;
+   margin-left: 90px; 
   }
   .MainLogo{
     img {
-      width: 70px;
-      height: 60px;
+      width: 80px;
+      height: 70px;
       flex-shrink: 0;
       position: absolute;
       left: 20px;
-      top: 21px;
+      top: 16px;
     }
     svg {
-      width: 70px;
+      width: 90px;
       height: 90px;
       position: absolute;
-      left: 20px;
+      left: 15px;
       top: 9.5px;
       
     }
   }
   .MenuWrapper{
-   margin-right: 260px;
+   margin-right: 325px;
    margin-left: 510px;
    
    li{
-    width: 80px;
-    height: 38px;
-    font-size: 14px;
+    width: 90px;
+    height: 42px;
+    font-size: 16px;
    }
    a{
     position: absolute;
       height: 22px;
-      margin-left: -65px;
+      margin-left: -70px;
       margin-top: -4px;
    }
    span{
@@ -118,25 +117,22 @@
 }
 @media screen and (max-width: 768px) {
   .MainWrapper {
-   width: 660px;
-   margin-left: 250px; 
+   width: 766px;
+   margin-left: 184px; 
    
   }
   .MainLogo{
     img {
-      width: 50px;
-      height: 60px;
-      flex-shrink: 0;
-      position: absolute;
-      left: 27px;
-      top: 16px;
+      width: 60px;
+      height: 75px;
+      left: 25px;
+      top: 18px;
     }
     svg {
-      width: 65px;
-      height: 70px;
-      position: absolute;
-      left: 20px;
-      top: 15px;
+      width: 80px;
+      height: 80px;
+      left: 15px;
+      top: 19px;
       
     }
   }
@@ -161,49 +157,47 @@
    }
   }
 }
-@media screen and (max-width: 488px) {
+
+@media screen and (max-width: 389px) {
   .MainWrapper {
-   width: 420px;
-   margin-left: 380px; 
-   
+   width: 385px;
+   margin-left: 370px; 
+   height:  61px;
+  
   }
   .MainLogo{
     img {
-      width: 30px;
-      height: 40px;
-      flex-shrink: 0;
-      position: absolute;
-      left: 27px;
-      top: 16px;
+      width: 47px;
+      height: 38px;   
+      left: 6px;
+      top: 10px;
     }
     svg {
       width: 50px;
-      height: 70px;
+      height: 80px;
       position: absolute;
-      left: 20px;
-      top: 15px;
+      left: 5px;
+      top: -10px;
       
     }
   }
-  .MenuWrapper{
-   margin-right: 190px;
-   margin-left: 410px;
-   
+    .MenuWrapper{
+   left: -199px;
    li{
-    width: 80px;
-    height: 45px;
-    font-size: 12px;
+    width: 50px;
+    height: 17px;
+    
+    margin: -15px 9px 0 0;
+    font-size: 6px;
    }
    a{
-    position: absolute;
-      height: 5px;
-      margin-left: -5px;
-      margin-top: -1px;
+      margin-top: -12px;
+      width: 10px;
+      height: 10px;
+
    }
-   span{
-    margin-top: 3px;
-    height: 21px;
-   }
+  
+   
   }
 }
 
