@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import './Cart.scss';
 import { FaShoppingCart } from 'react-icons/fa';
+import { Link } from 'react-router-dom';
 
 const Cart = () => {
   const [items, setItems] = useState([]);
@@ -15,15 +16,14 @@ const Cart = () => {
 
   // Обработчик события для клика по корзине
   const handleCartClick = () => {
-    // Здесь можно добавить действия, которые выполняются при клике на корзину
-    // Например, переход на страницу с подробностями корзины (вместо)
-    alert('Кликнули по корзине!');
   };
 
   return (
     <div className='WrapperCart'>
       <div className="cart" onClick={handleCartClick}>
-        <FaShoppingCart className="cart-icon" />
+      <Link to="cartpage"><FaShoppingCart className="cart-icon" /></Link>
+
+        
         <ul>
           {items.map((item, index) => (
             <li key={index}>
