@@ -189,7 +189,17 @@ a:hover {
 
 @media screen and (max-width: 1024px){
   .BarsIcon {
-    margin-top: -40px;
+    margin-top: -5px;
+    margin-left: -3px;
+  }
+  .Countline{
+    margin-left: -15px;
+  }
+}
+
+@media screen and (max-width: 850px){
+  .BarsIcon {
+    
   }
   .Countline{
 
@@ -201,7 +211,33 @@ a:hover {
   }
 }
 
-@media screen and (max-width: 389px){
+
+@media screen and (max-width: 420px){
+  .BarsIcon {
+    margin-top: 45px;
+    height: 20px;
+    width: 26px;
+    margin-left: -36px;
+  }
+  .Countline {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 430px){
+  .BarsIcon {
+    margin-top: 45px;
+    height: 20px;
+    width: 26px;
+
+  }
+  .Countline {
+    display: none;
+  }
+}
+
+
+@media screen and (max-width: 395px){
   .BarsIcon {
     margin-top: 45px;
     height: 24px;
