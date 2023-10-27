@@ -11,8 +11,7 @@ const Cart = () => {
   return (
     <div className={style.WrapperCart}>
       <Link to="/Cartpage" className={style.cart}>
-        <span>{totalPrice}</span>
-        <span>₽</span>
+        <span className={style.price}>{totalPrice}₽</span>
         <div className={style.line}></div>
         <div className={style.button__delimiter}>
           <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
