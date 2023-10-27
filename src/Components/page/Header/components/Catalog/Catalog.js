@@ -54,8 +54,6 @@ export const Catalog = () => {
   to="catalogpage">
   <FaIcons.FaBars className='BarsIcon' />
 </Link>
-
-
         </div>
         <nav className={sidebar ? 'nav-menu active' : 'nav-menu'}>
           <ul className="nav-menu-items">
@@ -76,7 +74,7 @@ export const Catalog = () => {
           {selectedCategory &&
             selectedCategory.map((subcategory, index) => (
               <li key={index} className='subcategories'>
-                <Link to={`/your-subcategory-url/${subcategory}`}>{subcategory}</Link>
+                <Link to={`/Catalog/${subcategory}`}>{subcategory}</Link>
               </li>
             ))}
         </ul>
@@ -85,5 +83,3 @@ export const Catalog = () => {
     </div>
   );
 };
-
-
