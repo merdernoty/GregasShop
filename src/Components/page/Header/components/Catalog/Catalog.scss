@@ -185,3 +185,77 @@ a:hover {
   height: 68vh; /* Set the height to the expanded value */
   display: block;
 }
+
+
+@media screen and (max-width: 1024px){
+  .BarsIcon {
+    margin-top: -5px;
+    margin-left: -3px;
+  }
+  .Countline{
+    margin-left: -15px;
+  }
+}
+
+@media screen and (max-width: 850px){
+  .BarsIcon {
+    
+  }
+  .Countline{
+
+  top: -113px;
+  left: 518px;
+  width: 1px;
+  height: 113px;
+  background-color: rgb(255, 255, 255);
+  }
+}
+
+
+@media screen and (max-width: 420px){
+  .BarsIcon {
+    margin-top: 45px;
+    height: 20px;
+    width: 26px;
+    margin-left: -36px;
+  }
+  .Countline {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 430px){
+  .BarsIcon {
+    margin-top: 45px;
+    height: 20px;
+    width: 26px;
+
+  }
+  .Countline {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 415px){
+  .BarsIcon {
+    margin-top: 45px;
+    height: 20px;
+    width: 26px;
+
+  }
+  .Countline {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 395px){
+  .BarsIcon {
+    margin-top: 45px;
+    height: 24px;
+    width: 26px;
+    margin-left: -16px;
+  }
+  .Countline {
+    display: none;
+  }
+}
