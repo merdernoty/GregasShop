@@ -236,6 +236,17 @@ a:hover {
   }
 }
 
+@media screen and (max-width: 415px){
+  .BarsIcon {
+    margin-top: 45px;
+    height: 20px;
+    width: 26px;
+
+  }
+  .Countline {
+    display: none;
+  }
+}
 
 @media screen and (max-width: 395px){
   .BarsIcon {

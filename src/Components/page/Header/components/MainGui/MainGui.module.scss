@@ -288,6 +288,49 @@
   }
 }
 
+@media screen and (max-width: 415px) {
+  .MainWrapper {
+   width: 410px;
+   margin-left: 355px; 
+   height:  61px;
+  
+  }
+  .MainLogo{
+    img {
+      width: 40px;
+      height: 30px;   
+      left: 6px;
+      top: 14px;
+    }
+    svg {
+      width: 40px;
+      height: 70px;
+      position: absolute;
+      left: 6px;
+      top: -5px;
+      
+    }
+  }
+    .MenuWrapper{
+   left: -175px;
+   li{
+    width: 60px;
+    height: 17px;
+    
+    margin: -14px 9px 0 0;
+    font-size: 9px;
+   }
+   a{
+      margin-top: -12px;
+      width: 8px;
+      height: 8px;
+
+   }
+  
+   
+  }
+}
+
 @media screen and (max-width: 395px) {
   .MainWrapper {
    width: 385px;
