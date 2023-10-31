@@ -1,0 +1,115 @@
+.Wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  
+    .text {
+      margin-left: -1050px;
+      font-size: larger;
+      margin-bottom: 10px;
+      font-size: 25px;
+    }
+  
+    .clearCart {
+      display: flex;
+      align-items: center;
+      margin-left: 1000px; /* Move .clearCart to the right */
+      
+    }
+  
+    .itemCart {
+      display: flex;
+      align-items: center;
+ 
+      img {
+        height: 100px;
+        width: 100px;
+        margin-right: 100px;
+      }
+  
+      .title {
+        flex: 1;
+        font-size: 16px;
+      }
+  
+      .countItem {
+        display: flex;
+        align-items: center;
+        margin-left: 20px;
+  
+        span {
+          font-size: 18px;
+          margin: 0 10px;
+        }
+  
+        button {
+          border: 1px solid #000;
+          border-radius: 10px;
+          background: #fff;
+          height: 35px;
+          width: 35px;
+        }
+      }
+  
+      .price {
+        margin: 0 40px 0 40px;
+      }
+  
+      .cross {
+       
+      }
+    }
+  
+    .WrapperSum {
+      display: flex;
+      justify-content: space-between;
+  
+      .sumItem {
+        background-color: #a4161a;
+        color: #fff;
+        border-radius: 10px;
+        padding: 5px;
+        margin: 0 230px 20px 0px;
+      }
+  
+      .sumPrice {
+        background-color: #a4161a;
+        color: #fff;
+        padding: 5px;
+        border-radius: 10px;
+        margin: 0 0px 20px 250px;
+      }
+    }
+  
+    .WrapperBtn {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+  
+      .back {
+        width: 140px;
+        color: #a4161a;
+        border-radius: 10px;
+        background: #fff;
+        margin: 0 420px 0 0px;
+        &:hover {
+          color: #fff;
+          background: #a4161a;
+        }
+      }
+  
+      .buy {
+        width: 140px;
+        background: #a4161a;
+        color: #fff;
+        border-radius: 10px;
+        margin: 0 0px 0 450px;
+        &:hover {
+          background: #fff;
+          color: #a4161a;
+        }
+      }
+    }
+  }
+  
