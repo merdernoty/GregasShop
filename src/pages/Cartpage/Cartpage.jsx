@@ -1,6 +1,5 @@
 import styles from './Cartpage.module.scss'; // модульность css
 import CartItem from './CartItem';
-import test from '../../assets/images/Fotobutton3.png';
 import { useDispatch, useSelector } from 'react-redux';
 import { clearItems } from '../../redux/slices/CartSlice';
 import { CartEmpty } from './CartEmtry/CartEmpty';
