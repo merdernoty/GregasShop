@@ -8,6 +8,8 @@ import { useSelector } from 'react-redux';
 const Cart = () => {  
   const { items, totalPrice } = useSelector((state) => state.CartSlice);
 
+
+  const totalCount = items.reduce((sum, item) => sum + item.count, 0);
   return (
     <div className={style.WrapperCart}>
       <Link to="/Cartpage" className={style.cart}>
@@ -38,7 +40,7 @@ const Cart = () => {
             ></path>
           </svg>
         </div>
-        <span>{items.length}</span>
+        <span>{totalCount}</span>
       </Link>
     </div>
   );
