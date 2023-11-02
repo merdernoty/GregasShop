@@ -3,6 +3,7 @@ import CartItem from './CartItem';
 import { useDispatch, useSelector } from 'react-redux';
 import { clearItems } from '../../redux/slices/CartSlice';
 import { CartEmpty } from './CartEmtry/CartEmpty';
+import { Link } from 'react-router-dom';
 
 export const Cartpage = () => {
   const dispatch = useDispatch();
@@ -22,7 +23,7 @@ export const Cartpage = () => {
     <div className={styles.Wrapper}>
       <div className={styles.Top}>
         <span className={styles.title}>Корзина</span>
-        <span className={styles.back}>Вернуться назад</span>
+       <Link to="/"> <span className={styles.back}>Вернуться назад</span> </Link>
       </div>
       <div className={styles.Sidebox}>
           <div className={styles.CartName}>Ваша корзина</div>
