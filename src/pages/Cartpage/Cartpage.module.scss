@@ -9,13 +9,16 @@
      
     }
     .back{
-      
       font-size: 20px;
       margin-left: 900px;
       background-color: #d43447;
       padding: 5px;
       border-radius: 5px;
       color: #f3ebeb;
+      &:hover {
+        background-color: #f3ebeb;
+        color: #d43447;
+      }
     }
   }
   .CartItems{
