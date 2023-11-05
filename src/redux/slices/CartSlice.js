@@ -28,6 +28,7 @@ const CartSlice = createSlice({
       const findItem = state.items.find((obj) => obj.id === action.payload);
       if (findItem) {
         findItem.count--;
+        findItem.price--;
       }
     },
 
