@@ -4,10 +4,11 @@ import { Link } from 'react-router-dom';
 import { useDispatch, useSelector } from 'react-redux';
 
 import { addItem } from '../../../../redux/slices/CartSlice';
+import { selectCartItemById } from '../../../../redux/slices/itemSlice';
 
 export const ItemBlock = ({ title, price, image, rating, id }) => {
   const dispatch = useDispatch();
-  const cartItem = useSelector((state) => state.CartSlice.items.find((obj) => obj.id === id));
+  const cartItem = useSelector(selectCartItemById(id));
 
   const addedCount = cartItem ? cartItem.count : 0;
 
