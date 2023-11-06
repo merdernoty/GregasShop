@@ -1,14 +1,15 @@
 import styles from './Cartpage.module.scss'; // модульность css
 import CartItem from './CartItem';
 import { useDispatch, useSelector } from 'react-redux';
-import { clearItems } from '../../redux/slices/CartSlice';
+import { clearItems, selectCart } from '../../redux/slices/CartSlice';
 import { CartEmpty } from './CartEmtry/CartEmpty';
 import { Link } from 'react-router-dom';
 
 export const Cartpage = () => {
   const dispatch = useDispatch();
-  const { totalPrice, items } = useSelector((state) => state.CartSlice);
+  const { totalPrice, items } = useSelector(selectCart);
 
+  
   const totalCount = items.reduce((sum, item) => sum + item.count, 0);
   const е = () => {
     if (window.confirm('Отчистить Корзину?')) {
