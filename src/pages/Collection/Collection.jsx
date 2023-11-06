@@ -2,7 +2,7 @@ import React, { useEffect } from 'react';
 import qs from 'qs';
 import { useNavigate } from 'react-router-dom';
 import { useSelector, useDispatch } from 'react-redux';
-import { setCategoryId, setCurrentPage, setFilters } from '../../redux/slices/filterSlice';
+import { selectFilter, setCategoryId, setCurrentPage, setFilters } from '../../redux/slices/filterSlice';
 import Categories from './Categories/Categories';
 import { ItemBlock } from '../Products/components/ItemBlock/ItemBlock';
 import './Collection.scss';
@@ -10,7 +10,7 @@ import { Sort, list } from './Sort/Sort';
 import Skeleton from './Skeleton/Skeleton';
 import { useSearch } from '../../hooks/context/SearchContext';
 import { Pagination } from '../Products/components/Pagination';
-import { fetchItems } from '../../redux/slices/itemSlice';
+import { fetchItems, selectItems } from '../../redux/slices/itemSlice';
 
 export const Collection = () => {
   const navigate = useNavigate();
@@ -18,8 +18,8 @@ export const Collection = () => {
   const isMounted = React.useRef(false);
   const isSearch = React.useRef(false);
 
-  const { categoryId, sort, currentPage } = useSelector((state) => state.filterSlice);
-  const { items, status } = useSelector((state) => state.itemSlice);
+  const { categoryId, sort, currentPage } = useSelector(selectFilter);
+  const { items, status } = useSelector(selectItems);
 
   const sortType = sort.sortProperty;
   const { searchValue } = useSearch();
