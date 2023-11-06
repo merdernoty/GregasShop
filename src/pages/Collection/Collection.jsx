@@ -45,6 +45,7 @@ export const Collection = () => {
         category,
         search,
         currentPage,
+        itemCategory: 'all'
       })
     );
   };
@@ -93,14 +94,14 @@ export const Collection = () => {
     <div className="collection-container">
       <Categories value={categoryId} onClickCategories={onChangeCategory} />
       <Sort></Sort>
-      {status === 'error' ? (
+      {status.all === 'error' ? (
         <div className='error-alert'>
           <h1>Произошла ошибка!</h1>
           <h2>К сожалению, не удалось получить товары...</h2>
           <h2>Попробуйте повторить попытку позже!</h2>
         </div>
       ) : (
-        <div className="product-list">{status === 'loading' ? Skeletons : products}</div>
+        <div className="product-list">{status.all === 'loading' ? Skeletons : products}</div>
       )}
 
       <Pagination currentPage={currentPage} onChangePage={onChangePage}></Pagination>
