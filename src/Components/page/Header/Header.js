@@ -7,7 +7,7 @@ export const Header = ({ searchValue, setSearchValue }) => {
     <>
       <BackToTopButton />
 
-      {location.pathname !== '/CartPage' && <Cart />}
+      {location.pathname !== '/Cartpage' && <Cart />}
       <MainGui />
       <Search searchValue={searchValue} setSearchValue={setSearchValue} />
       <Catalog />
