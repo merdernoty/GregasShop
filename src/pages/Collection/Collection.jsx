@@ -87,7 +87,7 @@ export const Collection = () => {
     isMounted.current = true;
   }, [categoryId, sortType, searchValue, currentPage]);
 
-  const Skeletons = [...new Array(6)].map((_, index) => <Skeleton key={index}></Skeleton>);
+  const Skeletons = [...new Array(4)].map((_, index) => <Skeleton key={index}></Skeleton>);
   const products = items.map((obj) => <ItemBlock key={obj.id} {...obj}></ItemBlock>);
 
   return (

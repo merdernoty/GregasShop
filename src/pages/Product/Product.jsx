@@ -13,14 +13,14 @@ export const Product = () => {
   const cartItem = useSelector(selectCartItemById(id));
   const addedCount = cartItem ? cartItem.count : 0;
   // const [count, setCount] = useState(0);
-
+  
   const addToCart = () => {
     const item = { price, id, title, image };
     dispatch(addItem(item));
   };
   const removeFromCart = () => {
     const item = { price, id, title, image };
-    dispatch(minusItem(item));
+    dispatch(minusItem(id));
   };
 
 
