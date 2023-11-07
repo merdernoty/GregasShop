@@ -4,11 +4,13 @@ import { Link } from 'react-router-dom';
 import { useSelector, useDispatch } from 'react-redux';
 import { ItemBlock } from '../ItemBlock/ItemBlock';
 import { fetchItems } from '../../../../redux/slices/itemSlice';
+import Skeleton from '../../../Collection/Skeleton/Skeleton';
 
 
 export const New = () => {
 
   const itemsNew = useSelector((state) => state.itemSlice.itemsNew);
+  const statusNew = useSelector((state) => state.itemSlice.status.new);
   const dispatch = useDispatch();
 
   const fetchProducts = async () => {
@@ -27,13 +29,13 @@ export const New = () => {
   React.useEffect(() => {
       fetchProducts();
   }, []);
-
+  const Skeletons = [...new Array(4)].map((_, index) => <Skeleton key={index}></Skeleton>);
   const products = itemsNew.map((obj) => <ItemBlock key={obj.id} {...obj}></ItemBlock >);
   return (
     <div className="NewSlider">
       <p className="NewSliderText"> Новинки </p>
       <div className="NewPhotos">
-        {products}
+      {statusNew === 'loading' ? Skeletons : products}
       </div>
     </div>
   );

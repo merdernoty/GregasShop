@@ -3,9 +3,11 @@ import './Hit.scss';
 import { useSelector, useDispatch } from 'react-redux';
 import { fetchItems } from '../../../../redux/slices/itemSlice';
 import { ItemBlock } from '../ItemBlock/ItemBlock';
+import Skeleton from '../../../Collection/Skeleton/Skeleton';
 
 export const Hit = () => {
   const itemsHit = useSelector((state) => state.itemSlice.itemsHit);
+  const statusHit = useSelector((state) => state.itemSlice.status.hit);
   const dispatch = useDispatch();
 
   const fetchProducts = async () => {
@@ -29,14 +31,14 @@ export const Hit = () => {
     },
     []);
   
-
+  const Skeletons = [...new Array(4)].map((_, index) => <Skeleton key={index}></Skeleton>);
   const products = itemsHit.map((obj) => <ItemBlock key={obj.id} {...obj}></ItemBlock>);
 
   return (
     <div className="HitSlider">
       <p className="HitSliderText"> Хиты </p>
       <div className="HitPhotos">
-        {products}
+      {statusHit === 'loading' ? Skeletons : products}
       </div>
     </div>
   );
