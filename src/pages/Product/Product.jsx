@@ -34,11 +34,11 @@ export const Product = () => {
 
         <div className={style.PriceBox}>
           <p className={style.PriceTag}>
-            {' '}
+
             Цена:<b className={style.price}> {price} ₽</b>{' '}
           </p>
           <p className={style.OrderDate}>
-            {' '}
+
             <b>доставка 5 дней</b>
           </p>
           <div className={style.addButton}>
@@ -46,9 +46,9 @@ export const Product = () => {
               Добавить:
               <b> {addedCount}</b>
             </div>
-            <div className={style.MinusCart} onClick={removeFromCart}>
-              -
-            </div>
+            {addedCount>0? <div className={style.MinusCart} onClick={removeFromCart}>
+               -
+            </div>:null}
           </div>
         </div>
         <br></br>
