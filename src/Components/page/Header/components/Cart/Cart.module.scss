@@ -10,6 +10,10 @@
     top: 34px;
     width: 100px;
     height: 40px;
+    &:hover{
+      color:black;
+      transform: translateY(-3px)
+    }
     .Count{
       background-color: white;
       height:15px;
@@ -20,6 +24,9 @@
       line-height: 15px;
       font-size: 13px;
       font-weight: 600;
+      &:hover{
+        color:black;
+      }
     }
 
     span {
