@@ -18,11 +18,19 @@
   height: 400px;
   width: 250px;
   margin: 5px;
+  border-bottom: 5px solid rgb(218, 39, 69);
+  
 }
 
 .ItemBlock:hover {
   transform: translateY(-8px);
   box-shadow: 0 12px 16px rgba(0, 0, 0, 0.3);
+  .addtoButton {
+    opacity: 1;
+    transition-delay: 30ms;
+    box-shadow: 0px -2px 10px 1.5px rgba(231, 13, 13, 0.3);
+
+  }
 }
 
 .NewPhotos {
@@ -65,7 +73,8 @@
   opacity: 1;
 }
 .image-item{
-  border-radius: 5px !important;
+  border-radius: 8px !important;
+  
 }
 
 .ItemBlockParag {
@@ -92,17 +101,12 @@
   margin-left: 20px;
 }
 .Sold {
-  margin-top: 18px;
+  margin-top: 15px;
   font-size: 12px;
   color: rgba(0, 0, 0, 0.6);
   
 }
-.line{
-  width: 85px;
-  height: 5px;
-  border-radius: 30px;
-  background-color: red;
-}
+
 
 .Price {
   position: relative;
@@ -120,7 +124,7 @@
   margin-top: 10px;
   background-color: red;
   text-align: center;
-  opacity: 0;
+  z-index:-1;
   transition: height 0.3s, opacity 0.3s;
 }
 
@@ -151,10 +155,13 @@
   color: #fff;
   justify-content: center;
   margin-top:-40px;
+  opacity:0;
   &:hover{
     cursor: pointer;
     background-color: rgb(187, 19, 47);
-    
+  }
+  &:focus{
+    outline: 0;
   }
   .ScoreBtn {
     z-index: 100;
@@ -164,6 +171,7 @@
       cursor: pointer;
       background-color: rgb(187, 19, 47);
       color: #f1f0f0;
+      outline: 0;
     }
   }
   

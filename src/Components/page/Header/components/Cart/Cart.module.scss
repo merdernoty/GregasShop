@@ -6,16 +6,21 @@
     display: flex;
     right: 320px;
     z-index: 999;
-    right: 20px;
+    right: -15px;
     top: 34px;
     width: 100px;
     height: 40px;
-    background-color: #161a1d;
-    border-radius: 20px;
-
-  &:hover{
-    background-color: black;
-  }
+    .Count{
+      background-color: white;
+      height:15px;
+      width: 15px;
+      border-radius:30px ;
+      margin-left:-10px ;
+      text-align: center;
+      line-height: 15px;
+      font-size: 13px;
+      font-weight: 600;
+    }
 
     span {
       color: white;

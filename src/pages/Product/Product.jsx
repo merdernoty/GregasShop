@@ -34,21 +34,21 @@ export const Product = () => {
 
         <div className={style.PriceBox}>
           <p className={style.PriceTag}>
-            {' '}
+
             Цена:<b className={style.price}> {price} ₽</b>{' '}
           </p>
           <p className={style.OrderDate}>
-            {' '}
+
             <b>доставка 5 дней</b>
           </p>
           <div className={style.addButton}>
-            <div className={style.addtocart} onClick={addToCart}>
-              Добавить:
-              <b> {addedCount}</b>
-            </div>
-            <div className={style.MinusCart} onClick={removeFromCart}>
-              -
-            </div>
+            <button className={style.addtocart} onClick={addToCart}>
+               в корзину
+              {addedCount>0? <b>: {addedCount} </b>:null}
+            </button>
+            {addedCount>0? <button className={style.MinusCart} onClick={removeFromCart}>
+               -
+            </button>:null }
           </div>
         </div>
         <br></br>
