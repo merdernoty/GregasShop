@@ -1,6 +1,7 @@
 import { useDispatch } from 'react-redux';
 import { addItem, minusItem, removeItem } from '../../redux/slices/CartSlice';
 import styles from './Cartpage.module.scss'; // модульность css
+import { Link } from 'react-router-dom';
 
 const CartItem = ({ id, title, price, count, image, totalCount }) => {
   const dispatch = useDispatch();
@@ -23,7 +24,9 @@ const CartItem = ({ id, title, price, count, image, totalCount }) => {
 
   return (
     <div className={styles.itemCart}>
-      <img className={styles.CartImage} src={image}></img>
+      <Link to={`/product/${id}/${encodeURIComponent(title)}/${price}/${encodeURIComponent(image)}/${id}`}>
+        <img className={styles.CartImage} src={image}></img>
+        </Link>
       <div className={styles.price}>{price* count}₽</div>
       <div className={styles.title}>{title} ({count}) </div>
       <div className={styles.CountBox}>
