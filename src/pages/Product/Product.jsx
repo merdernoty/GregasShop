@@ -42,13 +42,13 @@ export const Product = () => {
             <b>доставка 5 дней</b>
           </p>
           <div className={style.addButton}>
-            <div className={style.addtocart} onClick={addToCart}>
-              Добавить:
-              <b> {addedCount}</b>
-            </div>
-            {addedCount>0? <div className={style.MinusCart} onClick={removeFromCart}>
+            <button className={style.addtocart} onClick={addToCart}>
+               в корзину
+              {addedCount>0? <b>: {addedCount} </b>:null}
+            </button>
+            {addedCount>0? <button className={style.MinusCart} onClick={removeFromCart}>
                -
-            </div>:null}
+            </button>:null }
           </div>
         </div>
         <br></br>

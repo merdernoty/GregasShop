@@ -30,9 +30,9 @@ const CartItem = ({ id, title, price, count, image, totalCount }) => {
       <div className={styles.price}>{price* count}₽</div>
       <div className={styles.title}>{title} ({count}) </div>
       <div className={styles.CountBox}>
-        <div onClick= {onClickPlus}className={styles.btn}> + </div>
+        <button onClick= {onClickPlus}className={styles.btn}> + </button>
           <div>{count}</div>
-        <div onClick={onClickMinus} className={styles.btn}> - </div>
+        <button onClick={onClickMinus} className={styles.btn}> - </button>
       <div className={styles.removeBox} onClick={onClickRemove}>
         <svg width="17px" height="17px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
           <path

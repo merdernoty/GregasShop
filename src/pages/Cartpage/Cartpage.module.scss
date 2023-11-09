@@ -91,7 +91,7 @@
       background-color: #bb3b49;
       color: white;
       box-shadow: 0 0 5px 0.5px rgba(0, 0, 0, 0.1);
-
+      
       .btn {
         border-radius: 5px;
         border: none;
@@ -100,6 +100,9 @@
         font-size: 20px;
         align-self: center;
         cursor: pointer;
+        &:focus{
+          outline: 0;
+        };
       }
     }
   }
