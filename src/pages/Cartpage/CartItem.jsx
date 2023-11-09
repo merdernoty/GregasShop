@@ -32,7 +32,7 @@ const CartItem = ({ id, title, price, count, image, totalCount }) => {
       <div className={styles.CountBox}>
         <button onClick= {onClickPlus}className={styles.btn}> + </button>
           <div>{count}</div>
-        <button onClick={onClickMinus} className={styles.btn}> - </button>
+        <button onClick={count > 1 ? onClickMinus : onClickRemove}  className={styles.btn}> - </button>
       <div className={styles.removeBox} onClick={onClickRemove}>
         <svg width="17px" height="17px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
           <path
