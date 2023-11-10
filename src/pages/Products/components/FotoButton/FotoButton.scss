@@ -1,6 +1,7 @@
 * {
     margin: 0;
     padding: 0;
+    outline: 1px black;
 }
 
 body {
@@ -45,3 +46,31 @@ body {
     color: black;
   }
   
+@media (max-width: 500px) and (min-width: 410px){
+
+.Foto img{
+  width: 150px;
+  height: 150px;
+  border-radius: 5px;
+}
+
+.Foto {
+    margin-top: 5%;
+    width: 350px;
+    margin-left: 34%;
+  }
+  
+.fotoItem img {
+  width: 97px;
+  height: 70px;
+  border-radius: 2px;
+  
+}
+
+.Foto p {
+  margin-top: 10px; /* Добавьте отступ сверху для текста */
+  font-family: sans-serif;
+  font-size: 13px;
+  color: black;
+}
+}

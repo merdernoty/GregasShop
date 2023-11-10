@@ -33,3 +33,29 @@
   height: 100%;
   object-fit: cover;
 }
+
+@media (max-width: 500px) and (min-width: 410px){
+  .swiper-button-next{
+    display: none;
+  }
+  .swiper-button-prev{
+    display: none;
+  }
+  .swiper-pagination-bullet-active{
+    display: none;
+  }
+  .swiper {
+    max-height: 169px;
+    max-width: 350px;
+    margin-left: 31%;
+
+  }
+  .swiper-slide img {
+    max-height: 200px;
+    max-width: 350px;
+
+  }
+  .swiper-pagination-bullet {
+    display: none;
+  }
+}
