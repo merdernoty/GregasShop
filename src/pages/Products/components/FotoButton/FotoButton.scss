@@ -58,12 +58,17 @@ body {
 @media (max-width: 374px) and (min-width: 360px){
 .Foto {
   width: 100vw;
-  margin-left: 115vw;
+  margin-left: 110vw;
 }
 }
 @media (max-width: 389px) and (min-width: 375px){
 .Foto {
-  margin-left: 120vw;
+  width: 90vw;
+  grid-template-columns: repeat(auto-fill, minmax(23vw, 6fr));
+  margin-left: 105vw;
+}
+.Foto p {
+  font-size: 2.9vw;
 }
 }
 @media (max-width: 411px) and (min-width: 390px){
@@ -74,12 +79,12 @@ body {
 @media (max-width: 413px) and (min-width: 412px){
 .Foto {
   width: 100vw;
-  margin-left: 85vw;
+  margin-left: 90vw;
 }
 }
 @media (max-width: 424px) and (min-width: 414px){
 .Foto {
-  margin-left: 110vw;
+  margin-left: 100vw;
 }
 }
 @media (max-width: 429px) and (min-width: 425px){
