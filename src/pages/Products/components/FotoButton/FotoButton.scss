@@ -145,15 +145,15 @@ body {
 }
 }
 @media(min-width: 1280px){
-  .Foto {
-    width: 90vw;
-    margin-left: 10vw;
-    grid-template-columns: repeat(auto-fill, minmax(12vw, 6fr));
-  }
-  .fotoItem img {
-    width: 10vw;
-  }
-  .Foto p {
-    font-size: 1vw;
-  }
-  }
+.Foto {
+  width: 90vw;
+  margin-left: 10vw;
+  grid-template-columns: repeat(auto-fill, minmax(12vw, 6fr));
+}
+.fotoItem img {
+  width: 10vw;
+}
+.Foto p {
+  font-size: 1vw;
+}
+}
