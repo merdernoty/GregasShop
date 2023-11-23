@@ -52,3 +52,10 @@ $orange:#ce191f;
       }
     }
   }
+@media (max-width: 1024px) {
+  .sort {
+    b{
+      display: none;
+    }
+  }
+}
