@@ -1,3 +1,183 @@
+/* Footer.scss */
+#footer {
+  hr.grad {
+    border: none;
+    height: 2px;
+    background: black;
+  }
+
+  .AllCountainer {
+    display: flex;
+    justify-content: space-around;
+    
+    width: 90vw;
+    height: 333px;
+    flex-shrink: 0;
+  }
+
+  .СontainerCompany,
+  .СontainerInformation,
+  .СontainerComunication,
+  .СontainerOurContact {
+    color: #000;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    font-family: Inter;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+  }
+
+  /* Стили для блока "Компания" и подразделов */
+  .Company {
+    strong {
+      color: #000;
+      text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+      font-family: Inter;
+      font-size: 20px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: normal;
+    }
+
+    .About.company {
+      padding-top: 20px;
+    }
+    .Stock {
+      color: #000;
+      text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+      font-family: Inter;
+      font-size: 20px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: normal;
+    }
+  }
+
+  /* Стили для блока "Информация" и подразделов */
+  .Information {
+    strong {
+      color: #000;
+      text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+      font-family: Inter;
+      font-size: 20px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: normal;
+    }
+
+    .Wholesale {
+      padding-top: 20px;
+    }
+    .Payment.methods,
+    .Delivery.terms {
+      color: #000;
+      text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+      font-family: Inter;
+      font-size: 20px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: normal;
+    }
+  }
+
+  /* Стили для блока "Способы связи" и иконок соцсетей */
+  .Communication.methods {
+    strong {
+      color: #000;
+      text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+      font-family: Inter;
+      font-size: 20px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: normal;
+    }
+
+    .Instagramm,
+    .Telegramm {
+      color: #000;
+      text-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+      font-family: Inter;
+      font-size: 20px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: normal;
+      padding-top: 0px;
+
+      a {
+        display: inline-block;
+        padding-top: 0px;
+
+        svg {
+          width: 37px;
+          height: 47px;
+          padding-top: 20px;
+        }
+      }
+    }
+  }
+
+  /* Стили для блока "Наши контакты" */
+  .СontainerOurContact {
+    width: 218px;
+height: 241px;
+flex-shrink: 0;
+    strong {
+      color: #000;
+      text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+      font-family: Inter;
+      font-size: 20px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: normal;
+      padding-top: 20px;
+    }
+
+    .Telefon.number {
+      color: #000;
+      text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+      font-family: Inter;
+      font-size: 20px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: normal;
+      padding-top: 20px;
+    }
+
+    .email.block {
+      color: #000;
+      text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+      font-family: Inter;
+      font-size: 20px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: normal;
+
+      .work-time__text1 {
+        color: #000;
+        text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+        font-family: Inter;
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+      }
+    }
+
+    .work-time {
+      .work-time__text {
+        color: #000;
+        text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+        font-family: Inter;
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+      }
+    }
+  }
+}
+
 @media (max-width: 2560px) {
   .AllCountainer {
     flex-wrap: wrap; /* Разрешаем перенос элементов на новую строку */
@@ -115,90 +295,90 @@
 .AllCountainer,
 footer {
   flex-wrap: wrap; /* Разрешаем перенос элементов на новую строку */
-  margin-left: 21%; /* Центрируем блоки по горизонтали */
+  margin-left: 22.5%; /* Центрируем блоки по горизонтали */
 }
 #footer {
-  margin-top: 100vh;
+  margin-top: 70vh;
 }
 }
 @media (max-width: 359px) and (min-width: 320px){
 .AllCountainer,
 footer {
   flex-wrap: wrap; /* Разрешаем перенос элементов на новую строку */
-  margin-left: 18%; /* Центрируем блоки по горизонтали */
+  margin-left: 21%; /* Центрируем блоки по горизонтали */
 }
 #footer {
-  margin-top: 65vh;
+  margin-top: 45vh;
 }
 }
 @media (max-width: 374px) and (min-width: 360px){
   .AllCountainer,
 footer {
   flex-wrap: wrap; /* Разрешаем перенос элементов на новую строку */
-  margin-left: 25%; /* Центрируем блоки по горизонтали */
+  margin-left: 22.5%; /* Центрируем блоки по горизонтали */
 }
 #footer {
-  margin-top: 90vh;
+  margin-top: 60vh;
 }
 }
 @media (max-width: 389px) and (min-width: 375px){
   .AllCountainer,
 footer {
   flex-wrap: wrap; /* Разрешаем перенос элементов на новую строку */
-  margin-left: 24.5%; /* Центрируем блоки по горизонтали */
+  margin-left: 21.5%; /* Центрируем блоки по горизонтали */
 }
 #footer {
-  margin-top: 100vh;
+  margin-top: 65vh;
 }
 }
 @media (max-width: 411px) and (min-width: 390px){
   .AllCountainer,
 footer {
   flex-wrap: wrap; /* Разрешаем перенос элементов на новую строку */
-  margin-left: 24.5%; /* Центрируем блоки по горизонтали */
+  margin-left: 21.5%; /* Центрируем блоки по горизонтали */
 }
 #footer {
-  margin-top: 80vh;
+  margin-top: 50vh;
 }
 }
 @media (max-width: 413px) and (min-width: 412px){
   .AllCountainer,
 footer {
   flex-wrap: wrap; /* Разрешаем перенос элементов на новую строку */
-  margin-left: 24.5%; /* Центрируем блоки по горизонтали */
+  margin-left: 20.5%; /* Центрируем блоки по горизонтали */
 }
 #footer {
-  margin-top: 70vh;
+  margin-top: 50vh;
 }
 }
 @media (max-width: 424px) and (min-width: 414px){
   .AllCountainer,
 footer {
   flex-wrap: wrap; /* Разрешаем перенос элементов на новую строку */
-  margin-left: 24.2%; /* Центрируем блоки по горизонтали */
+  margin-left: 20.5%; /* Центрируем блоки по горизонтали */
 }
 #footer {
-  margin-top: 75vh;
+  margin-top: 50vh;
 }
 }
 @media (max-width: 429px) and (min-width: 425px){
   .AllCountainer,
 footer {
   flex-wrap: wrap; /* Разрешаем перенос элементов на новую строку */
-  margin-left: 24%; /* Центрируем блоки по горизонтали */
+  margin-left: 20%; /* Центрируем блоки по горизонтали */
 }
 #footer {
-  margin-top: 65vh;
+  margin-top: 45vh;
 }
 }
 @media (max-width: 539px) and (min-width: 430px){
   .AllCountainer,
 footer {
   flex-wrap: wrap; /* Разрешаем перенос элементов на новую строку */
-  margin-left: 19%; /* Центрируем блоки по горизонтали */
+  margin-left: 20.5%; /* Центрируем блоки по горизонтали */
 }
 #footer {
-  margin-top: 50vh;
+  margin-top: 20vh;
 }
 }
 @media (max-width: 767px) and (min-width: 540px){
@@ -208,17 +388,17 @@ footer {
   margin-left: 17%; /* Центрируем блоки по горизонтали */
 }
 #footer {
-  margin-top: 60vh;
+  margin-top: 30vh;
 }
 }
 @media (max-width: 819px) and (min-width: 768px){
   .AllCountainer,
 footer {
   flex-wrap: wrap; /* Разрешаем перенос элементов на новую строку */
-  margin-left: 18%; /* Центрируем блоки по горизонтали */
+  margin-left: 15%; /* Центрируем блоки по горизонтали */
 }
 #footer {
-  margin-top: 40vh;
+  margin-top: 20vh;
 }
 }
 @media (max-width: 911px) and (min-width: 820px){
@@ -235,20 +415,20 @@ footer {
   .AllCountainer,
 footer {
   flex-wrap: wrap; /* Разрешаем перенос элементов на новую строку */
-  margin-left: 10%; /* Центрируем блоки по горизонтали */
+  margin-left: 3%; /* Центрируем блоки по горизонтали */
 }
 #footer {
-  margin-top: 10vh;
+  margin-top: 0vh;
 }
 }
 @media (max-width: 1279px) and (min-width: 1024px){
   .AllCountainer,
 footer {
   flex-wrap: wrap; /* Разрешаем перенос элементов на новую строку */
-  margin-left: 8%; /* Центрируем блоки по горизонтали */
+  margin-left: 10%; /* Центрируем блоки по горизонтали */
 }
 #footer {
-  margin-top: 20vh;
+  margin-top: 0vh;
 }
 }
 @media(min-width: 1280px){
@@ -258,6 +438,6 @@ footer {
   margin-left: 4%; /* Центрируем блоки по горизонтали */
 }
 #footer {
-  margin-top: 14vh;
+  margin-top: 1vh;
 }
 }
