@@ -5,6 +5,7 @@ import { Search, Cart } from '../index';
 
 function Navigation({ searchValue, setSearchValue }) {
   return (
+    
     <div className={styles.navbar}>
         
       <div className={`${styles.container} ${styles.navContainer}`}>
