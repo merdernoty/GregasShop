@@ -1,16 +1,10 @@
 
-body {
-    display: flex;
-    justify-content: center; 
-    align-items: center; 
-}
-
-
 .HitSliderText {
     font-size: 20px;
     color:rgb(89, 88, 88);
     font-weight: 2;
     margin-left: 44px;
+    font-family: 'Montserrat';
 }
 
 .HitPhotos {
@@ -20,7 +14,7 @@ body {
 }
 
 @media (max-width: 1024px) {
-    .HitPhotos,.HitSlider, .body{
+    .HitPhotos,.HitSlider{
         flex-wrap: wrap; /* Разрешаем перенос элементов на новую строку */
         margin-left: auto; /* Центрируем блоки по горизонтали */
         margin-right: auto;
@@ -31,7 +25,7 @@ body {
     
   }
 @media (max-width: 768px) {
-        .HitSlider, .body{
+        .HitSlider{
       flex-wrap: wrap; /* Разрешаем перенос элементов на новую строку */
       margin-left: 32.7%; /* Центрируем блоки по горизонтали */
       width: 50%; /* Занимают 50% ширины родительского контейнера */
@@ -41,7 +35,7 @@ body {
     }
   }
 @media (max-width: 425px) {
-    .HitPhotos,.HitSlider, .body {
+    .HitSlider {
       flex-wrap: wrap; /* Разрешаем перенос элементов на новую строку */
       margin-left: 35.5%; /* Центрируем блоки по горизонтали */
       width: 50%; /* Занимают 50% ширины родительского контейнера */
@@ -51,7 +45,7 @@ body {
   }
 }
 @media (max-width: 375px) {
-    .HitPhotos,.HitSlider, .body{
+   .HitSlider{
       flex-wrap: wrap; /* Разрешаем перенос элементов на новую строку */
       margin-left: 35.5%; /* Центрируем блоки по горизонтали */
       width: 50%; /* Занимают 50% ширины родительского контейнера */
@@ -62,7 +56,7 @@ body {
   }
 
 @media (max-width: 320px) {
-    .HitPhotos,.HitSliderText,.HitSlider, .body{
+    .HitSlider{
       flex-wrap: wrap; /* Разрешаем перенос элементов на новую строку */
       margin-left: 36.5%; /* Центрируем блоки по горизонтали */
       width: 50%; /* Занимают 50% ширины родительского контейнера */
