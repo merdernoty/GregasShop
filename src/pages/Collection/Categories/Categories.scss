@@ -1,5 +1,6 @@
 .categories {
   display: flex;
+
   ul {
     list-style: none;
     padding: 0;
@@ -28,4 +29,14 @@
     border-radius: 12px;
 
   } 
+}
+@media(max-width: 1024px){
+  .categories{
+  overflow: auto;
+    width: 800px;
+    ul{
+      width: 800px;
+      overflow: auto;
+    }
+  }
 }

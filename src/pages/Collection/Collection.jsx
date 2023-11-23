@@ -101,7 +101,7 @@ export const Collection = () => {
           <h2>Попробуйте повторить попытку позже!</h2>
         </div>
       ) : (
-        <div className="product-list">{status.all === 'loading' ? Skeletons : products}</div>
+        <div className="divTest"> <div className="product-list">{status.all === 'loading' ? Skeletons : products}</div></div>
       )}
 
       <Pagination currentPage={currentPage} onChangePage={onChangePage}></Pagination>
