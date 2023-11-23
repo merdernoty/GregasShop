@@ -96,28 +96,25 @@
   
   .menuItems {
     padding-top: 120px;
-    background-color:#F2F2EF;
+    background-color: #F2F2EF;
     height: 100vh;
     width: 100%;
-    transform: translateX(-200%);
-    display: flex;
+    display: none;
     flex-direction: column;
     margin-left: -40px;
     padding-left: 50px;
-    transition: transform 0.5s ease-in-out;
     text-align: center;
-    
-  
+
     li {
-      margin-bottom: 1.2rem;
-      font-size: 1.5rem;
-      font-weight: 500;
+        margin-bottom: 1.2rem;
+        font-size: 1.5rem;
+        font-weight: 500;
     }
-  }
-  
-  .navContainer input[type="checkbox"]:checked ~ .menuItems {
-    transform: translateX(0);
-  }
+}
+
+.navContainer input[type="checkbox"]:checked ~ .menuItems {
+    display: flex; /* Изменено значение */
+}
   
   .navContainer input[type="checkbox"]:checked ~ .hamburgerLines .line1 {
     transform: rotate(45deg);
