@@ -10,7 +10,7 @@
     display: flex;
     justify-content: space-around;
     
-    width: 90vw;
+    max-width: 90vw;
     height: 333px;
     flex-shrink: 0;
   }
@@ -294,8 +294,9 @@ flex-shrink: 0;
 @media (max-width: 319px) and (min-width: 280px){
 .AllCountainer,
 footer {
+  display: flex;
   flex-wrap: wrap; /* Разрешаем перенос элементов на новую строку */
-  margin-left: 22.5%; /* Центрируем блоки по горизонтали */
+  justify-content: center; /* Центрируем блоки по горизонтали */
 }
 #footer {
   margin-top: 70vh;
@@ -304,8 +305,9 @@ footer {
 @media (max-width: 359px) and (min-width: 320px){
 .AllCountainer,
 footer {
+  display: flex;
   flex-wrap: wrap; /* Разрешаем перенос элементов на новую строку */
-  margin-left: 21%; /* Центрируем блоки по горизонтали */
+  justify-content: center; /* Центрируем блоки по горизонтали */
 }
 #footer {
   margin-top: 45vh;
@@ -314,8 +316,9 @@ footer {
 @media (max-width: 374px) and (min-width: 360px){
   .AllCountainer,
 footer {
+  display: flex;
   flex-wrap: wrap; /* Разрешаем перенос элементов на новую строку */
-  margin-left: 22.5%; /* Центрируем блоки по горизонтали */
+  justify-content: center; /* Центрируем блоки по горизонтали */
 }
 #footer {
   margin-top: 60vh;
@@ -324,8 +327,9 @@ footer {
 @media (max-width: 389px) and (min-width: 375px){
   .AllCountainer,
 footer {
+  display: flex;
   flex-wrap: wrap; /* Разрешаем перенос элементов на новую строку */
-  margin-left: 21.5%; /* Центрируем блоки по горизонтали */
+  justify-content: center; /* Центрируем блоки по горизонтали */
 }
 #footer {
   margin-top: 65vh;
@@ -334,8 +338,9 @@ footer {
 @media (max-width: 411px) and (min-width: 390px){
   .AllCountainer,
 footer {
+  display: flex;
   flex-wrap: wrap; /* Разрешаем перенос элементов на новую строку */
-  margin-left: 21.5%; /* Центрируем блоки по горизонтали */
+  justify-content: center; /* Центрируем блоки по горизонтали */
 }
 #footer {
   margin-top: 50vh;
@@ -344,8 +349,9 @@ footer {
 @media (max-width: 413px) and (min-width: 412px){
   .AllCountainer,
 footer {
+  display: flex;
   flex-wrap: wrap; /* Разрешаем перенос элементов на новую строку */
-  margin-left: 20.5%; /* Центрируем блоки по горизонтали */
+  justify-content: center; /* Центрируем блоки по горизонтали */
 }
 #footer {
   margin-top: 50vh;
@@ -354,8 +360,9 @@ footer {
 @media (max-width: 424px) and (min-width: 414px){
   .AllCountainer,
 footer {
+  display: flex;
   flex-wrap: wrap; /* Разрешаем перенос элементов на новую строку */
-  margin-left: 20.5%; /* Центрируем блоки по горизонтали */
+  justify-content: center; /* Центрируем блоки по горизонтали */
 }
 #footer {
   margin-top: 50vh;
@@ -364,8 +371,9 @@ footer {
 @media (max-width: 429px) and (min-width: 425px){
   .AllCountainer,
 footer {
+  display: flex;
   flex-wrap: wrap; /* Разрешаем перенос элементов на новую строку */
-  margin-left: 20%; /* Центрируем блоки по горизонтали */
+  justify-content: center; /* Центрируем блоки по горизонтали */
 }
 #footer {
   margin-top: 45vh;
@@ -374,8 +382,9 @@ footer {
 @media (max-width: 539px) and (min-width: 430px){
   .AllCountainer,
 footer {
+  display: flex;
   flex-wrap: wrap; /* Разрешаем перенос элементов на новую строку */
-  margin-left: 20.5%; /* Центрируем блоки по горизонтали */
+  justify-content: center; /* Центрируем блоки по горизонтали */
 }
 #footer {
   margin-top: 20vh;
@@ -384,8 +393,9 @@ footer {
 @media (max-width: 767px) and (min-width: 540px){
   .AllCountainer,
 footer {
+  display: flex;
   flex-wrap: wrap; /* Разрешаем перенос элементов на новую строку */
-  margin-left: 17%; /* Центрируем блоки по горизонтали */
+  justify-content: center; /* Центрируем блоки по горизонтали */
 }
 #footer {
   margin-top: 30vh;
@@ -394,8 +404,9 @@ footer {
 @media (max-width: 819px) and (min-width: 768px){
   .AllCountainer,
 footer {
+  display: flex;
   flex-wrap: wrap; /* Разрешаем перенос элементов на новую строку */
-  margin-left: 15%; /* Центрируем блоки по горизонтали */
+  justify-content: center; /* Центрируем блоки по горизонтали */
 }
 #footer {
   margin-top: 20vh;
@@ -404,8 +415,9 @@ footer {
 @media (max-width: 911px) and (min-width: 820px){
   .AllCountainer,
 footer {
+  display: flex;
   flex-wrap: wrap; /* Разрешаем перенос элементов на новую строку */
-  margin-left: 11%; /* Центрируем блоки по горизонтали */
+  justify-content: center; /* Центрируем блоки по горизонтали */
 }
 #footer {
   margin-top: 10vh;
@@ -414,8 +426,9 @@ footer {
 @media (max-width: 1023px) and (min-width: 912px){
   .AllCountainer,
 footer {
+  display: flex;
   flex-wrap: wrap; /* Разрешаем перенос элементов на новую строку */
-  margin-left: 3%; /* Центрируем блоки по горизонтали */
+  justify-content: center; /* Центрируем блоки по горизонтали */
 }
 #footer {
   margin-top: 0vh;
@@ -424,8 +437,9 @@ footer {
 @media (max-width: 1279px) and (min-width: 1024px){
   .AllCountainer,
 footer {
+  display: flex;
   flex-wrap: wrap; /* Разрешаем перенос элементов на новую строку */
-  margin-left: 10%; /* Центрируем блоки по горизонтали */
+  justify-content: center;/* Центрируем блоки по горизонтали */
 }
 #footer {
   margin-top: 0vh;
@@ -434,10 +448,11 @@ footer {
 @media(min-width: 1280px){
   .AllCountainer,
 footer {
+  display: flex;
   flex-wrap: wrap; /* Разрешаем перенос элементов на новую строку */
-  margin-left: 4%; /* Центрируем блоки по горизонтали */
+  justify-content: center; /* Центрируем блоки по горизонтали */
 }
 #footer {
-  margin-top: 1vh;
+  margin-top: 0vh;
 }
 }
