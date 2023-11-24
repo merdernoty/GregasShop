@@ -93,7 +93,7 @@ export const Collection = () => {
   return (
     <div className="collection-container">
       <Categories value={categoryId} onClickCategories={onChangeCategory} />
-      <Sort></Sort>
+     <Sort></Sort>
       {status.all === 'error' ? (
         <div className='error-alert'>
           <h1>Произошла ошибка!</h1>
@@ -101,7 +101,7 @@ export const Collection = () => {
           <h2>Попробуйте повторить попытку позже!</h2>
         </div>
       ) : (
-        <div className="divTest"> <div className="product-list">{status.all === 'loading' ? Skeletons : products}</div></div>
+         <div className="product-list">{status.all === 'loading' ? Skeletons : products}</div>
       )}
 
       <Pagination currentPage={currentPage} onChangePage={onChangePage}></Pagination>
