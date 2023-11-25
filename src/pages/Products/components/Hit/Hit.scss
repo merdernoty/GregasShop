@@ -1,67 +1,74 @@
-
 .HitSliderText {
-    font-size: 20px;
-    color:rgb(89, 88, 88);
-    font-weight: 2;
-    margin-left: 44px;
-    font-family: 'Montserrat';
+  font-family: 'Montserrat';
+  font-size: 1.5em; /* Использование em для более адаптивного размера шрифта */
+  color: rgb(89, 88, 88);
+  font-weight: 2;
+  margin-left: 20.5%; /* Использование процентов вместо фиксированных пикселей */
+  margin-bottom: 2%; /* Использование процентов вместо фиксированных пикселей */
+  transition: font-size 0.3s ease, margin-left 0.3s ease;
+
+  @media (max-width: 768px) {
+    font-size: 1.6em;
+    margin-left: 0;
+    text-align: center;
+  }
+
+  @media (max-width: 425px) {
+    text-align: center;
+    font-size: 1.4em;
+    margin-bottom: 1em; /* Использование em для более адаптивного отступа */
+  }
 }
 
 .HitPhotos {
-    display:flex;
-    margin-top: 20px;
-    justify-content: center;
+  display: flex;
+  margin-top: 18px;
+  justify-content: center;
 }
 
+.HitPhotos img {
+  width: 258px;
+  height: 258px;
+  border-radius: 0px;
+  border: 1px solid #00000000;
+  margin: 20px;
+  margin-top: 10px;
+}
 @media (max-width: 1024px) {
-    .HitPhotos,.HitSlider{
-        flex-wrap: wrap; /* Разрешаем перенос элементов на новую строку */
-        margin-left: auto; /* Центрируем блоки по горизонтали */
-        margin-right: auto;
-        width: 85%; /* Занимают 50% ширины родительского контейнера */
-        font-size: 16px;
-    }
-   
-    
+  .HitPhotos,.HitSlider{
+      flex-wrap: wrap; /* Разрешаем перенос элементов на новую строку */
+      margin-left: auto; /* Центрируем блоки по горизонтали */
+      margin-right: auto;
+      width: 85%; /* Занимают 50% ширины родительского контейнера */
+      font-size: 16px;
   }
+ 
+  
+}
 @media (max-width: 768px) {
-        .HitSlider{
-      flex-wrap: wrap; /* Разрешаем перенос элементов на новую строку */
-      margin-left: 32.7%; /* Центрируем блоки по горизонтали */
-      width: 50%; /* Занимают 50% ширины родительского контейнера */
-    }
-    .HitSliderText{
-        margin-left: 268px;
-    }
+      .HitSlider{
+    flex-wrap: wrap; /* Разрешаем перенос элементов на новую строку */
+    margin-left: 32.7%; /* Центрируем блоки по горизонтали */
+    width: 50%; /* Занимают 50% ширины родительского контейнера */
   }
+}
 @media (max-width: 425px) {
-    .HitSlider {
-      flex-wrap: wrap; /* Разрешаем перенос элементов на новую строку */
-      margin-left: 35.5%; /* Центрируем блоки по горизонтали */
-      width: 50%; /* Занимают 50% ширины родительского контейнера */
-    }
-    .HitSliderText{
-        margin-left: 330px;
-  }
+
 }
 @media (max-width: 375px) {
-   .HitSlider{
-      flex-wrap: wrap; /* Разрешаем перенос элементов на новую строку */
-      margin-left: 35.5%; /* Центрируем блоки по горизонтали */
-      width: 50%; /* Занимают 50% ширины родительского контейнера */
-    }
-    .HitSliderText{
-        margin-left: 330px;
-    }
+ .HitSlider{
+    flex-wrap: wrap; /* Разрешаем перенос элементов на новую строку */
+    margin-left: 35.5%; /* Центрируем блоки по горизонтали */
+    width: 50%; /* Занимают 50% ширины родительского контейнера */
   }
 
+}
+
 @media (max-width: 320px) {
-    .HitSlider{
-      flex-wrap: wrap; /* Разрешаем перенос элементов на новую строку */
-      margin-left: 36.5%; /* Центрируем блоки по горизонтали */
-      width: 50%; /* Занимают 50% ширины родительского контейнера */
-    }
-    .HitSliderText{
-        margin-left: 335px;
-    }
+  .HitSlider{
+    flex-wrap: wrap; /* Разрешаем перенос элементов на новую строку */
+    margin-left: 36.5%; /* Центрируем блоки по горизонтали */
+    width: 50%; /* Занимают 50% ширины родительского контейнера */
   }
+
+}
