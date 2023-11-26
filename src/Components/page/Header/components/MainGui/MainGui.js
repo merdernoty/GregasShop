@@ -46,7 +46,7 @@ export const MainGui = ({ searchValue, setSearchValue }) => {
           
         </div>
         <div className={styles.Navigation}>
-          <Navigation searchValue={searchValue} setSearchValue={setSearchValue} />
+          {/* <Navigation searchValue={searchValue} setSearchValue={setSearchValue} /> */}
         </div>
         <Search className={styles.search} searchValue={searchValue} setSearchValue={setSearchValue} />
         {location.pathname !== '/Cartpage' && <Cart />}

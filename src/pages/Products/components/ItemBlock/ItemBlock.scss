@@ -205,3 +205,23 @@
   }
 }
 
+@media (max-width: 690px) {
+  .ItemBlock,.Item-container,.collection-container-skeleton{
+  height: 350px;
+  width: 300px;
+    .image-container{
+      width: 90%;
+      height: 65%;
+      margin-bottom: 6%;
+      border-radius: 10px 10px 10px 10px;
+    }
+    .Price {
+      margin-left: 80%;
+      font-size: 18px;
+      font-weight: bold;
+      color: black;
+    }
+    
+  }
+
+}

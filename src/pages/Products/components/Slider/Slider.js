@@ -14,7 +14,7 @@ import './Slider.scss';
 // import required modules
 import { Autoplay, Pagination, Navigation } from 'swiper/modules';
 
-export const Slider = () => {
+export const Slider = () => {  
   return (
     <>
       <Swiper

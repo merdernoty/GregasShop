@@ -1,5 +1,6 @@
 .categories {
   display: flex;
+
   ul {
     list-style: none;
     padding: 0;
@@ -19,7 +20,7 @@
     border-radius: 12px;
     text-align: center;
     margin: 0 10px 0 10px;
-  
+
   }
 
   li.active {
@@ -27,5 +28,26 @@
     color: #fff;
     border-radius: 12px;
 
-  } 
+  }
+}
+@media(max-width: 1024px){
+  .categories{
+  // overflow: auto;
+    width: 800px;
+    ul{
+      width: 800px;
+      overflow: auto;
+
+    }
+  }
+}
+@media(max-width: 689px){
+  .categories{
+    max-width: 700px;
+    ul{
+
+      transform: translateX(50%);
+
+    }
+  }
 }
