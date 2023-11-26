@@ -1,16 +1,7 @@
-body {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
 .container5 {
-  max-width: 1158px;
-  height: 1027px;
-  margin-left: 30px;
-  font: 'Open Sans', Arial, sans-serif;
-  flex-shrink: 0;
-  
+  max-width: 70%; /* Адаптировано для лучшей отзывчивости */
+  margin: 0 auto; /* Центрирование контейнера */
+  font-family: 'Montserrat';
 }
 
 .title5 {
@@ -18,80 +9,17 @@ body {
   font-weight: 400;
   font-size: 40px;
   color: #000;
-  font-family: Inter;
+  font-family: 'Montserrat';
   line-height: normal;
   font-style: normal;
-
+  text-align: center; /* Центрирование текста */
 }
 
 .description {
   font-size: 24px;
   color: #000;
-  justify-content: space-around;
-  font-family: Inter;
-  font-size: 24px;
-  font-style: normal;
+  font-family: 'Montserrat';
   font-weight: 400;
   line-height: normal;
-  color: #000;
-font-family: Inter;
-font-size: 24px;
-font-style: normal;
-font-weight: 400;
-line-height: normal;
+  text-align: justify; /* Правка выравнивания текста */
 }
-
-// @media (max-width: 1600px) {
-//   .container5,
-//   body {
-//     flex-wrap: wrap; /* Разрешаем перенос элементов на новую строку */
-//     margin-left: auto; /* Центрируем блоки по горизонтали */
-//     margin-right: auto;
-//     width: 100%; /* Занимают 50% ширины родительского контейнера */
-//   }
-// }
-// @media (max-width: 1366px) {
-//   .container5,
-//   body {
-//     flex-wrap: wrap; /* Разрешаем перенос элементов на новую строку */
-//     margin-left: auto; /* Центрируем блоки по горизонтали */
-//     margin-right: auto;
-//     width: 80%; /* Занимают 50% ширины родительского контейнера */
-//   }
-// }
-// @media (max-width: 1024px) {
-//   .container5,
-//   body {
-//     flex-wrap: wrap; /* Разрешаем перенос элементов на новую строку */
-//     margin-left: 12%; /* Центрируем блоки по горизонтали */
-//     margin-right: 50%;
-//     width: 80%; /* Занимают 50% ширины родительского контейнера */
-//   }
-// }
-// @media (max-width: 768px) {
-//   .container5,
-//   body {
-//     flex-wrap: wrap; /* Разрешаем перенос элементов на новую строку */
-//     margin-left: 27%; /* Центрируем блоки по горизонтали */
-//     margin-right: 50%;
-//     width: 60%; /* Занимают 50% ширины родительского контейнера */
-//   }
-// }
-// @media (max-width: 425px) {
-//   .container5,
-//   body {
-//     flex-wrap: wrap; /* Разрешаем перенос элементов на новую строку */
-//     margin-left: 40%; /* Центрируем блоки по горизонтали */
-//     margin-right: 30%;
-//     width: 50%; /* Занимают 50% ширины родительского контейнера */
-//   }
-// }
-// @media (max-width: 320px) {
-//   .container5,
-//   body {
-//     flex-wrap: wrap; /* Разрешаем перенос элементов на новую строку */
-//     margin-left: 41%; /* Центрируем блоки по горизонтали */
-//     margin-right: 50%;
-//     width: 50%; /* Занимают 50% ширины родительского контейнера */
-//   }
-// }
