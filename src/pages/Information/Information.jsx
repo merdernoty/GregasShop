@@ -1,13 +1,11 @@
-import './Information.scss';
+import styles from './Information.module.scss';
 
 
 export const Information = () => {
     return (
-      <div className='box'>
+      <div className={styles.box}>
         <section>
-      
           <h1>Условия доставки</h1>
-          
           <p>
           Минимальная сумма заказа - 4999 руб., сборка заказа осуществляется только после его оплаты.
         Наш  магазин предлагает несколько вариантов доставки
