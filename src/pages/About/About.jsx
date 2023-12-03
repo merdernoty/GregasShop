@@ -2,7 +2,12 @@ import styles from './About.module.scss';
 
 export const About = () => {
   return (
+
+    <div className="box">
+      <div className='WrapperBox'>
+
     <div className={styles.box}>
+
       <section>
         <h1>O нас</h1>
         <p>
@@ -31,6 +36,7 @@ export const About = () => {
           </li>
         </ul>
       </section>
+      </div>
     </div>
   );
 };

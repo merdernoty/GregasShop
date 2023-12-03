@@ -6,7 +6,7 @@ import { useDispatch, useSelector } from 'react-redux';
 import { addItem } from '../../../../redux/slices/CartSlice';
 import { selectCartItemById } from '../../../../redux/slices/itemSlice';
 
-export const ItemBlock = ({ title, price, image, rating, id }) => {
+export const ItemBlock = ({ title, price, image,viewsCount, id }) => {
   const dispatch = useDispatch();
   const cartItem = useSelector(selectCartItemById(id));
 
@@ -38,7 +38,7 @@ export const ItemBlock = ({ title, price, image, rating, id }) => {
                 В наличии: <b>666</b>
                 <div className="line"></div>
                 <p className="Sold">
-                  Продано за месяц: <b>{rating} шт</b>
+                  Продано за месяц: <b>{viewsCount} шт</b>
                 </p>
               </p>
             </p>
