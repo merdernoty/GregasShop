@@ -38,5 +38,6 @@ export const About = () => {
       </section>
       </div>
     </div>
+    </div>
   );
 };
