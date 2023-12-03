@@ -1,10 +1,10 @@
-import './Payment.scss';
+import styles from './Payment.module.scss';
 import payment from '../../assets/images/payment.png'
 
 
 export const Payment = () => {
   return (
-    <div className='box'>
+    <div className={styles.box}>
       <section>
     
         <h1>Минимальная сумма заказа - 4999 руб., сборка заказа осуществляется только после его оплаты.</h1>
@@ -25,7 +25,7 @@ export const Payment = () => {
       <section>
 
         <h1>Безналичный расчет - счет для юридических лиц и индивидуальных предпринимателей </h1>
-        <img className='paymentpic' src={payment}></img>
+        <img className={styles.paymentpic} src={payment}></img>
         <p>Воспользоваться этой формой оплаты можно выбрав данный способ оплаты при оформлении заказа, система автоматически сформирует счет его можно скачать по ссылке по завершению оформления заказа.
 Вы получите на электронную почту счёт, который необходимо оплатить в течение 3 (трех) рабочих дней.</p>
         <br></br>

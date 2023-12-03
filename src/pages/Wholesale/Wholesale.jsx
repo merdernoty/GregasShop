@@ -1,10 +1,7 @@
-
-import './Wholesale.scss';
-
-
+import styles from './Wholesale.module.scss';
 export const Wholesale = () => {
   return (
-    <div className='box'>
+    <div className={styles.box}>
       <section>
     
         <h1>Lorem Ipsum</h1>
@@ -17,7 +14,6 @@ export const Wholesale = () => {
 
       <section>
         <ul>
-          
           <li> НУЖНА АНКЕТА </li>
           <li>Lorem Ipsum</li>
           <li>Lorem Ipsum</li>

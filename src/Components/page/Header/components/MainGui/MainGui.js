@@ -4,15 +4,18 @@ import LogoImage from '../../../../../assets/images/LogoMain.png';
 import { Link, useLocation } from 'react-router-dom';
 import { Search, Cart } from '../index';
 import user from '../../../../../assets/images/user.png';
-import Navigation from '../Navigation/Navigation'
+import { AiOutlineMenu, AiOutlineClose } from 'react-icons/ai';
+
 export const MainGui = ({ searchValue, setSearchValue }) => {
   const location = useLocation();
+
+  const [show, setShow] = useState(false);
 
   return (
     <header className={styles.MainWrapper}>
       <div className={styles.Headerbox}>
         <Link to="/">
-          <img className={styles.GregaLogo} src={LogoImage}></img>
+          <img className={styles.GregaLogo} src={LogoImage} alt="Logo"></img>
         </Link>
         <div className={styles.menuItems}>
           <div className={styles.Catalog}>
@@ -43,16 +46,36 @@ export const MainGui = ({ searchValue, setSearchValue }) => {
               Новинки
             </Link>
           </div>
-          
+          <div className={styles.ItemNav}>
+            <ul className={show ? [styles.menu, styles.active].join(' ') : [styles.menu]}>
+              <div className={styles.NavList}>
+              <li>
+                <Link to="/catalogpage">Каталог</Link>
+              </li>
+              <li>
+                <Link to="/all">ALL</Link>
+              </li>
+              <li>
+                <Link to="/catalogpage">Хиты</Link>
+              </li>
+              <li>
+                <Link to="/catalogpage">Скидки</Link>
+              </li>
+              <li>
+                <Link to="/catalogpage">Новинки</Link>
+              </li>
+            </div>
+            </ul>
+            <div onClick={() => setShow(!show)} className={styles.mobileBtn}>
+              {show ? <AiOutlineClose size={35} /> : <AiOutlineMenu size={35} />}
+            </div>
+          </div>
+
+          <Search className={styles.search} searchValue={searchValue} setSearchValue={setSearchValue} />
+          {location.pathname !== '/Cartpage' && <Cart />}
+          <img src={user} className={styles.user} alt="User" />
+          <span className={styles.sign}>sign in</span>
         </div>
-        <div className={styles.Navigation}>
-          {/* <Navigation searchValue={searchValue} setSearchValue={setSearchValue} /> */}
-        </div>
-        <Search className={styles.search} searchValue={searchValue} setSearchValue={setSearchValue} />
-        {location.pathname !== '/Cartpage' && <Cart />}
-        <img src={user} className={styles.user} />
-        <span className={styles.sign}>sign in</span>
-        
       </div>
     </header>
   );

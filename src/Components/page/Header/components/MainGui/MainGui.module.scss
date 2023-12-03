@@ -29,8 +29,8 @@
       border-radius: 5px;
       font-size: 1.7rem;
       margin-left: 30px;
+      
       height: 35px;
-      margin-top: 25px;
       float: left;
     }
     .Item {
@@ -42,8 +42,20 @@
       font-size: 1.4rem;
       margin-left: 30px;
       height: 35px;
-      margin-top: 25px;
+
       float: left;
+    }
+    .ItemNav {
+      font-weight: 500;
+      padding: 5px;
+      display: flex;
+      align-items: center;
+      border-radius: 5px;
+      font-size: 1.4rem;
+      margin-left: 30px;
+      height: 35px;
+      float: left;
+      display:none;
     }
     .sign {
       float: right;
@@ -58,12 +70,46 @@
       margin-top: -40px;
       margin-right: 115px;
     }
-  }
-  .Navigation {
-    position: absolute;
-    margin-left: 140px;
-    margin-top: 15px;
-    display: none;
+    
+    .menu {
+      display: none;
+      align-items: center;
+      font-size: 22px;
+      line-height: 28px;
+      gap: 30px;
+      margin-top:30px ;
+      display: flex;
+      flex-direction: column;
+      position: fixed;
+      left: -100%;
+      right: 0;
+      top: 60px;
+      bottom: 0;
+      width: 100%;
+      height: 100vh;
+      background-color: #f8f8f8;
+      z-index: 100;
+      transition: left 1s;
+      list-style: none;
+      .NavList{
+        margin-top:30px;
+        li{
+          padding: 15px;
+        }
+      }
+    }
+
+    .active {
+      left: 0;
+      top:60px;
+    }
+
+    .menu a {
+      font-size: 28px;
+    }
+    .mobile_btn {
+      display: none;
+    }
   }
 }
 
@@ -87,28 +133,24 @@
 @media screen and (max-width: 1120px) {
   .MainWrapper {
     overflow: visible;
-    .menuItems{
-      display: none;
+    .Item {
+      display: none !important;
     }
-    .Navigation {
-      display: block;
+    .Catalog{
+      display: none !important;
     }
-    .sign {
-      display: none;
+    .ItemNav {
+      display: flex !important;
+      margin-left: -10px !important ;
     }
-    .Catalog {
-      opacity: 0;
-    }
+   
   }
-}
-@media screen and (max-width: 500px) {
-  .GregaLogo {
-    height: 60px !important;
-    width: 70px !important;
-    margin-top: 15px;
-    margin-left: 30px !important;
-  }
-  .Navigation{
-    margin-left: 90px !important;
+  @media screen and (max-width: 500px) {
+    .GregaLogo {
+      height: 60px !important;
+      width: 70px !important;
+      margin-top: 15px;
+      margin-left: 30px !important;
+    }
   }
 }

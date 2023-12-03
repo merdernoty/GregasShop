@@ -33,6 +33,9 @@ const CartItem = ({ id, title, price, count, image, totalCount }) => {
         <button onClick= {onClickPlus}className={styles.btn}> + </button>
           <div>{count}</div>
         <button onClick={count > 1 ? onClickMinus : onClickRemove}  className={styles.btn}> - </button>
+
+
+      </div>
       <div className={styles.removeBox} onClick={onClickRemove}>
         <svg width="17px" height="17px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
           <path
@@ -43,7 +46,6 @@ const CartItem = ({ id, title, price, count, image, totalCount }) => {
             stroke-linejoin="round"
           />
         </svg>
-      </div>
       </div>
     </div>
   );

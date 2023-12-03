@@ -1,10 +1,10 @@
-    
-import './Cargo.scss';
+import styles from './Cargo.module.scss';
+
 
 
 export const Cargo = () => {
   return (
-    <div className='box'>
+    <div className={styles.box}>
       <section>
     
         <h1>Условия доставки</h1>
