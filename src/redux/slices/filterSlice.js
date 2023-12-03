@@ -5,7 +5,7 @@ const initialState = {
   currentPage: 1,
   sort: {
     name: 'популярности',
-    sortProperty: 'rating',
+    orderBy: 'viewsCount',
   }
 };
 

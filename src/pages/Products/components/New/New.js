@@ -17,10 +17,12 @@ export const New = () => {
     const categoryId = 2;
     const currentPage= 1;
     const category = categoryId > 0 ? `category=${categoryId}` : '';
+    const search =  '';
 
     dispatch(
       fetchItems({
         category,
+        search,
         currentPage,
         itemCategory: 'new', // Используйте 'new' для New компонента
       })

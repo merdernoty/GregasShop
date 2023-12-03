@@ -3,6 +3,7 @@ import './About.scss';
 export const About = () => {
   return (
     <div className="box">
+      <div className='WrapperBox'>
       <section>
         <h1>O нас</h1>
 
@@ -33,6 +34,7 @@ export const About = () => {
           </li>
         </ul>
       </section>
+      </div>
     </div>
   );
 };

@@ -1,10 +1,22 @@
-
 .NewSliderText {
-  font-size: 20px;
+  font-family: 'Montserrat';
+  font-size: 1.5em; /* Использование em для более адаптивного размера шрифта */
   color: rgb(89, 88, 88);
   font-weight: 2;
-  margin-left: 44px;
-  margin-bottom: 20px;
+  margin-left: 20.5%; /* Использование процентов вместо фиксированных пикселей */
+  margin-bottom: 2%; /* Использование процентов вместо фиксированных пикселей */
+  transition: font-size 0.3s ease, margin-left 0.3s ease;
+
+  @media (max-width: 768px) {
+    font-size: 1.6em;
+    margin-left: 0;
+    text-align: center;
+  }
+
+  @media (max-width: 425px) {
+    font-size: 1.4em;
+    margin-bottom: 1em; /* Использование em для более адаптивного отступа */
+  }
 }
 
 .NewPhotos {
@@ -35,11 +47,7 @@
 @media (max-width: 768px) {
       .NewSlider{
     flex-wrap: wrap; /* Разрешаем перенос элементов на новую строку */
-    margin-left: 32.7%; /* Центрируем блоки по горизонтали */
     width: 50%; /* Занимают 50% ширины родительского контейнера */
-  }
-  .NewSliderText{
-      margin-left: 268px;
   }
 }
 @media (max-width: 425px) {
@@ -48,21 +56,13 @@
 @media (max-width: 375px) {
  .NewSlider{
     flex-wrap: wrap; /* Разрешаем перенос элементов на новую строку */
-    margin-left: 35.5%; /* Центрируем блоки по горизонтали */
     width: 50%; /* Занимают 50% ширины родительского контейнера */
-  }
-  .NewSliderText{
-      margin-left: 330px;
   }
 }
 
 @media (max-width: 320px) {
   .NewSlider{
     flex-wrap: wrap; /* Разрешаем перенос элементов на новую строку */
-    margin-left: 36.5%; /* Центрируем блоки по горизонтали */
     width: 50%; /* Занимают 50% ширины родительского контейнера */
-  }
-  .NewSliderText{
-      margin-left: 335px;
   }
 }
