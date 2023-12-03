@@ -49,22 +49,22 @@ export const MainGui = ({ searchValue, setSearchValue }) => {
           <div className={styles.ItemNav}>
             <ul className={show ? [styles.menu, styles.active].join(' ') : [styles.menu]}>
               <div className={styles.NavList}>
-              <li>
-                <Link to="/catalogpage">Каталог</Link>
-              </li>
-              <li>
-                <Link to="/all">ALL</Link>
-              </li>
-              <li>
-                <Link to="/catalogpage">Хиты</Link>
-              </li>
-              <li>
-                <Link to="/catalogpage">Скидки</Link>
-              </li>
-              <li>
-                <Link to="/catalogpage">Новинки</Link>
-              </li>
-            </div>
+                <li>
+                  <Link to="/catalogpage">Каталог</Link>
+                </li>
+                <li>
+                  <Link to="/all">ALL</Link>
+                </li>
+                <li>
+                  <Link to="/catalogpage">Хиты</Link>
+                </li>
+                <li>
+                  <Link to="/catalogpage">Скидки</Link>
+                </li>
+                <li>
+                  <Link to="/catalogpage">Новинки</Link>
+                </li>
+              </div>
             </ul>
             <div onClick={() => setShow(!show)} className={styles.mobileBtn}>
               {show ? <AiOutlineClose size={35} /> : <AiOutlineMenu size={35} />}
@@ -72,9 +72,10 @@ export const MainGui = ({ searchValue, setSearchValue }) => {
           </div>
 
           <Search className={styles.search} searchValue={searchValue} setSearchValue={setSearchValue} />
-          {location.pathname !== '/Cartpage' && <Cart />}
-          <img src={user} className={styles.user} alt="User" />
           <span className={styles.sign}>sign in</span>
+          <img src={user} className={styles.user} alt="User" />
+          {location.pathname !== '/Cartpage' && <Cart />}
+          
         </div>
       </div>
     </header>
