@@ -19,7 +19,7 @@ export const  Hits= () => {
   const {  sort, currentPage } = useSelector(selectFilter);
   const { items, status } = useSelector(selectItems);
 
-  const sortType = 'rating';
+  const sortType = 'viewsCount';
   const { searchValue } = useSearch();
 
 

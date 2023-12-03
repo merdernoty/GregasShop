@@ -4,12 +4,12 @@ import { useSelector, useDispatch } from 'react-redux';
 import { setSort } from '../../../redux/slices/filterSlice';
 
 export const list = [
-  { name: 'популярности(max)', sortProperty: 'rating' },
-  { name: 'популярности(min)', sortProperty: '-rating' },
-  { name: 'цене(max)', sortProperty: 'price' },
-  { name: 'цене(min)', sortProperty: '-price' },
-  { name: 'альфавиту(с конца)', sortProperty: 'title' },
-  { name: 'альфавиту(с начала)', sortProperty: '-title' },
+  { name: 'популярности(max)', orderBy: 'viewsCount' },
+  { name: 'популярности(min)', orderBy: '-viewsCount' },
+  { name: 'цене(max)', orderBy: 'price' },
+  { name: 'цене(min)', orderBy: '-price' },
+  { name: 'алфавиту(с конца)', orderBy: 'title' },
+  { name: 'алфавиту(с начала)', orderBy: '-title' },
 ];
 
 export const Sort = () => {
@@ -58,7 +58,7 @@ export const Sort = () => {
               <li
                 key={i}
                 onClick={() => onClickListItem(obj)}
-                className={sort.sortProperty === obj.sortProperty ? 'active' : ''}
+                className={sort.orderBy === obj.orderBy ? 'active' : ''}
               >
                 {obj.name}
               </li>

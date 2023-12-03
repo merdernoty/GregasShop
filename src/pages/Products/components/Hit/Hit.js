@@ -15,11 +15,12 @@ export const Hit = () => {
     const categoryId = 1;
     const currentPage = 1;
     const category = categoryId > 0 ? `category=${categoryId}` : '';
-    
+    const search =  '';
 
     dispatch(
       fetchItems({
         category,
+        search,
         currentPage,
         itemCategory: 'hit', // Используйте 'new' для New компонента
       })

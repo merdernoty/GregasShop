@@ -1,10 +1,11 @@
 import { createSlice, createAsyncThunk } from '@reduxjs/toolkit';
-import axios from 'axios';
+import axios from '../../axios';
 
 export const fetchItems = createAsyncThunk('items/fetchItemsStatus', async (params) => {
   const { order, SortBy, category, search, currentPage } = params;
   const { data } = await axios.get(
-    `https://650c60bf47af3fd22f678d4b.mockapi.io/items?page=${currentPage}&limit=4&${category}&sortBy=${SortBy}&order=${order}${search}`
+    // `https://650c60bf47af3fd22f678d4b.mockapi.io/items?page=${currentPage}&limit=4&${category}&sortBy=${SortBy}&order=${order}${search}`
+    `/posts?page=${currentPage}&limit=4&${category}&orderBy=${SortBy}&sortBy=${order}&keyword=${search}`
   );
   return data;
 });
@@ -36,13 +37,13 @@ const itemSlice = createSlice({
         state.status.all = 'success';
         
         if (action.meta.arg.itemCategory === 'new') {
-          state.itemsNew = action.payload;
+          state.itemsNew = action.payload.data;
           state.status.new = 'success';
         } else if (action.meta.arg.itemCategory === 'hit') {
-          state.itemsHit = action.payload;
+          state.itemsHit = action.payload.data;
           state.status.hit = 'success';
         } else if (action.meta.arg.itemCategory === 'all') {
-          state.items = action.payload;
+          state.items = action.payload.data;
           state.status.all = 'success';
         }
       })

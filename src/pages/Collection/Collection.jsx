@@ -21,7 +21,8 @@ export const Collection = () => {
   const { categoryId, sort, currentPage } = useSelector(selectFilter);
   const { items, status } = useSelector(selectItems);
 
-  const sortType = sort.sortProperty;
+  const sortType = sort.orderBy;
+  console.log(sortType);
   const { searchValue } = useSearch();
 
   const onChangeCategory = (id) => {
@@ -36,7 +37,7 @@ export const Collection = () => {
     const order = sortType.includes('-') ? 'asc' : 'desc';
     const SortBy = sortType.replace('-', '');
     const category = categoryId > 0 ? `category=${categoryId}` : '';
-    const search = searchValue ? `&search=${searchValue}` : '';
+    const search = searchValue ? `${searchValue}` : '';
 
     dispatch(
       fetchItems({
@@ -55,8 +56,8 @@ export const Collection = () => {
     if (window.location.search) {
       const params = qs.parse(window.location.search.substring(1));
 
-      const sort = list.find((obj) => obj.sortProperty === params.sortProperty);
-
+      const sort = list.find((obj) => obj.orderBy === params.orderBy);
+      console.log(sort)
       dispatch(
         setFilters({
           ...params,
@@ -78,7 +79,7 @@ export const Collection = () => {
   useEffect(() => {
     if (isMounted.current) {
       const queryString = qs.stringify({
-        sortProperty: sort.sortProperty,
+        orderBy: sort.orderBy,
         categoryId,
         currentPage,
       });
