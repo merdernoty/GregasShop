@@ -1,9 +1,9 @@
-import './Deals.scss';
+import styles from './Deals.module.scss';
 
 
 export const Deals = () => {
   return (
-    <div className='box'>
+    <div className={styles.box}>
       <section>
     
         <h1>Lorem bobr</h1>

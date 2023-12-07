@@ -1,19 +1,21 @@
-import './About.scss';
+import styles from './About.module.scss';
 
 export const About = () => {
   return (
+
     <div className="box">
       <div className='WrapperBox'>
+
+    <div className={styles.box}>
+
       <section>
         <h1>O нас</h1>
-
         <p>
           Магазин «Grega’s shop» создан в память о храбром и сильном мальчике Руслане. Логотип компании любимая игрушка
           Руслана, его друг, с которым он не разлучался даже в поездках.
         </p>
         <br></br>
       </section>
-
       <section>
         <ul>
           <li>Магазин пропитан азиатской культурой: анимe, K-pop, лапша, напитки и сладости.</li>
@@ -35,6 +37,7 @@ export const About = () => {
         </ul>
       </section>
       </div>
+    </div>
     </div>
   );
 };
