@@ -15,18 +15,6 @@ export const MainGui = ({ searchValue, setSearchValue }) => {
   const location = useLocation();
   const [show, setShow] = useState(false);
 
-
-  const dispatch = useDispatch();
-  const isAuth = useSelector(selectIsAuth);
-
-  const onClickLogout = () => {
-    if (window.confirm('Вы действительно хотите выйти?')) {
-      dispatch(logout());
-      window.localStorage.removeItem('token');
-    }
-  };
-
-  
   return (
     <header className={styles.MainWrapper}>
       <div className={styles.Headerbox}>
@@ -44,19 +32,16 @@ export const MainGui = ({ searchValue, setSearchValue }) => {
               ALL
             </Link>
           </div>
-
           <div className={styles.Item}>
             <Link to="/hits" className={styles.itemText}>
               Хиты
             </Link>
           </div>
-
           <div className={styles.Item}>
             <Link to="/" className={styles.itemText}>
               Скидки
             </Link>
           </div>
-
           <div className={styles.Item}>
             <Link to="/" className={styles.itemText}>
               Новинки
@@ -65,28 +50,27 @@ export const MainGui = ({ searchValue, setSearchValue }) => {
           <div className={styles.ItemNav}>
             <ul className={show ? [styles.menu, styles.active].join(' ') : [styles.menu]}>
               <div className={styles.NavList}>
-                <li>
-                  <Link to="/catalogpage">Каталог</Link>
-                </li>
-                <li>
-                  <Link to="/all">ALL</Link>
-                </li>
-                <li>
-                  <Link to="/catalogpage">Хиты</Link>
-                </li>
-                <li>
-                  <Link to="/catalogpage">Скидки</Link>
-                </li>
-                <li>
-                  <Link to="/catalogpage">Новинки</Link>
-                </li>
-              </div>
+              <li>
+                <Link to="/catalogpage">Каталог</Link>
+              </li>
+              <li>
+                <Link to="/all">ALL</Link>
+              </li>
+              <li>
+                <Link to="/catalogpage">Хиты</Link>
+              </li>
+              <li>
+                <Link to="/catalogpage">Скидки</Link>
+              </li>
+              <li>
+                <Link to="/catalogpage">Новинки</Link>
+              </li>
+            </div>
             </ul>
             <div onClick={() => setShow(!show)} className={styles.mobileBtn}>
               {show ? <AiOutlineClose size={35} /> : <AiOutlineMenu size={35} />}
             </div>
           </div>
-
           <Search className={styles.search} searchValue={searchValue} setSearchValue={setSearchValue} />
           
           
