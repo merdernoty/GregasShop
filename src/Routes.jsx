@@ -15,6 +15,7 @@ import { CatalogPage } from './pages/CatalogPage/CatalogPage';
 import { Login } from './pages/Login';
 import { Hits } from './pages/Hits/Hits';
 import { Registration } from './pages/Registration';
+import UserPage from './pages/userPage/UserPage';
 
 export const routes = [
   {
@@ -92,6 +93,9 @@ export const routes = [
       {
         path: 'register',
         element: <Registration />,
+      },{
+        path: 'userpage',
+        element: <UserPage />,
       },
     ],
   },

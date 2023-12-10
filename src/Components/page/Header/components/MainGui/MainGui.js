@@ -86,26 +86,29 @@ export const MainGui = ({ searchValue, setSearchValue }) => {
             </div>
           </div>
           <Search className={styles.search} searchValue={searchValue} setSearchValue={setSearchValue} />
-          
-          
+
+
           {isAuth ? (
-              <>
-                <Button onClick={onClickLogout} className={styles.signOut}>
-                  Выйти
-                </Button>
+            <>
+              <Button onClick={onClickLogout} className={styles.signOut}>
+                Выйти
+              </Button>
+              <Link to="/userpage">
                 <img src={user} className={styles.user} alt="User" />
-              </>
-            ) : (
-              <>
-                <Link to="/login">
-                  <Button className={styles.sign}>Войти</Button>
-                </Link>
-                <Link to="/register">
-                  <Button className={styles.signUp}>Регистрация</Button>
-                </Link>
-              </>
-            )}
-            {location.pathname !== '/Cartpage' && <Cart />}
+              </Link>
+            </>
+          ) : (
+            <>
+              <Link to="/login">
+                <Button className={styles.sign}>Войти</Button>
+              </Link>
+              <Link to="/register">
+                <Button className={styles.signUp}>Регистрация</Button>
+              </Link>
+            </>
+          )}
+
+          {location.pathname !== '/Cartpage' && <Cart />}
         </div>
       </div>
     </header>
