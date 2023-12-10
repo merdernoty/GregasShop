@@ -6,13 +6,14 @@ import { Search, Cart } from '../index';
 import user from '../../../../../assets/images/user.png';
 import { AiOutlineMenu, AiOutlineClose } from 'react-icons/ai';
 
+
+import { useDispatch, useSelector } from 'react-redux';
+import Button from '@mui/material/Button';
+import Container from '@mui/material/Container';
+import { logout, selectIsAuth } from '../../../../../redux/slices/auth';
 export const MainGui = ({ searchValue, setSearchValue }) => {
   const location = useLocation();
   const [show, setShow] = useState(false);
-
-  const handleItemClick = () => {
-    setShow(false);
-  };
 
   return (
     <header className={styles.MainWrapper}>
@@ -49,41 +50,48 @@ export const MainGui = ({ searchValue, setSearchValue }) => {
           <div className={styles.ItemNav}>
             <ul className={show ? [styles.menu, styles.active].join(' ') : [styles.menu]}>
               <div className={styles.NavList}>
-                <li>
-                  <Link to="/catalogpage" onClick={handleItemClick}>
-                    Каталог
-                  </Link>
-                </li>
-                <li>
-                  <Link to="/all" onClick={handleItemClick}>
-                    ALL
-                  </Link>
-                </li>
-                <li>
-                  <Link to="/hits" onClick={handleItemClick}>
-                    Хиты
-                  </Link>
-                </li>
-                <li>
-                  <Link to="/" onClick={handleItemClick}>
-                    Скидки
-                  </Link>
-                </li>
-                <li>
-                  <Link to="/" onClick={handleItemClick}>
-                    Новинки
-                  </Link>
-                </li>
-              </div>
+              <li>
+                <Link to="/catalogpage">Каталог</Link>
+              </li>
+              <li>
+                <Link to="/all">ALL</Link>
+              </li>
+              <li>
+                <Link to="/catalogpage">Хиты</Link>
+              </li>
+              <li>
+                <Link to="/catalogpage">Скидки</Link>
+              </li>
+              <li>
+                <Link to="/catalogpage">Новинки</Link>
+              </li>
+            </div>
             </ul>
             <div onClick={() => setShow(!show)} className={styles.mobileBtn}>
               {show ? <AiOutlineClose size={35} /> : <AiOutlineMenu size={35} />}
             </div>
           </div>
           <Search className={styles.search} searchValue={searchValue} setSearchValue={setSearchValue} />
-          {location.pathname !== '/Cartpage' && <Cart />}
-          <img src={user} className={styles.user} alt="User" />
-          <span className={styles.sign}>sign in</span>
+          
+          
+          {isAuth ? (
+              <>
+                <Button onClick={onClickLogout} className={styles.signOut}>
+                  Выйти
+                </Button>
+                <img src={user} className={styles.user} alt="User" />
+              </>
+            ) : (
+              <>
+                <Link to="/login">
+                  <Button className={styles.sign}>Войти</Button>
+                </Link>
+                <Link to="/register">
+                  <Button className={styles.signUp}>Регистрация</Button>
+                </Link>
+              </>
+            )}
+            {location.pathname !== '/Cartpage' && <Cart />}
         </div>
       </div>
     </header>
