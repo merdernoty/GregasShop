@@ -3,21 +3,10 @@ import axios from '../../axios';
 
 export const fetchItems = createAsyncThunk('items/fetchItemsStatus', async (params) => {
   const { order, SortBy, category, search, currentPage } = params;
-  try {
-    const { data } = await axios.get(`/posts`, {
-      params: {
-        page: currentPage,
-        limit: 4,
-        [category]: true,
-        orderBy: SortBy,
-        sortBy: order,
-        keyword: search,
-      },
-    });
-    return data;
-  } catch (error) {
-    throw error;
-  }
+  const { data } = await axios.get(
+    `/posts?page=${currentPage}&limit=4&${category}&orderBy=${SortBy}&sortBy=${order}&keyword=${search}`
+  );
+  return data;
 });
 
 const initialState = {

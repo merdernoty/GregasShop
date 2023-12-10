@@ -25,7 +25,9 @@ export const MainGui = ({ searchValue, setSearchValue }) => {
       window.localStorage.removeItem('token');
     }
   };
-
+  const handleItemClick = () => {
+    setShow(false);
+  };
   
   return (
     <header className={styles.MainWrapper}>
@@ -63,19 +65,19 @@ export const MainGui = ({ searchValue, setSearchValue }) => {
             <ul className={show ? [styles.menu, styles.active].join(' ') : [styles.menu]}>
               <div className={styles.NavList}>
               <li>
-                <Link to="/catalogpage">Каталог</Link>
+                <Link to="/catalogpage" onClick={handleItemClick}>Каталог</Link>
               </li>
               <li>
-                <Link to="/all">ALL</Link>
+                <Link to="/all" onClick={handleItemClick}>ALL</Link>
               </li>
               <li>
-                <Link to="/catalogpage">Хиты</Link>
+                <Link to="/catalogpage" onClick={handleItemClick}>Хиты</Link>
               </li>
               <li>
-                <Link to="/catalogpage">Скидки</Link>
+                <Link to="/catalogpage" onClick={handleItemClick}>Скидки</Link>
               </li>
               <li>
-                <Link to="/catalogpage">Новинки</Link>
+                <Link to="/catalogpage" onClick={handleItemClick}>Новинки</Link>
               </li>
             </div>
             </ul>
