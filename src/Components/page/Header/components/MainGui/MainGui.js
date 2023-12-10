@@ -11,10 +11,22 @@ import { useDispatch, useSelector } from 'react-redux';
 import Button from '@mui/material/Button';
 import Container from '@mui/material/Container';
 import { logout, selectIsAuth } from '../../../../../redux/slices/auth';
+
 export const MainGui = ({ searchValue, setSearchValue }) => {
   const location = useLocation();
   const [show, setShow] = useState(false);
 
+  const dispatch = useDispatch();
+  const isAuth = useSelector(selectIsAuth);
+
+  const onClickLogout = () => {
+    if (window.confirm('Вы действительно хотите выйти?')) {
+      dispatch(logout());
+      window.localStorage.removeItem('token');
+    }
+  };
+
+  
   return (
     <header className={styles.MainWrapper}>
       <div className={styles.Headerbox}>
