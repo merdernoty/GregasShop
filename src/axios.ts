@@ -1,7 +1,7 @@
 import axios from "axios";
 
 const instance = axios.create({
-    baseURL: 'https://tan-bison-tam.cyclic.app/'
+     baseURL: 'https://backend-bay-three.vercel.app'
 })
 
 export default instance;
