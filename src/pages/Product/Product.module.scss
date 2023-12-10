@@ -12,29 +12,30 @@
   font-weight: 100;
 }
 .TitleBox {
-  margin: 20px;
-  margin-left: 120px;
+  margin: 2%;
+  margin-left: 11%;
   max-width: 80%;
 }
 .ProductBox {
+  max-height: 900px;
   display: flex;
   flex-wrap: wrap;
-  padding: 5px;
+  padding: 10%;
   width: 70vw;
-  height: 80vh;
+  height: 80vw;
   margin-left: 10%;
   border-radius:10px;
-  border-top: 25px solid #991b1b;
+  border-top: 45px solid #991b1b;
   background-color: #f8fafc;
   box-shadow: 0px 0px 8px 0px rgba(34, 60, 80, 0.2);
 }
 .ProductImage {
   max-width: 300px;
-  max-height: 290px;
-  height: 40%;
+  max-height: 300px;
+  height: 50%;
   width: 95%;
   margin-left: 2%;
-  border-radius: 10px;
+  border-radius: 10%;
   box-shadow: 5px 5px 5px 1px rgba(0, 0, 0, .2);
 }
 .Mainbox{
@@ -43,46 +44,48 @@
   align-items: center;
   width: auto;
   height: auto;
+  margin-left: 10%;
 .PriceBox{
-  height: 80px;
+  max-height: 80px;
+  height: 80%;
   width:  100%;
   background-color: white;
   margin-left: auto;
   border-radius: 10px;
-  line-height: 40px;
+  line-height: 270%;
   box-shadow: 0px 0px 10px 1px rgba(34, 60, 80, 0.2);
-  margin-bottom: 5px;
+  margin-bottom: 5%;
   .PriceTag{
     font-size: 1.3rem;
-    margin-left: 45px;
-    margin-top: 5px;
+    margin-left: 15%;
+    margin-top: 2%;
     .price{
-      word-spacing: -3px;
+      word-spacing: -3%;
     }
   }
 
   .OrderDate{
-    margin-left: 18px;
+    margin-left: 5%;
     margin-top: 5px;
     font-size: 0.7rem;
     opacity: 0.6;
-    margin-top:-10px
+    margin-top:-5%;
   }
 }
 
 .addButton{
   display:flex;
   align-items: center;
-  margin-top: -70px;
+  margin-top: -28%;
   font-family: 'Quicksand', sans-serif;
   
   .addtocart {
     padding: 2px;  
-    border-radius: 10px;
+    border-radius: 30px;
     font-size: 0.9rem;
     background: #c53131;
     cursor: pointer;
-    width: 100px;
+    width: 50%;
     overflow: hidden;
     transition: transform 0.1s;
     z-index: 1;
@@ -101,10 +104,10 @@
 
   .MinusCart{
     background-color: #c53131;
-    height:30px;
-    width: 30px;
-    border-radius: 10px;
-    margin-left: 10px;
+    height: 15%;
+    width: 15%;
+    border-radius: 20%;
+    margin-left: 2%;
     color: #fff;
     font-size:20px;
     display: flex;
@@ -123,78 +126,75 @@
   } 
 }
 .ProductDetails {
+  max-height: 400px;
   display: block;
   margin-left: auto;
-  line-height: 30px;
+  line-height: 250%;
   background-color:white;
   border-radius: 10px;
   box-shadow: 0px 0px 10px 1px rgba(34, 60, 80, 0.2);
-  height: 320px;
-  width: 250px;
-  margin-bottom: 25px;
+  height: 320%;
+  width: 100%;
+  margin-bottom: 1%;
   .ProductDetailsList{
     border-bottom: 1px solid #991b1b;
   .ProductDetailsItem{
-    margin-left: 10px;
+    margin-left: 5%;
   }
   }
   .Sales{
-    margin-top:10px ;
-    margin-left: 10px;
+    margin-top:1%;
+    margin-left: 5%;
   }
 }
 }
 .Description{
-  line-height: 22px;
+  max-width: 300px;
+  line-height: 200%;
   height: 1.3rem;
-  width: 340px;
+  width: 50%;
   margin-top: -10%;
-  margin-bottom: 200px;
+  margin-bottom: 100%;
   margin-left:5%;
 }
 }
-@media (max-width:1600px) and (min-width: 1300px) {
-  .ProductImage {
-    max-width: 450px;
-    max-height: 290px;
-    height: 30%;
-    width: 65%;
-  }
+@media (min-width:1700px){
+  .BBox{
   .Mainbox{
-   height: 20vw;
-   width:  20vw;
-   margin-left: 390px;
-  .PriceBox{
-    height: 70px;
-    width:  240px;
-    margin-bottom: 20px;
-    .PriceTag{
-      font-size: 1.3rem;
-      margin-left: 45px;
-      margin-top: 5px;
-      .price{
-        word-spacing: -3px;
-      }
+    margin-left: 40%!important;
     }
-  
-    
-  }
-  
-  
-  }
-  .Description{
-    margin-bottom: 140px;
-    margin-left:45px
-  }
-}
-@media (max-width: 450px) {
-  .ProductBox {
-    /* Установите желаемую высоту для .Mainbox */
-    height: 1000px!important; 
   }
 }
 
-@media (max-width: 1390px) and (min-width: 1350px) {
-  .Mainbox{
-    margin-left: 620px;}
+@media (max-width:1100px) and (min-width:450px){
+  .BBox{
+    .Mainbox{
+      margin-left: 10%!important;
+      
+      }
+      .ProductBox {
+        height: auto;
+        max-height: 1900px;
+        margin-bottom: 20px;
+        
+      }
+      .Description{
+        margin-top: 10%;
+        font-size: 0.9rem;
+      }
+    }
+}
+@media (max-width:449px) and (min-width:100px){
+.BBox{  
+  .ProductBox {
+    max-height: 2500px;
+    height: 450vw;
+    margin-bottom: 30px;
+
+  }
+  .Description{
+    margin-left:5%;
+    margin-bottom: 280%;
+  }
+}
 }
