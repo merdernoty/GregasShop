@@ -3,11 +3,21 @@ import axios from '../../axios';
 
 export const fetchItems = createAsyncThunk('items/fetchItemsStatus', async (params) => {
   const { order, SortBy, category, search, currentPage } = params;
-  const { data } = await axios.get(
-    // `https://650c60bf47af3fd22f678d4b.mockapi.io/items?page=${currentPage}&limit=4&${category}&sortBy=${SortBy}&order=${order}${search}`
-    `/posts?page=${currentPage}&limit=4&${category}&orderBy=${SortBy}&sortBy=${order}&keyword=${search}`
-  );
-  return data;
+  try {
+    const { data } = await axios.get(`/posts`, {
+      params: {
+        page: currentPage,
+        limit: 4,
+        [category]: true,
+        orderBy: SortBy,
+        sortBy: order,
+        keyword: search,
+      },
+    });
+    return data;
+  } catch (error) {
+    throw error;
+  }
 });
 
 const initialState = {
