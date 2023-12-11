@@ -1,79 +1,103 @@
-h3 {
-  text-align: left;
-  font-size: 50px;
+.BBox{
+  margin: 10%;
+  max-width: 70%;
+  h4{
+    text-align: center;
+  font-size: 1.3rem;
   font-weight: 100;
+  }
+  h3 {
+    color: #fff;
+    position: relative;
+  bottom: -60px;
+  text-align: center;
+  font-size: 1.3rem;
+  font-weight: 100;
+  left: 10%;
 }
 .TitleBox {
-  margin: 20px;
-  margin-left: 120px;
+  margin: 2%;
+  margin-left: 11%;
+  max-width: 80%;
 }
 .ProductBox {
-  padding: 10px;
-  width: 975px;
-  height: 550px;
-  margin-left: 123px;
+  max-height: 900px;
+  max-width: 2900px;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 10%;
+  width: 70vw;
+  height: 80vw;
+  margin-left: 10%;
   border-radius:10px;
-  border-top: 25px solid #991b1b;
+  border-top: 45px solid #991b1b;
   background-color: #f8fafc;
   box-shadow: 0px 0px 8px 0px rgba(34, 60, 80, 0.2);
-  max-width: 80%;
-  flex-wrap: wrap;
-  font-size: 130%;
-  margin: 0 auto;
 }
 .ProductImage {
-  height: 300px;
-  width: 300px;
-  margin-left: 40px;
-  border-radius: 10px;
+  max-width: 300px;
+  max-height: 300px;
+  height: 50%;
+  width: 95%;
+  margin-left: 2%;
+  border-radius: 10%;
   box-shadow: 5px 5px 5px 1px rgba(0, 0, 0, .2);
-  max-width: 80%;
-  flex-wrap: wrap;
-  font-size: 130%;
-  margin: 0 auto;
+  
 }
+.Mainbox{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: auto;
+  height: auto;
+  margin-left: 10%;
 .PriceBox{
-  height: 80px;
-  width: 285px;
+  max-height: 190px;
+  height: 130%;
+  width:  120%;
   background-color: white;
-  margin-left: 660px;
-  margin-top: -320px;
+  margin-left: auto;
   border-radius: 10px;
-  line-height: 40px;
+  line-height: 270%;
   box-shadow: 0px 0px 10px 1px rgba(34, 60, 80, 0.2);
+  margin-bottom: 5%;
   .PriceTag{
-    font-size: 1.3rem;
-    margin-left: 45px;
-    margin-top: 5px;
+    font-size: 1.1rem;
+    margin-left: 10%;
+    margin-top: 1%;
     .price{
-      word-spacing: -3px;
+      word-spacing: -5%;
     }
   }
+
   .OrderDate{
-    margin-left: 18px;
-    margin-top: 5px;
+    margin-left: 2%;
+    margin-top: 2px;
     font-size: 0.7rem;
     opacity: 0.6;
-    margin-top:-10px
+    margin-top:-5%;
   }
 }
+
 .addButton{
   display:flex;
   align-items: center;
-  margin-top: -50px;
+  margin-top: -28%;
   font-family: 'Quicksand', sans-serif;
   
   .addtocart {
-    border-radius: 10px;
-    font-size: 12px;
+    max-width: 180px;
+    max-height: 80px;
+    padding: 10px;  
+    border-radius: 30px;
+    font-size: 0.9rem;
     background: #c53131;
     cursor: pointer;
-    height: 40px;
-    width: 100px;
+    width: 30%;
     overflow: hidden;
     transition: transform 0.1s;
     z-index: 1;
-    margin-left: 130px;
+    margin-left: 50%;
     text-align: center;
     box-shadow: 2px 1px 10px 1px rgba(0, 0, 0, .2);
     position: relative;
@@ -81,18 +105,17 @@ h3 {
     border:none;
     outline: 0;
      &:hover {
-      transform: scale(1.1);
+  
       box-shadow: 0px 0px 7px 5px rgba(202, 49, 49, 0.2);
     }
-    
-
   }
+
   .MinusCart{
     background-color: #c53131;
-    height:30px;
-    width: 30px;
-    border-radius: 10px;
-    margin-left: 10px;
+    height: 15%;
+    width: 15%;
+    border-radius: 20%;
+    margin-left: 10%;
     color: #fff;
     font-size:20px;
     display: flex;
@@ -111,31 +134,204 @@ h3 {
   } 
 }
 .ProductDetails {
+  max-height: 500px;
+  width: 120%;
   display: block;
-  margin-left: 660px;
-  line-height: 30px;
+  margin-left: auto;
+  line-height: 250%;
   background-color:white;
   border-radius: 10px;
   box-shadow: 0px 0px 10px 1px rgba(34, 60, 80, 0.2);
-  height: 280px;
-  width: 285px;
+  margin-bottom: 1%;
   .ProductDetailsList{
     border-bottom: 1px solid #991b1b;
   .ProductDetailsItem{
-    margin-left: 10px;
+    margin-left: 5%;
   }
   }
   .Sales{
-    margin-top:10px ;
-    margin-left: 10px;
+    margin-top:1%;
+    margin-left: 5%;
+  }
+}
+}
+.Description{
+  max-width: 300px;
+  line-height: 200%;
+  height: auto;
+  font-size: auto;
+  margin-top: -10%;
+  margin-bottom: 100%;
+  margin-left:5%;
+  display: -webkit-box;
+  -webkit-line-clamp: 30; /* Ограничиваем количество строк */
+  -webkit-box-orient: vertical; /* Располагаем текст вертикально */
+ 
+}
+}
+
+@media (min-width:1700px){
+  .BBox{
+  .Mainbox{
+    margin-left: 40%!important;
+    }
   }
 }
 
-.Description{
-  line-height: 22px;
-  height: 100px;
-  width: 340px;
-  margin-top: -50px;
-  margin-left:45px;
+@media (max-width:1100px) and (min-width:460px){
+  h3{
+    bottom: -40px!important;
+  }
+  .BBox{
+    .Mainbox{
+      margin-left: 10%!important;
+      font-size: 0.7rem!important;
+      .PriceBox{
+        width: 140%;
+      }
+      .ProductDetails{
+      
+        font-size: 0.7rem!important;
+        width: 140%;
+      }
+      }
+      .ProductBox {
+        height: auto;
+        max-height: 1100px;
+        margin-bottom: 20px;
+     
+      }
+  
+      .Description{
+        margin-top: 10%;
+     
+      }
+      
+    }
 }
-
+@media (max-width:459px) and (min-width:320px){
+  h3{
+    bottom: -40px!important;
+  }
+.BBox{  
+  .ProductImage{
+    margin-left: -10px;
+    height: 190px;
+    width:185px;
+    margin-top: -10px;
+  }
+  .ProductBox {
+    max-height: 2500px;
+    height: 280vw;
+    margin-bottom: 30px;
+    
+.Mainbox{
+  margin-top: -90px;
+  max-height: 170px;
+  .OrderDate{
+    font-size: 0.7rem!important;
+  }
+  .PriceBox{
+    margin-left: -20px;
+    width: 120%;
+  }
+  .ProductDetails{
+    margin-left: -20px;
+    font-size: 0.7rem!important;
+    width: 120%;
+  }
+}
+  }
+  .Description{
+    margin-left:5%;
+    margin-top: 80%;
+    max-width: 290px;
+    max-height: 50px;
+    font-size: 0.7rem;
+  }
+}
+}
+@media (max-width:379px)and (min-width:310px){
+  h3{
+    bottom: -40px!important;
+  }
+.BBox{  
+  .ProductImage{
+    margin-left: -10px;
+    height: 190px;
+    width:185px;
+    margin-top: -1px;
+  }
+  .ProductBox {
+    max-height: 2500px;
+    height: 380vw;
+    margin-bottom: 30px;
+    
+.Mainbox{
+  margin-top: -220px;
+  max-height: 170px;
+  .OrderDate{
+    font-size: 0.7rem!important;
+  }
+  .PriceBox{
+    margin-left: -20px;
+    width: 120%;
+  }
+  .ProductDetails{
+    margin-left: -20px;
+    font-size: 0.7rem!important;
+    width: 120%;
+  }
+}
+  }
+  .Description{
+    margin-left:5%;
+    margin-top: 10%;
+    max-width: 290px;
+    max-height: 50px;
+    font-size: 0.7rem;
+  }
+}
+}
+@media (max-width:310px){
+  h3{
+    bottom: -40px!important;
+  }
+.BBox{  
+  .ProductImage{
+    margin-left: -10px;
+    height: 190px;
+    width:185px;
+    margin-top: -190px;
+  }
+  .ProductBox {
+    max-height: 2500px;
+    height: 380vw;
+    margin-bottom: 20px;
+    
+.Mainbox{
+  margin-top: -190px;
+  max-height: 170px;
+  .OrderDate{
+    font-size: 0.7rem!important;
+  }
+  .PriceBox{
+    margin-left: -20px;
+    width: 120%;
+  }
+  .ProductDetails{
+    margin-left: -20px;
+    font-size: 0.7rem!important;
+    width: 120%;
+  }
+}
+  }
+  .Description{
+    margin-left:5%;
+    margin-top: 30%;
+    max-width: 290px;
+    max-height: 50px;
+    font-size: 0.7rem;
+  }
+}
+}
