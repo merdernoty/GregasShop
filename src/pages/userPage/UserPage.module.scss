@@ -12,30 +12,38 @@
     margin-bottom: 40%;
     color: #313030;
 
+    .back {
+      color: black;
+    }
+
     .topTitle {
       margin: 0 auto;
       width: 97%;
       text-align: center;
       background-color: #f1f5f8;
-      border-radius: 3px 3px 0px 0px;
+      border-radius: 10px 3px 0px 0px;
       font-size: 20px;
       line-height: 40px;
       color: #313030;
       box-shadow: 0px 5px 5px 1px rgba(241, 245, 248, 0.5);
+
       p {
         margin: 10px 0;
       }
     }
 
-    .orders {
+    .orders,
+    .userData {
       background-color: #f1f5f8;
       width: 97%;
-      height: 30%;
+      min-height: 30%;
       margin: 3% auto;
       display: flex;
+      border-radius: 10px;
       flex-direction: column;
 
-      .titleOrders {
+      .titleOrders,
+      .userTitle {
         width: 100%;
         text-align: center;
 
@@ -54,14 +62,27 @@
         margin-left: auto;
       }
     }
+    .userInfo{
+      margin: 2%;
+      li{
+        list-style: none;
+        margin-bottom: 2%;
+      }
 
-    .userData {
-      background-color: #f1f5f8;
-      width: 97%;
-      height: 30%;
-      margin: 3% auto;
-      display: flex;
-      padding: 3%;
+
     }
   }
+  @media(max-width: 630px){
+  .content{
+    width: 90%;
+    height: 90%;
+  }
+    h1{
+      font-size: 80%;
+    }
+    p {
+      font-size: 70%;
+    }
+
+}
 }

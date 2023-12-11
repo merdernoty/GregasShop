@@ -18,7 +18,23 @@ const UserPage = () => {
             <div className={styles.subtitle}>Заказы</div>
           </div>
         </div>
-        <div className={styles.userData}></div>
+        <div className={styles.userData}>
+          <div className={styles.userTitle}>
+            <div className={styles.subtitle}>Личные данные</div>
+          </div>
+       <div className={styles.userInfo}>
+         <ul className={styles.listInfo}>
+           <li>Андрей</li>
+           <li>frfrfrfr@gmail.com</li>
+           <li>+123456789</li>
+
+         </ul>
+<a href="/userPage">Изменить личные данные</a>
+         <br/>
+<a href="/userPage">Изменить пароль</a>
+
+       </div>
+        </div>
       </div>
     </div>
   );
