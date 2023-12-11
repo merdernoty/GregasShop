@@ -1,337 +1,144 @@
-.BBox{
-  margin: 10%;
-  max-width: 70%;
-  h4{
-    text-align: center;
-  font-size: 1.3rem;
-  font-weight: 100;
+// Product.module.scss
+
+.BBox {
+  width: 60%;
+  margin: 9rem auto;
+  background-color: #fff; // Set background color if needed
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1); // Subtle box shadow
+  border-radius: 10px;
+  position: relative;
+
+  &:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 1rem;
+    background-color: #c91332;; // Red color
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
   }
-  h3 {
-    color: #fff;
-    position: relative;
-  bottom: -60px;
-  text-align: center;
-  font-size: 1.3rem;
-  font-weight: 100;
-  left: 10%;
+
+  @media (max-width: 768px) {
+    width: 90%;
+  }
 }
+
 .TitleBox {
-  margin: 2%;
-  margin-left: 11%;
-  max-width: 80%;
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+  padding: 20px 0 0 50px ;
 }
+
 .ProductBox {
-  max-height: 900px;
-  max-width: 2900px;
   display: flex;
   flex-wrap: wrap;
-  padding: 10%;
-  width: 70vw;
-  height: 80vw;
-  margin-left: 10%;
-  border-radius:10px;
-  border-top: 45px solid #991b1b;
-  background-color: #f8fafc;
-  box-shadow: 0px 0px 8px 0px rgba(34, 60, 80, 0.2);
+  justify-content: space-between;
 }
+
 .ProductImage {
-  max-width: 300px;
-  max-height: 300px;
-  height: 50%;
-  width: 95%;
-  margin-left: 2%;
-  border-radius: 10%;
-  box-shadow: 5px 5px 5px 1px rgba(0, 0, 0, .2);
-  
+  max-width: 100%;
+  width: 400px;
+  height: 400px;
+  margin-bottom: 1rem;
 }
-.Mainbox{
+
+.Mainbox {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  width: auto;
-  height: auto;
-  margin-left: 10%;
-.PriceBox{
-  max-height: 190px;
-  height: 130%;
-  width:  120%;
-  background-color: white;
-  margin-left: auto;
-  border-radius: 10px;
-  line-height: 270%;
-  box-shadow: 0px 0px 10px 1px rgba(34, 60, 80, 0.2);
-  margin-bottom: 5%;
-  .PriceTag{
-    font-size: 1.1rem;
-    margin-left: 10%;
-    margin-top: 1%;
-    .price{
-      word-spacing: -5%;
-    }
-  }
+  justify-content: space-between;
+  margin-left: 2rem;
 
-  .OrderDate{
-    margin-left: 2%;
-    margin-top: 2px;
-    font-size: 0.7rem;
-    opacity: 0.6;
-    margin-top:-5%;
+  @media (max-width: 768px) {
+    margin-left: 0;
+    margin-top: 1rem;
   }
 }
 
-.addButton{
-  display:flex;
-  align-items: center;
-  margin-top: -28%;
-  font-family: 'Quicksand', sans-serif;
-  
-  .addtocart {
-    max-width: 180px;
-    max-height: 80px;
-    padding: 10px;  
-    border-radius: 30px;
-    font-size: 0.9rem;
-    background: #c53131;
-    cursor: pointer;
-    width: 30%;
-    overflow: hidden;
-    transition: transform 0.1s;
-    z-index: 1;
-    margin-left: 50%;
-    text-align: center;
-    box-shadow: 2px 1px 10px 1px rgba(0, 0, 0, .2);
-    position: relative;
-    color: #fff;
-    border:none;
-    outline: 0;
-     &:hover {
-  
-      box-shadow: 0px 0px 7px 5px rgba(202, 49, 49, 0.2);
-    }
-  }
-
-  .MinusCart{
-    background-color: #c53131;
-    height: 15%;
-    width: 15%;
-    border-radius: 20%;
-    margin-left: 10%;
-    color: #fff;
-    font-size:20px;
-    display: flex;
-    justify-content: center; /*Центрирование по горизонтали*/
-    align-items: center;
-    cursor: pointer;  
-    border:none;
-    outline: 0;
-    z-index: 1;
-    box-shadow: 0px 0px 5px 1px rgba(0, 0, 0, .2);
-    &:hover{
-      transform: scale(1.1);
-      box-shadow: 0px 0px 6px 5px rgba(202, 49, 49, 0.2);
-      
-    }
-  } 
+.PriceBox {
+  margin-bottom: 1rem;
 }
+
+.PriceTag {
+  font-size: 1.2rem;
+  margin-bottom: 0.5rem;
+}
+
+.price {
+  color: #0066cc;
+}
+
+.OrderDate {
+  font-size: 0.9rem;
+  color: #888;
+}
+
+.addButton {
+  display: flex;
+  align-items: center;
+}
+
+.addtocart,
+.MinusCart {
+  padding: 0.5rem 1rem;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+.addtocart {
+  background-color: #4caf50;
+  color: #fff;
+  border: none;
+  margin-right: 0.5rem;
+  border-radius: 8px;
+}
+
+.MinusCart {
+  background-color: #f44336;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+}
+
 .ProductDetails {
-  max-height: 500px;
-  width: 120%;
-  display: block;
-  margin-left: auto;
-  line-height: 250%;
-  background-color:white;
-  border-radius: 10px;
-  box-shadow: 0px 0px 10px 1px rgba(34, 60, 80, 0.2);
-  margin-bottom: 1%;
-  .ProductDetailsList{
-    border-bottom: 1px solid #991b1b;
-  .ProductDetailsItem{
-    margin-left: 5%;
-  }
-  }
-  .Sales{
-    margin-top:1%;
-    margin-left: 5%;
-  }
-}
-}
-.Description{
-  max-width: 300px;
-  line-height: 200%;
-  height: auto;
-  font-size: auto;
-  margin-top: -10%;
-  margin-bottom: 100%;
-  margin-left:5%;
-  display: -webkit-box;
-  -webkit-line-clamp: 30; /* Ограничиваем количество строк */
-  -webkit-box-orient: vertical; /* Располагаем текст вертикально */
- 
-}
+  margin-top: 1.5rem;
 }
 
-@media (min-width:1700px){
-  .BBox{
-  .Mainbox{
-    margin-left: 40%!important;
-    }
-  }
+.ProductDetailsList {
+  display: flex;
+  flex-direction: column;
 }
 
-@media (max-width:1100px) and (min-width:460px){
-  h3{
-    bottom: -40px!important;
-  }
-  .BBox{
-    .Mainbox{
-      margin-left: 10%!important;
-      font-size: 0.7rem!important;
-      .PriceBox{
-        width: 140%;
-      }
-      .ProductDetails{
-      
-        font-size: 0.7rem!important;
-        width: 140%;
-      }
-      }
-      .ProductBox {
-        height: auto;
-        max-height: 1100px;
-        margin-bottom: 20px;
-     
-      }
-  
-      .Description{
-        margin-top: 10%;
-     
-      }
-      
-    }
+.ProductDetailsItem {
+  font-size: 1rem;
+  margin-bottom: 0.5rem;
 }
-@media (max-width:459px) and (min-width:320px){
-  h3{
-    bottom: -40px!important;
-  }
-.BBox{  
-  .ProductImage{
-    margin-left: -10px;
-    height: 190px;
-    width:185px;
-    margin-top: -10px;
-  }
+
+.Sales {
+  margin-top: 1rem;
+}
+
+.SalesItem {
+  font-size: 0.9rem;
+  margin-bottom: 0.5rem;
+}
+
+.Description {
+  margin-top: 2rem;
+}
+
+h4 {
+  font-size: 1.3rem;
+  margin-bottom: 1rem;
+}
+
+// Media Query for smaller screens
+@media (max-width: 768px) {
   .ProductBox {
-    max-height: 2500px;
-    height: 280vw;
-    margin-bottom: 30px;
-    
-.Mainbox{
-  margin-top: -90px;
-  max-height: 170px;
-  .OrderDate{
-    font-size: 0.7rem!important;
+    flex-direction: column;
   }
-  .PriceBox{
-    margin-left: -20px;
-    width: 120%;
+  .TitleBox {
+    padding: 25px 0 0 0 !important ;
   }
-  .ProductDetails{
-    margin-left: -20px;
-    font-size: 0.7rem!important;
-    width: 120%;
-  }
-}
-  }
-  .Description{
-    margin-left:5%;
-    margin-top: 80%;
-    max-width: 290px;
-    max-height: 50px;
-    font-size: 0.7rem;
-  }
-}
-}
-@media (max-width:379px)and (min-width:310px){
-  h3{
-    bottom: -40px!important;
-  }
-.BBox{  
-  .ProductImage{
-    margin-left: -10px;
-    height: 190px;
-    width:185px;
-    margin-top: -1px;
-  }
-  .ProductBox {
-    max-height: 2500px;
-    height: 380vw;
-    margin-bottom: 30px;
-    
-.Mainbox{
-  margin-top: -220px;
-  max-height: 170px;
-  .OrderDate{
-    font-size: 0.7rem!important;
-  }
-  .PriceBox{
-    margin-left: -20px;
-    width: 120%;
-  }
-  .ProductDetails{
-    margin-left: -20px;
-    font-size: 0.7rem!important;
-    width: 120%;
-  }
-}
-  }
-  .Description{
-    margin-left:5%;
-    margin-top: 10%;
-    max-width: 290px;
-    max-height: 50px;
-    font-size: 0.7rem;
-  }
-}
-}
-@media (max-width:310px){
-  h3{
-    bottom: -40px!important;
-  }
-.BBox{  
-  .ProductImage{
-    margin-left: -10px;
-    height: 190px;
-    width:185px;
-    margin-top: -190px;
-  }
-  .ProductBox {
-    max-height: 2500px;
-    height: 380vw;
-    margin-bottom: 20px;
-    
-.Mainbox{
-  margin-top: -190px;
-  max-height: 170px;
-  .OrderDate{
-    font-size: 0.7rem!important;
-  }
-  .PriceBox{
-    margin-left: -20px;
-    width: 120%;
-  }
-  .ProductDetails{
-    margin-left: -20px;
-    font-size: 0.7rem!important;
-    width: 120%;
-  }
-}
-  }
-  .Description{
-    margin-left:5%;
-    margin-top: 30%;
-    max-width: 290px;
-    max-height: 50px;
-    font-size: 0.7rem;
-  }
-}
 }
