@@ -10,7 +10,7 @@ import { AiOutlineMenu, AiOutlineClose } from 'react-icons/ai';
 import { useDispatch, useSelector } from 'react-redux';
 import Button from '@mui/material/Button';
 import Container from '@mui/material/Container';
-import { logout, selectIsAuth } from '../../../../../redux/slices/auth';
+import { logout, selectIsAuth, fetchAuthMe, initializeAuth} from '../../../../../redux/slices/auth';
 
 export const MainGui = ({ searchValue, setSearchValue }) => {
   const location = useLocation();
@@ -19,6 +19,12 @@ export const MainGui = ({ searchValue, setSearchValue }) => {
   const dispatch = useDispatch();
   const isAuth = useSelector(selectIsAuth);
 
+  useEffect(() => {
+    // Инициализация состояния аутентификации при загрузке компонента
+    dispatch(initializeAuth());
+  }, [dispatch]);
+
+  
   const onClickLogout = () => {
     if (window.confirm('Вы действительно хотите выйти?')) {
       dispatch(logout());

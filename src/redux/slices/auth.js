@@ -11,10 +11,29 @@ export const fetchRegister = createAsyncThunk('auth/fetchRegister', async (param
   return data;
 });
 
-export const fetchAuthMe = createAsyncThunk('auth/fetchAuthMe', async () => {
-  const { data } = await axios.get('/auth/me');
+export const fetchAuthMe = createAsyncThunk('auth/fetchAuthMe', async (token) => {
+  const { data } = await axios.get('/auth/me', {
+    headers: {
+      Authorization: `Bearer ${token}`,
+    },
+  });
   return data;
 });
+
+// Новый экшен для инициализации состояния аутентификации
+export const initializeAuth = () => async (dispatch) => {
+  const token = window.localStorage.getItem('token');
+
+  if (token) {
+    try {
+      // Если есть токен, отправляем запрос на восстановление аутентификации
+      const userData = await dispatch(fetchAuthMe(token));
+    } catch (error) {
+      // Обработка ошибок
+      console.error('Error initializing authentication:', error);
+    }
+  }
+};
 
 const initialState = {
   data: null,
@@ -72,5 +91,7 @@ const authSlice = createSlice({
 export const selectIsAuth = (state) => Boolean(state.auth.data);
 
 export const authReducer = authSlice.reducer;
+
+export const selectUserData = (state) => state.auth.data;
 
 export const { logout } = authSlice.actions;

@@ -19,6 +19,9 @@ export const Registration = () => {
     handleSubmit,
     formState: { errors, isValid },
   } = useForm({
+    defaultValues: {
+      phone:7
+    },
     mode: 'onChange',
   });
 
@@ -48,11 +51,27 @@ export const Registration = () => {
       </div>
       <form onSubmit={handleSubmit(onSubmit)}>
         <TextField
-          error={Boolean(errors.fullName?.message)}
-          helperText={errors.fullName?.message}
-          {...register('fullName', { required: 'Укажите полное имя' })}
+          error={Boolean(errors.Name?.message)}
+          helperText={errors.Name?.message}
+          {...register('Name', { required: 'Укажите имя' })}
           className={styles.field}
           label="Полное имя"
+          fullWidth
+        />
+        <TextField
+          error={Boolean(errors.SecondName?.message)}
+          helperText={errors.SecondName?.message}
+          {...register('SecondName', { required: 'Укажите Фамилию' })}
+          className={styles.field}
+          label="Фамилия"
+          fullWidth
+        />
+        <TextField
+          error={Boolean(errors.Patronymic?.message)}
+          helperText={errors.Patronymic?.message}
+          {...register('Patronymic', { required: 'Укажите Отчество' })}
+          className={styles.field}
+          label="Отчество"
           fullWidth
         />
         <TextField
@@ -65,6 +84,15 @@ export const Registration = () => {
           fullWidth
         />
         <TextField
+          error={Boolean(errors.phone?.message)}
+          helperText={errors.phone?.message}
+          type="tel"
+          {...register('phone', { required: 'Укажите Телефон' })}
+          className={styles.field}
+          label="Телефон"
+          fullWidth
+        />
+        <TextField
           error={Boolean(errors.password?.message)}
           helperText={errors.password?.message}
           type="password"
@@ -73,7 +101,7 @@ export const Registration = () => {
           label="Пароль"
           fullWidth
         />
-        <Button disabled={!isValid} type="submit" size="large" variant="contained" fullWidth>
+        <Button classes={{ root: styles.btn }} disabled={!isValid} type="submit" size="large" variant="contained" fullWidth>
           Зарегистрироваться
         </Button>
       </form>

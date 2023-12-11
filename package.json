@@ -23,6 +23,7 @@
     "@types/react": "^18.2.38",
     "axios": "^1.6.2",
     "classnames": "^2.3.2",
+    "jsonpointer": "^5.0.1",
     "lodash.debounce": "^4.0.8",
     "qs": "^6.11.2",
     "react": "^18.2.0",
@@ -35,6 +36,7 @@
     "react-scripts": "^5.0.1",
     "react-scrollbar": "^0.5.6",
     "react-svg": "^16.1.22",
+    "redux-persist": "^6.0.0",
     "swiper": "^10.2.0"
   },
   "browserslist": {
