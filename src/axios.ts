@@ -1,7 +1,7 @@
 import axios from "axios";
 
 const instance = axios.create({
-    baseURL: 'http://localhost:4444/'
+    baseURL: 'https://backend-bay-three.vercel.app/'
 })
 
-export default instance;
+export default  instance;

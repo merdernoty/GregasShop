@@ -6,11 +6,29 @@ import { Search, Cart } from '../index';
 import user from '../../../../../assets/images/user.png';
 import { AiOutlineMenu, AiOutlineClose } from 'react-icons/ai';
 
+
+import { useDispatch, useSelector } from 'react-redux';
+import Button from '@mui/material/Button';
+import Container from '@mui/material/Container';
+import { logout, selectIsAuth } from '../../../../../redux/slices/auth';
+
 export const MainGui = ({ searchValue, setSearchValue }) => {
   const location = useLocation();
-
   const [show, setShow] = useState(false);
 
+  const dispatch = useDispatch();
+  const isAuth = useSelector(selectIsAuth);
+
+  const onClickLogout = () => {
+    if (window.confirm('Вы действительно хотите выйти?')) {
+      dispatch(logout());
+      window.localStorage.removeItem('token');
+    }
+  };
+  const handleItemClick = () => {
+    setShow(false);
+  };
+  
   return (
     <header className={styles.MainWrapper}>
       <div className={styles.Headerbox}>
@@ -28,19 +46,16 @@ export const MainGui = ({ searchValue, setSearchValue }) => {
               ALL
             </Link>
           </div>
-
           <div className={styles.Item}>
             <Link to="/hits" className={styles.itemText}>
               Хиты
             </Link>
           </div>
-
           <div className={styles.Item}>
             <Link to="/" className={styles.itemText}>
               Скидки
             </Link>
           </div>
-
           <div className={styles.Item}>
             <Link to="/" className={styles.itemText}>
               Новинки
@@ -50,19 +65,19 @@ export const MainGui = ({ searchValue, setSearchValue }) => {
             <ul className={show ? [styles.menu, styles.active].join(' ') : [styles.menu]}>
               <div className={styles.NavList}>
               <li>
-                <Link to="/catalogpage">Каталог</Link>
+                <Link to="/catalogpage" onClick={handleItemClick}>Каталог</Link>
               </li>
               <li>
-                <Link to="/all">ALL</Link>
+                <Link to="/all" onClick={handleItemClick}>ALL</Link>
               </li>
               <li>
-                <Link to="/catalogpage">Хиты</Link>
+                <Link to="/catalogpage" onClick={handleItemClick}>Хиты</Link>
               </li>
               <li>
-                <Link to="/catalogpage">Скидки</Link>
+                <Link to="/catalogpage" onClick={handleItemClick}>Скидки</Link>
               </li>
               <li>
-                <Link to="/catalogpage">Новинки</Link>
+                <Link to="/catalogpage" onClick={handleItemClick}>Новинки</Link>
               </li>
             </div>
             </ul>
@@ -70,11 +85,30 @@ export const MainGui = ({ searchValue, setSearchValue }) => {
               {show ? <AiOutlineClose size={35} /> : <AiOutlineMenu size={35} />}
             </div>
           </div>
-
           <Search className={styles.search} searchValue={searchValue} setSearchValue={setSearchValue} />
+
+
+          {isAuth ? (
+            <>
+              <Button onClick={onClickLogout} className={styles.signOut}>
+                Выйти
+              </Button>
+              <Link to="/userpage">
+                <img src={user} className={styles.user} alt="User" />
+              </Link>
+            </>
+          ) : (
+            <>
+              <Link to="/login">
+                <Button className={styles.sign}>Войти</Button>
+              </Link>
+              <Link to="/register">
+                <Button className={styles.signUp}>Регистрация</Button>
+              </Link>
+            </>
+          )}
+
           {location.pathname !== '/Cartpage' && <Cart />}
-          <img src={user} className={styles.user} alt="User" />
-          <span className={styles.sign}>sign in</span>
         </div>
       </div>
     </header>
