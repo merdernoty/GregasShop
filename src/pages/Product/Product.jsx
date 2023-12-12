@@ -3,7 +3,7 @@ import { useParams } from 'react-router-dom';
 import style from './Product.module.scss';
 import { useSelector, useDispatch } from 'react-redux';
 import './Product1.js';
-import { addItem, minusItem } from '../../redux/slices/CartSlice.js';
+import { addItem, minusItem } from '../../redux/slices/cart/CartSlice.js';
 import { selectCartItemById } from '../../redux/slices/itemSlice.js';
 
 export const Product = () => {

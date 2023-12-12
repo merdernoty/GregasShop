@@ -3,7 +3,7 @@ import './ItemBlock.scss';
 import { Link } from 'react-router-dom';
 import { useDispatch, useSelector } from 'react-redux';
 
-import { addItem } from '../../../../redux/slices/CartSlice';
+import { addItem } from '../../../../redux/slices/cart/CartSlice';
 import { selectCartItemById } from '../../../../redux/slices/itemSlice';
 
 export const ItemBlock = ({ title, price, image,viewsCount, id }) => {
