@@ -3,7 +3,7 @@ import { useParams } from 'react-router-dom';
 import style from './Product.module.scss';
 import { useSelector, useDispatch } from 'react-redux';
 import './Product1.js';
-import { addItem, minusItem } from '../../redux/slices/CartSlice.js';
+import { addItem, minusItem } from '../../redux/slices/cart/CartSlice.js';
 import { selectCartItemById } from '../../redux/slices/itemSlice.js';
 
 export const Product = () => {
@@ -25,13 +25,13 @@ export const Product = () => {
 
 
   return (
-    <div>
+    <div className={style.BBox}>
       <h3 className={style.TitleBox}> {title} </h3>
       <div className={style.ProductBox}>
         <br></br>
         <img className={style.ProductImage} src={image} alt={`Изображение ${title}`} />
         {/* Add more images as needed */}
-
+        <div className={style.Mainbox}>
         <div className={style.PriceBox}>
           <p className={style.PriceTag}>
 
@@ -49,8 +49,9 @@ export const Product = () => {
             {addedCount>0? <button className={style.MinusCart} onClick={removeFromCart}>
                -
             </button>:null }
+            </div>
+
           </div>
-        </div>
         <br></br>
         <div className={style.ProductDetails}>
           <div className={style.ProductDetailsList}>
@@ -69,6 +70,7 @@ export const Product = () => {
             <p className={style.SalesItem}> Скидка от 100 000 - 5% </p>
             <p className={style.SalesItem}> Скидка от 200 000 - 10% </p>
           </div>
+        </div>
         </div>
         <div className={style.Description}>
           <h4>Описание</h4>

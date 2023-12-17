@@ -1,5 +1,5 @@
 import { useDispatch } from 'react-redux';
-import { addItem, minusItem, removeItem } from '../../redux/slices/CartSlice';
+import { addItem, minusItem, removeItem } from '../../redux/slices/cart/CartSlice';
 import styles from './Cartpage.module.scss'; // модульность css
 import { Link } from 'react-router-dom';
 

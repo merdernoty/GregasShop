@@ -10,7 +10,7 @@ import { AiOutlineMenu, AiOutlineClose } from 'react-icons/ai';
 import { useDispatch, useSelector } from 'react-redux';
 import Button from '@mui/material/Button';
 import Container from '@mui/material/Container';
-import { logout, selectIsAuth } from '../../../../../redux/slices/auth';
+import { logout, selectIsAuth, fetchAuthMe, initializeAuth} from '../../../../../redux/slices/auth';
 
 export const MainGui = ({ searchValue, setSearchValue }) => {
   const location = useLocation();
@@ -19,6 +19,12 @@ export const MainGui = ({ searchValue, setSearchValue }) => {
   const dispatch = useDispatch();
   const isAuth = useSelector(selectIsAuth);
 
+  useEffect(() => {
+    // Инициализация состояния аутентификации при загрузке компонента
+    dispatch(initializeAuth());
+  }, [dispatch]);
+
+  
   const onClickLogout = () => {
     if (window.confirm('Вы действительно хотите выйти?')) {
       dispatch(logout());
@@ -86,26 +92,29 @@ export const MainGui = ({ searchValue, setSearchValue }) => {
             </div>
           </div>
           <Search className={styles.search} searchValue={searchValue} setSearchValue={setSearchValue} />
-          
-          
+
+
           {isAuth ? (
-              <>
-                <Button onClick={onClickLogout} className={styles.signOut}>
-                  Выйти
-                </Button>
+            <>
+              <Button onClick={onClickLogout} className={styles.signOut}>
+                Выйти
+              </Button>
+              <Link to="/userpage">
                 <img src={user} className={styles.user} alt="User" />
-              </>
-            ) : (
-              <>
-                <Link to="/login">
-                  <Button className={styles.sign}>Войти</Button>
-                </Link>
-                <Link to="/register">
-                  <Button className={styles.signUp}>Регистрация</Button>
-                </Link>
-              </>
-            )}
-            {location.pathname !== '/Cartpage' && <Cart />}
+              </Link>
+            </>
+          ) : (
+            <>
+              <Link to="/login">
+                <Button className={styles.sign}>Войти</Button>
+              </Link>
+              <Link to="/register">
+                <Button className={styles.signUp}>Регистрация</Button>
+              </Link>
+            </>
+          )}
+
+          {location.pathname !== '/Cartpage' && <Cart />}
         </div>
       </div>
     </header>
