@@ -54,13 +54,13 @@
 @media (max-width: 375px) {
  .NewSlider{
     flex-wrap: wrap; 
-    width: 50%; 
+    width: 100%; 
   }
 }
 
 @media (max-width: 320px) {
   .NewSlider{
     flex-wrap: wrap; /* Разрешаем перенос элементов на новую строку */
-    width: 50%; /* Занимают 50% ширины родительского контейнера */
+    width: 100%; /* Занимают 50% ширины родительского контейнера */
   }
 }
