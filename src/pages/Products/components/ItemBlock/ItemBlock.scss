@@ -228,7 +228,7 @@
 @media (max-width: 540px) {
   .ItemBlock,.Item-container,.collection-container-skeleton{
   height: 300px;
-  width: 45vw;
+  width: 50vw;
   min-width: 155px;
     .image-container{
       width: 90%;
@@ -237,7 +237,7 @@
       border-radius: 10px 10px 10px 10px;
     }
     .Price {
-      margin-left: 75%;
+      margin-left: 70%;
       font-size: 15px;
       font-weight: bold;
       color: black;
@@ -248,11 +248,11 @@
       
     }
     .Stock {
-      font-size: 9px;
+      font-size: 11px;
      
     }
     .Sold {
-      font-size: 9px;
+      font-size: 11px;
     }
     .ItemBlockParag .link{
       font-size: 15px;
